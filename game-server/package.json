@@ -1,0 +1,14 @@
+{
+    "name":"servers",
+    "version":"0.0.1",
+    "private":false,
+    "dependencies":{
+        "pomelo":"2.2.5",
+		"async": "^1.5.2",
+		"crc": "^3.4.0",
+		"request": "2.69.0",
+		"pomelo-logger": "0.1.7",
+		"underscore": "^1.8.3",
+    }
+}
+

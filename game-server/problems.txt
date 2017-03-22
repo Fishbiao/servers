@@ -1,0 +1,51 @@
+server "xxxx" "xxx" register master failed 问题解决
+原因:
+chat服务端分三部分 connector, chat, gate, 在分布式部署环境中,这三种类型服务器之间要进行通信,每个服务器会持有一个token作为验证串, 在config目录下adminServer.json就是添加每种服务器类型的token, 而默认情况下创建的只有connector,这就是为什么会出现"chat"和"gate"注册失败而"connector"注册成功的原因,知道原因解决就很简单了.
+
+解决方法:
+在config目录下adminServer.json里添加chat和gate两种服务器类型的token
+
+
+
+添加gate服务器后启动报错：
+[2017-03-20 23:54:11.617] [ERROR] console - Option path is not valid. Please ref
+er to the README.
+
+[2017-03-20 23:54:11.617] [ERROR] console - Option close timeout is not valid. P
+lease refer to the README.
+[2017-03-20 23:54:11.617] [ERROR] console - Option heartbeats is not valid. Plea
+se refer to the README.
+[2017-03-20 23:54:11.617] [ERROR] console - Option log level is not valid. Pleas
+e refer to the README.
+原因：没有设置以下内容：
+app.configure('production|development', 'gate', function () {
+    app.set('connectorConfig',
+        {
+            connector: pomelo.connectors.hybridconnector//,
+            //useProtobuf : true
+        });
+});
+
+
+
+[2017-03-21 22:35:09.882] [ERROR] console - [ReferenceError: v8debug is not defi
+ned]
+ReferenceError: v8debug is not defined
+    at eval (eval at <anonymous> (D:\chessProject\servers\game-server\app\server
+s\gate\handler\gateHandler.js:1:1), <anonymous>:52:21)
+    at eval (eval at <anonymous> (D:\chessProject\servers\game-server\app\server
+s\gate\handler\gateHandler.js:1:1), <anonymous>:94:5)
+    at D:\chessProject\servers\game-server\app\servers\gate\handler\gateHandler.
+js:1:1
+    at exports.runInThisContext (vm.js:54:17)
+    at Module._compile (module.js:373:25)
+    at Object.Module._extensions..js (module.js:416:10)
+    at Module.load (module.js:343:32)
+    at Function.Module._load (module.js:300:12)
+    at Module.require (module.js:353:17)
+    at require (internal/module.js:12:17)
+解决方法：Edit configuration->Create a node configuration
+
+
+
+
