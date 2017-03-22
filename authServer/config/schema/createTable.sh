@@ -1,0 +1,2 @@
+#!/bin/sh
+mysql -u root -p890205 -e "CREATE DATABASE IF NOT EXISTS GlobalUser;" && mysql -u root -p890205 --database=GlobalUser <./createTable.sql >createTable.log -f --batch --silent --show-warnings --line-numbers --table --column-names

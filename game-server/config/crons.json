@@ -1,12 +1,5 @@
 {
   "development": {
-    "gate": [
-      {
-        "id": 1,
-        "time": "0/5 * * * * *",
-        "action": "testCron.test"
-      }
-    ],
     "area": [
       {
         "id": 1,
@@ -23,13 +16,6 @@
     ]
   },
   "production": {
-    "gate": [
-      {
-        "id": 1,
-        "time": "0/5 0 0 * * *",
-        "action": "testCron.test"
-      }
-    ],
     "area": [
       {
         "id": 1,
