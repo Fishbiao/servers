@@ -1,0 +1,21 @@
+{
+  "appenders": [
+	{
+      "type": "console"
+    }
+    , {
+      "type": "file",
+      "filename": "./logs/nodejs-client.log",
+      "maxLogSize": 1048576,
+      "backups": 3
+    }
+	, {
+      "type": "file",
+      "filename": "./logs/act.log",
+      "maxLogSize": 1048576,
+      "backups": 3
+	  , "category": "act"
+    }
+  ]
+  , "replaceConsole": true
+}

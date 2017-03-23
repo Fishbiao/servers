@@ -1,212 +1,41 @@
-[2017-03-20 23:08:28.535] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:09:15.253] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:10:20.868] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:11:04.743] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:12:20.360] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:12:45.845] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:13:37.553] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:13:38.915] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mgate-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"connector-server-1":{"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":"--debug=3123","serverType":"connector","pid":5280},"gate-server-1":{"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientHost":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--debug=3122","serverType":"gate"}}}
-[2017-03-20 23:13:38.922] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mgate-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"connector-server-1":{"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":"--debug=3123","serverType":"connector","pid":5280},"gate-server-1":{"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientHost":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--debug=3122","serverType":"gate"}}}
-[2017-03-20 23:18:09.397] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:18:23.462] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:18:23.818] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-20 23:18:24.244] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-20 23:18:24.245] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 776 ms
-[2017-03-20 23:26:26.368] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:26:26.723] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-20 23:26:26.839] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-20 23:26:26.839] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 465 ms
-[2017-03-20 23:27:43.032] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:27:43.384] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-20 23:27:43.495] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-20 23:27:43.495] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 457 ms
-[2017-03-20 23:42:03.697] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:42:04.079] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-20 23:42:04.213] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-20 23:42:04.213] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 510 ms
-[2017-03-20 23:42:51.609] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:42:52.691] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-20 23:42:52.826] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-20 23:42:52.826] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 1211 ms
-[2017-03-20 23:44:19.818] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:44:21.335] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-20 23:44:21.457] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-20 23:44:21.457] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 1627 ms
-[2017-03-20 23:53:38.511] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:53:38.888] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-20 23:53:38.895] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-20 23:53:38.895] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 349 ms
-[2017-03-20 23:54:11.149] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:54:11.506] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-20 23:54:11.619] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-20 23:54:11.620] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 464 ms
-[2017-03-20 23:55:12.024] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:55:12.399] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-20 23:55:12.406] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-20 23:55:12.406] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 347 ms
-[2017-03-20 23:56:03.503] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:56:05.060] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-20 23:56:05.070] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-20 23:56:05.070] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 1477 ms
-[2017-03-20 23:58:28.747] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-20 23:58:30.307] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-20 23:58:30.318] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-20 23:58:30.319] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 1484 ms
-[2017-03-21 00:02:02.095] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 00:02:49.917] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 00:02:50.299] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 00:02:50.304] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 00:02:50.305] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 353 ms
-[2017-03-21 00:03:20.286] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 00:03:21.366] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 00:05:09.862] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 00:05:11.445] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 00:05:11.454] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 00:05:31.982] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 22029 ms
-[2017-03-21 00:09:37.233] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 1
-[2017-03-21 00:09:37.255] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] handleMessage session id: 1, msg: {"id":1,"type":0,"compressRoute":0,"route":"gate.gateHandler.queryEntry","body":"{'uid':'fisher'}","compressGzip":0}
-[2017-03-21 00:09:46.663] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] send message reqId: 1, route: gate.gateHandler.queryEntry, msg: {"code":500}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
-[2017-03-21 00:09:58.658] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 2
-[2017-03-21 00:09:58.665] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] handleMessage session id: 2, msg: {"id":2,"type":0,"compressRoute":0,"route":"gate.gateHandler.queryEntry","body":"{'uid':'fisher'}","compressGzip":0}
-[2017-03-21 00:10:17.126] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] send message reqId: 2, route: gate.gateHandler.queryEntry, msg: {"code":500}, receivers: [2], opts: {"type":"response","userOptions":{},"isResponse":true}
-[2017-03-21 00:10:54.555] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\common\service\sessionService.js] [39msession on [gate-server-1] is closed with session id: 1
-[2017-03-21 00:10:54.557] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\common\service\sessionService.js] [39msession on [gate-server-1] is closed with session id: 2
-[2017-03-21 00:10:56.369] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 3
-[2017-03-21 00:10:56.376] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] handleMessage session id: 3, msg: {"id":1,"type":0,"compressRoute":0,"route":"gate.gateHandler.queryEntry","body":{"uid":"fisher"},"compressGzip":0}
-[2017-03-21 00:11:52.984] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] send message reqId: 1, route: gate.gateHandler.queryEntry, msg: {"code":200,"host":"127.0.0.1","port":3010}, receivers: [3], opts: {"type":"response","userOptions":{},"isResponse":true}
-[2017-03-21 00:13:58.386] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\common\service\sessionService.js] [39msession on [gate-server-1] is closed with session id: 3
-[2017-03-21 00:14:00.178] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 4
-[2017-03-21 00:14:00.186] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] handleMessage session id: 4, msg: {"id":1,"type":0,"compressRoute":0,"route":"gate.gateHandler.queryEntry","body":{"uid":"fisher"},"compressGzip":0}
-[2017-03-21 00:14:03.430] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] send message reqId: 1, route: gate.gateHandler.queryEntry, msg: {"code":200,"host":"127.0.0.1","port":3010}, receivers: [4], opts: {"type":"response","userOptions":{},"isResponse":true}
-[2017-03-21 00:15:52.687] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\common\service\sessionService.js] [39msession on [gate-server-1] is closed with session id: 4
-[2017-03-21 00:15:59.125] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mgate-server-1 receive removeServer signal: {"action":"removeServer","id":"connector-server-1"}
-[2017-03-21 22:33:47.143] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 22:33:47.571] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 22:33:47.577] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\server\server.js] [39mcould not find cron: {"id":1,"time":"0 0 0 * * *","action":"resetBarrierAtkCnt.reset"}
-[2017-03-21 22:33:47.577] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 22:33:47.577] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 367 ms
-[2017-03-21 22:34:34.107] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 22:34:34.508] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 22:34:34.515] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 22:34:34.516] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 371 ms
-[2017-03-21 22:35:09.855] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 1
-[2017-03-21 22:35:09.872] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] handleMessage session id: 1, msg: {"id":1,"type":0,"compressRoute":0,"route":"gate.gateHandler.queryEntry","body":{"uid":"fisher"},"compressGzip":0}
-[2017-03-21 22:35:09.901] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] send message reqId: 1, route: gate.gateHandler.queryEntry, msg: {"code":200,"host":"127.0.0.1","port":3010}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
-[2017-03-21 22:44:47.008] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mgate-server-1 receive removeServer signal: {"action":"removeServer","id":"connector-server-1"}
-[2017-03-21 22:44:58.839] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 22:45:00.434] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 22:45:00.446] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 22:45:00.447] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 1519 ms
-[2017-03-21 22:45:50.455] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 22:45:50.834] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 22:45:50.841] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 22:45:50.841] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 350 ms
-[2017-03-21 22:46:08.215] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 1
-[2017-03-21 22:46:08.235] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] handleMessage session id: 1, msg: {"id":2,"type":0,"compressRoute":0,"route":"gate.gateHandler.queryEntry","body":{"uid":"fisher"},"compressGzip":0}
-[2017-03-21 22:46:08.268] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] send message reqId: 2, route: gate.gateHandler.queryEntry, msg: {"code":200,"host":"127.0.0.1","port":3010}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
-[2017-03-21 22:50:14.297] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 22:50:14.678] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 22:50:14.686] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 22:50:14.686] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 351 ms
-[2017-03-21 22:50:34.506] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 1
-[2017-03-21 22:50:34.523] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] handleMessage session id: 1, msg: {"id":3,"type":0,"compressRoute":0,"route":"gate.gateHandler.queryEntry","body":{"uid":"fisher"},"compressGzip":0}
-[2017-03-21 22:50:34.544] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] send message reqId: 3, route: gate.gateHandler.queryEntry, msg: {"code":200,"host":"127.0.0.1","port":3010}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
-[2017-03-21 22:50:39.478] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 2
-[2017-03-21 22:50:39.486] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] handleMessage session id: 2, msg: {"id":4,"type":0,"compressRoute":0,"route":"gate.gateHandler.queryEntry","body":{"uid":"fisher"},"compressGzip":0}
-[2017-03-21 22:50:39.487] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] send message reqId: 4, route: gate.gateHandler.queryEntry, msg: {"code":200,"host":"127.0.0.1","port":3010}, receivers: [2], opts: {"type":"response","userOptions":{},"isResponse":true}
-[2017-03-21 22:54:25.933] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 22:54:26.311] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 22:54:26.319] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 22:54:26.320] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 353 ms
-[2017-03-21 22:54:27.167] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mgate-server-1 receive removeServer signal: {"action":"removeServer","id":"connector-server-1"}
-[2017-03-21 22:54:29.625] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 22:54:30.006] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 22:54:30.014] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 22:54:30.015] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 354 ms
-[2017-03-21 22:56:46.431] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 22:56:46.814] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 22:56:46.821] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 22:56:46.822] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 355 ms
-[2017-03-21 22:58:37.812] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 22:58:38.200] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 22:58:38.208] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 22:58:38.209] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 362 ms
-[2017-03-21 23:07:38.712] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 23:07:39.095] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 23:07:39.103] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 23:07:39.104] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 359 ms
-[2017-03-21 23:14:40.396] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 23:14:40.782] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 23:14:40.787] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\server\server.js] [39mcould not find cron job: {"id":1,"time":"0/5 0 0 * * *","action":"testCron.test"}, test
-[2017-03-21 23:14:40.787] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 23:14:40.789] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 359 ms
-[2017-03-21 23:14:48.295] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mgate-server-1 receive removeServer signal: {"action":"removeServer","id":"connector-server-1"}
-[2017-03-21 23:14:52.893] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 23:14:53.270] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 23:14:53.278] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 23:14:53.280] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 352 ms
-[2017-03-21 23:39:15.269] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 23:39:15.669] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 23:39:15.676] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 23:39:15.677] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 371 ms
-[2017-03-21 23:39:31.137] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mgate-server-1 receive removeServer signal: {"action":"removeServer","id":"connector-server-1"}
-[2017-03-21 23:46:47.692] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 23:46:48.933] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 23:46:48.941] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\server\server.js] [39mcould not find cron: {"id":1,"time":"0/5 * * * * *","action":"testCron.test"}
-[2017-03-21 23:46:48.941] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 23:48:59.842] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 132112 ms
-[2017-03-21 23:49:03.654] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mgate-server-1 receive removeServer signal: {"action":"removeServer","id":"connector-server-1"}
-[2017-03-21 23:49:27.548] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-21 23:49:27.939] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-21 23:49:27.944] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\server\server.js] [39mcould not find cron: {"id":1,"time":"0/5 * * * * *","action":"testCron.test"}
-[2017-03-21 23:49:27.944] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-21 23:49:27.946] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 363 ms
-[2017-03-21 23:49:29.133] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39m[gate-server-1] receive addServer signal: {"action":"addServer","server":{"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":"--debug=3123","serverType":"connector","pid":6708}}
-[2017-03-22 23:46:08.667] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-22 23:46:09.060] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-22 23:46:09.065] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\server\server.js] [39mcould not find cron: {"id":1,"time":"0/5 * * * * *","action":"testCron.test"}
-[2017-03-22 23:46:09.065] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-22 23:46:09.067] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 362 ms
-[2017-03-22 23:46:22.983] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mgate-server-1 receive removeServer signal: {"action":"removeServer","id":"connector-server-1"}
-[2017-03-22 23:46:36.798] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-22 23:46:37.216] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-22 23:46:37.221] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\server\server.js] [39mcould not find cron: {"id":1,"time":"0/5 * * * * *","action":"testCron.test"}
-[2017-03-22 23:46:37.222] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-22 23:46:37.224] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 389 ms
-[2017-03-22 23:47:01.122] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-22 23:47:01.533] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-22 23:47:01.540] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\server\server.js] [39mcould not find cron: {"id":1,"time":"0/5 * * * * *","action":"testCron.test"}
-[2017-03-22 23:47:01.541] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-22 23:47:01.543] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 384 ms
-[2017-03-22 23:50:52.209] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-22 23:50:52.632] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-22 23:50:52.637] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\server\server.js] [39mcould not find cron: {"id":1,"time":"0/5 * * * * *","action":"testCron.test"}
-[2017-03-22 23:50:52.638] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-22 23:50:52.639] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 393 ms
-[2017-03-22 23:51:07.577] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-22 23:51:07.989] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-22 23:51:07.995] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\server\server.js] [39mcould not find cron: {"id":1,"time":"0/5 * * * * *","action":"testCron.test"}
-[2017-03-22 23:51:07.995] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-22 23:51:07.997] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 380 ms
-[2017-03-22 23:53:56.046] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-22 23:53:56.420] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-22 23:53:56.426] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-22 23:53:56.426] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 345 ms
-[2017-03-23 00:08:02.936] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-23 00:08:03.322] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-23 00:08:03.328] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-23 00:08:03.328] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 359 ms
-[2017-03-23 00:28:50.913] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-23 00:28:51.288] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-23 00:28:51.294] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-23 00:28:51.294] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 348 ms
-[2017-03-23 00:30:01.478] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
-[2017-03-23 00:30:01.859] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
-[2017-03-23 00:30:01.864] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
-[2017-03-23 00:30:01.864] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 347 ms
-[2017-03-23 00:30:18.183] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 1
-[2017-03-23 00:30:18.204] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] handleMessage session id: 1, msg: {"id":1,"type":0,"compressRoute":0,"route":"gate.gateHandler.queryEntry","body":{"uid":"fisher"},"compressGzip":0}
-[2017-03-23 00:30:18.219] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] send message reqId: 1, route: gate.gateHandler.queryEntry, msg: {"code":200,"host":"127.0.0.1","port":3010}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
-[2017-03-23 00:30:21.805] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 2
-[2017-03-23 00:30:21.811] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] handleMessage session id: 2, msg: {"id":2,"type":0,"compressRoute":0,"route":"gate.gateHandler.queryEntry","body":{"uid":"fisher"},"compressGzip":0}
-[2017-03-23 00:30:21.812] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] send message reqId: 2, route: gate.gateHandler.queryEntry, msg: {"code":200,"host":"127.0.0.1","port":3010}, receivers: [2], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2017-03-23 23:38:30.023] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\connectors\common\handler.js] [39mcould not find handle invalid data package.
+[2017-03-23 23:38:30.023] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\common\service\sessionService.js] [39msession on [gate-server-1] is closed with session id: 1
+[2017-03-23 23:51:57.823] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
+[2017-03-23 23:51:58.194] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
+[2017-03-23 23:51:58.199] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
+[2017-03-23 23:51:58.199] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 343 ms
+[2017-03-24 00:08:28.193] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mgate-server-1 receive removeServer signal: {"action":"removeServer","id":"connector-server-1"}
+[2017-03-24 00:08:31.847] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
+[2017-03-24 00:08:32.220] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
+[2017-03-24 00:08:32.226] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
+[2017-03-24 00:08:32.226] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 345 ms
+[2017-03-24 00:09:05.322] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 1
+[2017-03-24 00:09:05.329] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\connectors\common\handler.js] [39mcould not find handle invalid data package.
+[2017-03-24 00:09:05.329] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\common\service\sessionService.js] [39msession on [gate-server-1] is closed with session id: 1
+[2017-03-24 00:09:19.432] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mgate-server-1 receive removeServer signal: {"action":"removeServer","id":"connector-server-1"}
+[2017-03-24 00:12:18.896] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
+[2017-03-24 00:12:19.210] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
+[2017-03-24 00:12:19.215] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
+[2017-03-24 00:12:19.216] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 290 ms
+[2017-03-24 00:12:21.663] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 1
+[2017-03-24 00:12:21.668] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\connectors\common\handler.js] [39mcould not find handle invalid data package.
+[2017-03-24 00:12:21.668] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\common\service\sessionService.js] [39msession on [gate-server-1] is closed with session id: 1
+[2017-03-24 00:19:58.627] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
+[2017-03-24 00:19:59.013] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
+[2017-03-24 00:19:59.019] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
+[2017-03-24 00:19:59.019] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 358 ms
+[2017-03-24 00:20:02.339] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 1
+[2017-03-24 00:20:02.343] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\connectors\common\handler.js] [39mcould not find handle invalid data package.
+[2017-03-24 00:20:02.343] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\common\service\sessionService.js] [39msession on [gate-server-1] is closed with session id: 1
+[2017-03-24 00:30:47.575] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "gate-server-1"
+[2017-03-24 00:30:47.951] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" enter after start...
+[2017-03-24 00:30:47.956] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" finish start
+[2017-03-24 00:30:47.956] [INFO] pomelo - [32m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\application.js] [39m"gate-server-1" startup in 347 ms
+[2017-03-24 00:30:49.261] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 1
+[2017-03-24 00:30:49.266] [ERROR] pomelo - [31m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\connectors\common\handler.js] [39mcould not find handle invalid data package.
+[2017-03-24 00:30:49.266] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\common\service\sessionService.js] [39msession on [gate-server-1] is closed with session id: 1
+[2017-03-24 00:31:37.166] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] getSession session is created with session id: 2
+[2017-03-24 00:31:37.173] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] handleMessage session id: 2, msg: {"id":1,"type":0,"compressRoute":0,"route":"gate.gateHandler.queryEntry","body":{"uid":"fisher"},"compressGzip":0}
+[2017-03-24 00:31:37.184] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\components\connector.js] [39m[gate-server-1] send message reqId: 1, route: gate.gateHandler.queryEntry, msg: {"code":200,"host":"127.0.0.1","port":3010}, receivers: [2], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2017-03-24 00:32:19.252] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\common\service\sessionService.js] [39msession on [gate-server-1] is closed with session id: 2
+[2017-03-24 00:32:21.293] [DEBUG] pomelo - [36m[D:\chessProject\servers\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mgate-server-1 receive removeServer signal: {"action":"removeServer","id":"connector-server-1"}
