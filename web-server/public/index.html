@@ -20,6 +20,8 @@
       var pomelo = window.pomelo;
       var host = "127.0.0.1";
       var port = "3014";
+      var _uid = 'fisher';
+      var _pwd = '123456';
       function show() {
         pomelo.init({
           host: host,
@@ -30,13 +32,21 @@
                 //alert("host="+data.host+"  port="+data.port);
                 pomelo.disconnect();//断开gate服务器的连接
 
+                /*console.log("begin request");
+                var request = require('request')
+                var qs = {  name: _uid,
+                    pwd: _pwd};
+                request({url: 'http://127.0.0.1:3003/login', qs: qs}, function(err, response, body){
+                    console.log("authserver login Data =%j",body)
+
+                });*/
                 //连接connector服务区
                 pomelo.init({
                     host: data.host,
                     port: data.port,
                     log: true
                 }, function() {
-                    pomelo.request("connector.entryHandler.entry", {MAC: 'fisher', password: '123456',platform:"default"}, function(data) {
+                    pomelo.request("connector.entryHandler.entry", {MAC: _uid, password: _pwd,platform:"default",roleName:'yangCong'}, function(data) {
                         console.log("success connector.entryHandler.entry=%j",data)
                     });
                 });
@@ -57,12 +67,12 @@
       </div>
       <div class="g-background">
         <div class="g-content">
-          Welcome to Pomelo
+          Welcome to WebClient
         </div>
       </div>
       <div class="g-link">
         Home:
-        <a href="https://github.com/NetEase/pomelo">https://github.com/NetEase/pomelo</a>
+        <a href="https://github.com/Fishbiao/servers">https://github.com/Fishbiao/servers</a>
       </div>
       <div class="g-button">
         <input id="test" type="button" value="Test Game Server" onclick="show()"/>

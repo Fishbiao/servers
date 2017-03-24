@@ -2,109 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99cedcdd-9876-4e1b-a521-623a9f83b665" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-server/public/image/logo.png" afterPath="$PROJECT_DIR$/web-server/public/image/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-server/public/image/sp.png" afterPath="$PROJECT_DIR$/web-server/public/image/sp.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authServer/config/mysql.json" afterPath="$PROJECT_DIR$/authServer/config/mysql.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authServer/config/schema/createTable.sh" afterPath="$PROJECT_DIR$/authServer/config/schema/createTable.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.js" afterPath="$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/config/clientProtos.js" afterPath="$PROJECT_DIR$/game-server/config/clientProtos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/logs/crash.log" afterPath="$PROJECT_DIR$/game-server/logs/crash.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/logs/pomelo-admin.log" afterPath="$PROJECT_DIR$/game-server/logs/pomelo-admin.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/logs/pomelo-connector-server-1.log" afterPath="$PROJECT_DIR$/game-server/logs/pomelo-connector-server-1.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/logs/pomelo-gate-server-1.log" afterPath="$PROJECT_DIR$/game-server/logs/pomelo-gate-server-1.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/logs/pomelo-master-server-1.log" afterPath="$PROJECT_DIR$/game-server/logs/pomelo-master-server-1.log" />
-<<<<<<< HEAD
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/async/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/async/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/mqtt/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/mqtt/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/duplexify/node_modules/end-of-stream/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/duplexify/node_modules/end-of-stream/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/.travis.yml" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/README.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/lib/_stream_readable.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/lib/_stream_readable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/lib/_stream_writable.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/lib/_stream_writable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/.npmignore" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/.travis.yml" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/LICENSE.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/README.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/generate.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/generate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/generateNet.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/generateNet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/parse.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/parse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/writeToStream.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/writeToStream.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/constants.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/constants.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/generate.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/generate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/mqtt.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/mqtt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/.travis.yml" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/README.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/lib/_stream_readable.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/lib/_stream_readable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/lib/_stream_writable.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/lib/_stream_writable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/numbers.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/numbers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/packet.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/packet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/parser.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/test.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/testRandom.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/testRandom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/writeToStream.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/mqtt-packet/writeToStream.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/.travis.yml" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/README.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/lib/_stream_readable.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/lib/_stream_readable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/lib/_stream_writable.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/lib/_stream_writable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/debug/CHANGELOG.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/debug/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/debug/README.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/debug/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/debug/component.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/debug/component.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/debug/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/debug/src/browser.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/debug/src/browser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/debug/src/node.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/debug/src/node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-admin/node_modules/pomelo-scheduler/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-logger/node_modules/log4js/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-logger/node_modules/log4js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/.travis.yml" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/README.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/lib/_stream_readable.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/lib/_stream_readable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/lib/_stream_writable.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/lib/_stream_writable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/duplexify/node_modules/readable-stream/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/.npmignore" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/.travis.yml" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/LICENSE.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/README.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/generate.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/generate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/generateNet.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/generateNet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/parse.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/parse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/writeToStream.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/benchmarks/writeToStream.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/constants.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/constants.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/generate.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/generate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/mqtt.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/mqtt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/.travis.yml" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/README.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/lib/_stream_readable.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/lib/_stream_readable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/lib/_stream_writable.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/lib/_stream_writable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/node_modules/readable-stream/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/node_modules/bl/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/numbers.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/numbers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/packet.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/packet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/parser.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/test.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/testRandom.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/testRandom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/writeToStream.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/mqtt-packet/writeToStream.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/.travis.yml" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/README.md" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/lib/_stream_readable.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/lib/_stream_readable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/lib/_stream_writable.js" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/lib/_stream_writable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/mqtt-connection/node_modules/through2/node_modules/readable-stream/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/node-uuid/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-rpc/node_modules/node-uuid/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-scheduler/node_modules/log4js/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/pomelo-scheduler/node_modules/log4js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/socket.io/node_modules/debug/node_modules/ms/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/socket.io/node_modules/debug/node_modules/ms/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/socket.io/node_modules/engine.io/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/socket.io/node_modules/engine.io/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/socket.io/node_modules/socket.io-client/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/socket.io/node_modules/socket.io-client/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/socket.io/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/socket.io/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/ws/package.json" afterPath="$PROJECT_DIR$/game-server/node_modules/pomelo/node_modules/ws/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/package.json" afterPath="$PROJECT_DIR$/game-server/package.json" />
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs-client/logs/nodejs-client.log" afterPath="$PROJECT_DIR$/nodejs-client/logs/nodejs-client.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-server/public/index.html" afterPath="$PROJECT_DIR$/web-server/public/index.html" />
->>>>>>> de09f5b0a486a53d2f11de1912a3714e6be0d0c3
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -126,77 +35,90 @@
         <entry file="file://$PROJECT_DIR$/web-server/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="39" column="83" lean-forward="true" selection-start-line="39" selection-start-column="83" selection-end-line="39" selection-end-column="83" />
+              <caret line="48" column="128" lean-forward="false" selection-start-line="48" selection-start-column="128" selection-end-line="48" selection-end-column="128" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entryHandler.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entryHandler.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="26">
+              <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmds.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodejs-client/script/cmds.js">
+      <file leaf-file-name="playerDao.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/app/dao/playerDao.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="48" />
+            <state relative-caret-position="285">
+              <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lord.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodejs-client/script/lord.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3814">
-              <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pomelo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodejs-client/script/pomelo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="91" column="27" lean-forward="true" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodejs-client/package.json">
+      <file leaf-file-name="player.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/player.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="handler.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/node_modules/pomelo/lib/connectors/common/handler.js">
+      <file leaf-file-name="entity.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/entity.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="50" column="2" lean-forward="false" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
+            <state relative-caret-position="171">
+              <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hybridsocket.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/node_modules/pomelo/lib/connectors/hybridsocket.js">
+      <file leaf-file-name="persistent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/app/domain/persistent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="247">
+              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clientProtos.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/config/clientProtos.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="33" />
+              <folding>
+                <marker date="1490372752287" expanded="true" signature="256:16027" ph="{...}" />
+                <marker date="1490372752287" expanded="true" signature="412:799" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/config/auth.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/app/auth/lib/modules/default.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -206,15 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>request</find>
-      <find>async</find>
-      <find>Option path is not valid</find>
-      <find>getPlayerInfo</find>
-      <find>enter after start</find>
-      <find>connect.multipart()</find>
-      <find>DB_ERR</find>
-      <find>token</find>
-      <find>parse</find>
       <find>Created by kilua</find>
       <find>could not find handle inva</find>
       <find>connect</find>
@@ -236,6 +149,15 @@
       <find>EventEmitter</find>
       <find>pomelo.init</find>
       <find>port</find>
+      <find>img</find>
+      <find>g-background</find>
+      <find>init</find>
+      <find>auth</find>
+      <find>authCheck</find>
+      <find>playerId</find>
+      <find>id</find>
+      <find>getPlayersByUid</find>
+      <find>Pomelo</find>
     </findStrings>
     <dirStrings>
       <dir>D:\chessProject\servers\game-server</dir>
@@ -268,7 +190,13 @@
         <option value="$PROJECT_DIR$/nodejs-client/package.json" />
         <option value="$PROJECT_DIR$/nodejs-client/script/cmds.js" />
         <option value="$PROJECT_DIR$/nodejs-client/script/lord.js" />
+        <option value="$PROJECT_DIR$/web-server/public/css/base.css" />
+        <option value="$PROJECT_DIR$/game-server/app/auth/index.js" />
+        <option value="$PROJECT_DIR$/game-server/config/auth.json" />
+        <option value="$PROJECT_DIR$/game-server/app/auth/lib/modules/default.js" />
+        <option value="$PROJECT_DIR$/game-server/config/clientProtos.js" />
         <option value="$PROJECT_DIR$/web-server/public/index.html" />
+        <option value="$PROJECT_DIR$/game-server/app/dao/playerDao.js" />
         <option value="$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.js" />
       </list>
     </option>
@@ -286,10 +214,8 @@
     <handled-path value="$PROJECT_DIR$/web-server/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1227" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -306,6 +232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -360,25 +287,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
+              <option name="myItemId" value="game-server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,6 +302,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="game-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -435,8 +348,26 @@
               <option name="myItemId" value="servers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gate" />
+              <option name="myItemId" value="servers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -458,52 +389,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
+              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handler" />
+              <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -678,45 +574,35 @@
       <workItem from="1490018054587" duration="7186000" />
       <workItem from="1490105259187" duration="6411000" />
       <workItem from="1490193727341" duration="3521000" />
-<<<<<<< HEAD
-      <workItem from="1490276621820" duration="9942000" />
-=======
       <workItem from="1490276621820" duration="9343000" />
       <workItem from="1490348340717" duration="4676000" />
->>>>>>> de09f5b0a486a53d2f11de1912a3714e6be0d0c3
+      <workItem from="1490367934521" duration="8000" />
+      <workItem from="1490367960777" duration="6032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="32323000" />
+    <option name="totallyTimeSpent" value="42440000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="7" y="0" width="1694" height="1056" extended-state="1" />
-    <editor active="false" />
-=======
-    <option name="totallyTimeSpent" value="36400000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="1227" height="1040" extended-state="0" />
     <editor active="true" />
->>>>>>> de09f5b0a486a53d2f11de1912a3714e6be0d0c3
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18854167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17010735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30967742" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39006343" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3892473" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30972517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -728,146 +614,59 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.js</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/game-server/app/auth/lib/modules/default.js</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/game-server/app/auth/lib/modules/default.js</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.js</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.js</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSRemoteDebug">
-        <watch expression="pkg" language="JavaScript" />
+        <watch expression="authConfig.url" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/game-server/node_modules/pomelo-logger/lib/logger.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/node_modules/underscore/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/servers/gate/lifecycle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/util/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/servers/gate/cron/dailySample.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="636" column="10" lean-forward="false" selection-start-line="636" selection-start-column="4" selection-end-line="636" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/servers/gate/cron/testCron.js" />
-    <entry file="file://$PROJECT_DIR$/game-server/app/domain/area/cronTrigger.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6688">
-          <caret line="352" column="9" lean-forward="false" selection-start-line="352" selection-start-column="9" selection-end-line="352" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/util/cronTriggerManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authServer/server.bat" />
-    <entry file="file://$PROJECT_DIR$/game-server/start.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startAllServers.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authServer/node_modules/express/node_modules/connect/lib/middleware/bodyParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/crons.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authServer/config/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="73" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/adminServer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authServer/shared/code.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authServer/shared/token.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authServer/config/allUser.txt" />
-    <entry file="file://$PROJECT_DIR$/authServer/dao/globalUserDao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authServer/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodejs-client/node-js-client.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/config/serverRes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -971,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="401" column="16" lean-forward="false" selection-start-line="401" selection-start-column="16" selection-end-line="401" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,66 +799,231 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/authServer/routes/authUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="92" column="42" lean-forward="true" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodejs-client/script/pomelo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="91" column="27" lean-forward="true" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodejs-client/script/cmds.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodejs-client/script/lord.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3814">
+        <state relative-caret-position="684">
           <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/node_modules/pomelo/lib/connectors/common/handler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="950">
           <caret line="50" column="2" lean-forward="false" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/public/image/sp.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/public/image/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/public/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="46" column="16" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs-client/script/pomelo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="97" column="17" lean-forward="false" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/auth/lib/modules/4399.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authServer/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="73" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/node_modules/express/lib/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/auth/lib/modules/shinezone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs-client/script/cmds.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authServer/routes/authUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="59" column="54" lean-forward="false" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/auth/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/node_modules/async/lib/async.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="705" column="42" lean-forward="false" selection-start-line="705" selection-start-column="42" selection-end-line="705" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authServer/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/config/clientProtos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <marker date="1490372752287" expanded="true" signature="256:16027" ph="{...}" />
+            <marker date="1490372752287" expanded="true" signature="412:799" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-server/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="39" column="83" lean-forward="true" selection-start-line="39" selection-start-column="83" selection-end-line="39" selection-end-column="83" />
+          <caret line="48" column="128" lean-forward="false" selection-start-line="48" selection-start-column="128" selection-end-line="48" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/config/auth.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/auth/lib/modules/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/shared/code.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/consts/consts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="435" column="0" lean-forward="false" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/entity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/domain/persistent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/dao/playerDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/domain/event/eventManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="26">
+          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
           <folding />
         </state>
       </provider>

@@ -22,7 +22,9 @@ module.exports = {
         // 平台标志，我方内部的帐号验证可不传或传'default'
         "optional string platform": 4,
 		// 平台sdk回调数据
-        "optional string sdkLoginCbData": 4
+        "optional string sdkLoginCbData": 5,
+        //角色名，例如微信名
+        "optional string roleName": 6
     },
     // 创角
     "connector.roleHandler.createPlayer": {
