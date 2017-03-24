@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>
-      Pomelo
+      Client
     </title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta http-equiv="content-style-type" content="text/css" />
@@ -27,7 +27,19 @@
           log: true
         }, function() {
             pomelo.request("gate.gateHandler.queryEntry", {'uid':'fisher'}, function(data) {
-                alert("host="+host+"  port="+port);
+                //alert("host="+data.host+"  port="+data.port);
+                pomelo.disconnect();//断开gate服务器的连接
+
+                //连接connector服务区
+                pomelo.init({
+                    host: data.host,
+                    port: data.port,
+                    log: true
+                }, function() {
+                    pomelo.request("connector.entryHandler.entry", {MAC: 'fisher', password: '123456',platform:"default"}, function(data) {
+                        console.log("success connector.entryHandler.entry=%j",data)
+                    });
+                });
             });
         /*pomelo.request("connector.entryHandler.entry", "hello pomelo", function(data) {
             alert(data.msg);

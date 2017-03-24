@@ -1,3 +1,6 @@
+var logger = require('pomelo-logger').getLogger(__filename),
+	async = require('async');
+
 module.exports = function(app) {
   return new Handler(app);
 };
@@ -15,6 +18,15 @@ var Handler = function(app) {
  * @return {Void}
  */
 Handler.prototype.entry = function(msg, session, next) {
+	logger.debug("entryHandler entry :%j",msg);
+
+    session.on('closed',onUserLeave.bind(null,app));
+
+    async.waterfall([],
+		function(err,code){
+
+		}
+	);
   next(null, {code: 200, msg: 'game server is ok.'});
 };
 
@@ -27,11 +39,11 @@ Handler.prototype.entry = function(msg, session, next) {
  * @return {Void}
  */
 Handler.prototype.publish = function(msg, session, next) {
-	var result = {
-		topic: 'publish',
-		payload: JSON.stringify({code: 200, msg: 'publish message is ok.'})
-	};
-  next(null, result);
+    var result = {
+        topic: 'publish',
+        payload: JSON.stringify({code: 200, msg: 'publish message is ok.'})
+    };
+    next(null, result);
 };
 
 /**
