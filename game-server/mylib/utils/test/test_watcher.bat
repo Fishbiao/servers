@@ -1,0 +1,2 @@
+node fileWatcher
+pause

@@ -12,7 +12,7 @@ var globalUserDao = require('../dao/globalUserDao'),
 
 
 var exp = module.exports = {};
-exp.auth = function (req, res) {
+exp.authUser = function (req, res) {
     var url_parts = url.parse(req.url, true),
         msg = url_parts.query,
         name = msg.name || '', pwd = msg.pwd || '';
@@ -56,8 +56,8 @@ exp.authCheck = function (req, res) {
         msg = url_parts.query,
         tokenStr = msg.token,
         timeout = 30 * 60 * 1000;
-    console.log('authCheck token = %s', tokenStr);
     var result = token.parse(tokenStr, config.secret);
+    console.log('authCheck token = %s  result=%s', tokenStr,result);
     if (result) {
         globalUserDao.getUserByName(dbClient, result.uid, function (err, userInfo) {
             if (err) {

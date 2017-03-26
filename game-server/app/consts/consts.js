@@ -110,24 +110,8 @@ module.exports = {
         FRAG_ITME:12
     },
     CONFIG: {
-        WIPE_OPEN_BARRIER: "Custom_SaoDang",
-        WIPE_TICKET_PRICE: "player_buycustomsclean",
-        RESET_BARRIER_PRICE: "player_buycustomscost",
-        RESET_BARRIER_MAX: "player_buycustomsmaxtime",
-        BUY_ENERGY_MAX: "player_buystrengthtime",
-        ENERGY_PRICE: "player_buystrengthcost",
-        ENERGY_BUY_UNIT: "player_buystrengthget",
-        REVIVE_MAX: "relive",
-        REVIVE_COST: "relivecost",
-        BUY_TIME_MAX: "buytime",
-        BUY_TIME_COST: "buytimecost",
-        BUY_TIME_UNIT: "buytimeoncetime",
         INIT_DIAMOND: "init_Diamond",
         INIT_GOLD: "init_Gold",
-        INIT_ENERGY: "init_Energy",
-        INIT_HERO: "init_Hero",
-        INIT_PET: "init_Pet",
-        LV_UP_COST_COE: "lvupMoney"
     },
     //战斗模式
     FIGHT_TYPE: {

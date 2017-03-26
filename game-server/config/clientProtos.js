@@ -24,18 +24,7 @@ module.exports = {
 		// 平台sdk回调数据
         "optional string sdkLoginCbData": 5,
         //角色名，例如微信名
-        "optional string roleName": 6
-    },
-    // 创角
-    "connector.roleHandler.createPlayer": {
-        // 帐号
-        "optional string MAC": 1,
-        // 密码
-        "optional string pwd": 2,
-        // 角色名
-        "optional string name": 3,
-        // 头像id
-        "optional byte picId": 4
+        "optional string playerName": 6
     },
     // 客户端心跳包
     "connector.heartHandler.clientHeart": {
@@ -47,8 +36,6 @@ module.exports = {
     },
     // 进入场景
     "area.playerHandler.enterScene": {
-        // 语言
-		"optional string language": 1
     },
 	
 	// 角色取名字

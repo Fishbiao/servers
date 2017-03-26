@@ -8,8 +8,8 @@ var _ = require('underscore'),
     logger = require('pomelo-logger').getLogger(__filename);
 
 var Entity = require('./entity'),
-    consts = require('../../consts/consts'),
-    bag = require('./bag'),
+    consts = require('../../consts/consts')
+    /*bag = require('./bag'),
     Hero = require('./hero'),
     Pet = require('./pet'),
     SimpleBag = require('./simpleBag'),
@@ -32,7 +32,7 @@ var Entity = require('./entity'),
     DataStatisticManager = require('../dataStatistics/dataStatisticManager'),
     Code = require('../../../shared/code'),
     inviteManager = require('../../domain/area/inviteManager'),
-    Consts = require('../../consts/consts');
+    Consts = require('../../consts/consts')*/;
 
 //推送玩家属性
 function onUpdateProp(prop, value) {
@@ -832,17 +832,6 @@ pro.clearLeaveTimer = function () {
 };
 pro.setFrontendId = function (frontendId) {
     this.frontendId = frontendId;
-};
-
-/*
-* 设置语言
-* */
-pro.setLanguage = function ( _language ) {
-    if(!!_language){
-        this.language =_language;
-        return;
-    }
-    this.language = dataUtils.getLanguage();
 };
 
 pro.setSession = function (newSession) {

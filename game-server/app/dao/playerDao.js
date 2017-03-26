@@ -105,17 +105,13 @@ playerDao.getPlayerByName = function (name, cb) {
 /*
  *   创角角色
  * */
-playerDao.createPlayer = function (uid, name, pwd, picId, cb) {
-    var sql = 'insert into player (MAC,password,playername,headPicId,createTime,roleLevel,exp,VIPLevel,diamondCnt,goldCnt,totalRechargeNum,' +
-            'energy,dispatchEnergyTime,canBuyHeroList,rechargeTotal,fristRechargeAwardTime,setNameCnt,buyGetDiamond,endlessSingleOldWave,endlessAddEffect,' +
-            'bronzeCoin,silverCoin,goldCoin,randRefreshCoin,challengeTicket,snatchSingleCnt,weekCardEndTick,monthCardEndTick,foreverCardEndTick,weekCardWelfareTick,monthCardWelfareTick,foreverCardWelfareTick, '+
-            'barrierPromoteDropIds,barrierPromoteEndTick)' +
-            ' values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+playerDao.createPlayer = function (uid, name, cb) {
+    var sql = 'insert into player (MAC,playerName,createTime,diamondCnt,goldCnt)' +
+            ' values(?,?,?,?,?)',
         initDiamond = dataUtils.getOptionValue(Consts.CONFIG.INIT_DIAMOND, 0),
         initGold = dataUtils.getOptionValue(Consts.CONFIG.INIT_GOLD, 0),
-        initEnergy = dataUtils.getOptionValue(Consts.CONFIG.INIT_ENERGY, 0),
         now = Date.now(),
-        args = [uid, pwd, name, picId, now, 1, 0, 0, initDiamond, initGold, 0, initEnergy, now,JSON.stringify([]),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,JSON.stringify([]),0];
+        args = [uid, name, now, initDiamond, initGold];
 
     pomelo.app.get('dbclient').query(sql, args, function (err, res) {
         if (err !== null) {

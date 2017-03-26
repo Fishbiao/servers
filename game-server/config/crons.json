@@ -1,11 +1,6 @@
 {
   "development": {
     "area": [
-      {
-        "id": 1,
-        "time": "0 0 0 * * *",
-        "action": "resetBarrierAtkCnt.reset"
-      }
     ],
     "world": [
       {
@@ -17,11 +12,6 @@
   },
   "production": {
     "area": [
-      {
-        "id": 1,
-        "time": "0 0 0 * * *",
-        "action": "resetBarrierAtkCnt.reset"
-      }
     ],
     "world": [
       {

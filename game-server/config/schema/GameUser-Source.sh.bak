@@ -1,0 +1,2 @@
+#!/bin/sh
+mysql -u user -ppassword -e "CREATE DATABASE IF NOT EXISTS databaseName;" && mysql -u user -ppassword --database=databaseName <./GameUser-Source.sql >GameUser-Source.log -f --batch --silent --show-warnings --line-numbers --table --column-names

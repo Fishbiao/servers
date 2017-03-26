@@ -8,7 +8,10 @@
 		"crc": "^3.4.0",
 		"request": "2.69.0",
 		"pomelo-logger": "0.1.7",
-		"underscore": "^1.8.3"
+		"underscore": "^1.8.3",
+        "chokidar": "^1.5.0",
+		"generic-pool": "=2.1.1",
+		"mysql": "^2.10.2"
     }
 }
 

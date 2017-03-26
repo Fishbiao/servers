@@ -46,8 +46,12 @@
                     port: data.port,
                     log: true
                 }, function() {
-                    pomelo.request("connector.entryHandler.entry", {MAC: _uid, password: _pwd,platform:"default",roleName:'yangCong'}, function(data) {
+                    pomelo.request("connector.entryHandler.entry", {MAC: _uid, password: _pwd,platform:"default",playerName:'yangCong'}, function(data) {
                         console.log("success connector.entryHandler.entry=%j",data)
+
+                        pomelo.request("area.playerHandler.enterScene",{language:""},function (data){
+                            console.log("success area.playerHandler.enterScene=%j",data)
+                        });
                     });
                 });
             });

@@ -1,7 +1,8 @@
 var logger = require('pomelo-logger').getLogger(__filename),
 	async = require('async');
 
-var playerDao = require('../../../dao/playerDao'),
+var Code = require('../../../../shared/code'),
+    playerDao = require('../../../dao/playerDao'),
     auth = require('../../../auth');
 
 module.exports = function(app) {
@@ -18,7 +19,7 @@ var Handler = function(app) {
  */
 Handler.prototype.entry = function(msg, session, next) {
 	logger.debug("entryHandler entry :%j",msg);
-    var MAC = msg.MAC, pwd = msg.password, app = this.app, platform = msg.platform || 'default',roleName = msg.roleName;
+    var MAC = msg.MAC, pwd = msg.password, app = this.app, platform = msg.platform || 'default',playerName = msg.playerName;
 
     session.on('closed',onUserLeave.bind(null,app));//????????????
 
@@ -31,22 +32,35 @@ Handler.prototype.entry = function(msg, session, next) {
                 if (!res.result) {
                     return cb(new Error('auth fail'), res.code);
                 }
-                session.set('MAC', res.uid);
+                session.set('MAC', res.uid);//res.uid是带前缀的。
                 session.set('rawUid', MAC);
                 session.pushAll();
-                //playerDao.getPlayersByUid(res.uid, cb);//??????????
-                cb({id:1000});
+                playerDao.getPlayersByUid(res.uid, cb);
             },
             function (player, cb) {
                 if (!player) {
-                    // 抛出异常，以终止流水线，直接调用最终回调
-                    return cb(new Error('player not exists'), Code.CONNECTOR.FA_PLAYER_NOT_EXIST);
+                    //没有角色就创建角色
+                    playerDao.createPlayer(session.get('MAC'), playerName, function (err, playerId) {
+                        if (err) {
+                            cb(new Error('create player failed.'), Code.DB_ERROR);
+                        } else {
+                            //report.pushUserInfo(session.get('rawUid'));
+                            session.bind(playerId);
+                            session.set('playerId', playerId);
+                            session.pushAll(function () {
+                                app.set('onlineCnt', app.get('onlineCnt') + 1);
+                                cb(null,{id:playerId});
+                            });
+                        }
+                    });
                 }
-                //report.pushUserInfo(session.get('rawUid'));
-                app.set('onlineCnt', app.get('onlineCnt') + 1);
-                session.bind(player.id, function (err) {
-                    cb(err, player);
-                });
+                else{
+                    //report.pushUserInfo(session.get('rawUid'));
+                    app.set('onlineCnt', app.get('onlineCnt') + 1);
+                    session.bind(player.id, function (err) {
+                        cb(err, player);
+                    });
+                }
             },
             function (player, cb) {
                 session.set('playerId', player.id);
@@ -57,10 +71,10 @@ Handler.prototype.entry = function(msg, session, next) {
             if (err) {
                 logger.info('entry err = %j', err);
                 next(null, {code: code});
-                if (code !== Code.CONNECTOR.FA_PLAYER_NOT_EXIST) {
+                //if (code !== Code.CONNECTOR.FA_PLAYER_NOT_EXIST) {
                     // 无角色时，须等待客户端创角角色，不踢
-                    app.get('sessionService').kickBySessionId(session.id, null);
-                }
+                    //app.get('sessionService').kickBySessionId(session.id, null);
+               // }
             } else {
                 next(null, {code: Code.OK});
             }

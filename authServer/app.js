@@ -30,7 +30,7 @@ if ('production' === app.get('env')) {
     app.use(express.errorHandler());
 }
 
-app.get('/authUser', authUser.auth);
+app.get('/authUser', authUser.authUser);//渠道需要在账号服务器注册
 app.post('/authCheck', authUser.authCheck);
 app.get('/register', authUser.register);
 app.get('/login', authUser.login);
