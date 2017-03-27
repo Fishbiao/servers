@@ -50,7 +50,12 @@
                         console.log("success connector.entryHandler.entry=%j",data)
 
                         pomelo.request("area.playerHandler.enterScene",{language:""},function (data){
-                            console.log("success area.playerHandler.enterScene=%j",data)
+                            console.log("success area.playerHandler.enterScene code = %d curPlayer=%j",data.code,data.curPlayer)
+
+                            pomelo.request("area.playerHandler.createRoom",{},function (data){
+                                console.log("success area.playerHandler.createRoom data=%j",data);
+                            });
+
                         });
                     });
                 });

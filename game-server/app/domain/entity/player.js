@@ -56,145 +56,18 @@ var Player = function (opts) {
 //  Character.call(this, opts);
     Entity.call(this, opts);
     this.saveProperties = [
-        'roleLevel', 'exp', 'VIPLevel', 'diamondCnt', 'goldCnt', 'totalRechargeNum', 'dispatchEnergyTime', 'energy',
-        'buyEnergyCnt', 'resetBuyEnergyCntTime', 'curHeroPos', 'currBrotherHeroPoss', 'curPetPos', 'keyCount', 'wipeTicket', 'highPower',
-        'comPoint', 'meltPoint', 'endlessBuffBuyCntResetTick', 'endlessOccasionCntResetTick', 'washPoint', 'highScore',
-        'weekHighScore','canBuyHeroList','dailyMissionReset','dailyActivityEnergyReset','dailyEndlessBoxToHeroCnt','rechargeTotal','fristRechargeAwardTime','setNameCnt','playername',
-        'dailyEndlessBoxToHeroCntRstTick',
-        'inviteId', 'inviteCode', 'inviteCount',
-        'buyGetDiamond','endlessSingleOldWave','endlessAddEffect',
-        'bronzeCoin','silverCoin','goldCoin','randRefreshCoin','challengeTicket','snatchSingleCnt',
-        'weekCardEndTick','monthCardEndTick','foreverCardEndTick','weekCardWelfareTick','monthCardWelfareTick','foreverCardWelfareTick',
-        'barrierPromoteDropIds','barrierPromoteEndTick'
+        'diamondCnt','goldCnt'
     ];
-
-    //游戏语言
-    this.playername = opts.playername;
-    this.headPicId = opts.headPicId;
-
-    this.rechargeTotal = opts.rechargeTotal || 0;
-    this.fristRechargeAwardTime = opts.fristRechargeAwardTime || 0;
-    this.setNameCnt = opts.setNameCnt || 0;
-    this.endlessSingleOldWave = opts.endlessSingleOldWave || 0;
-    this.createTime = opts.createTime;
-    this.roleLevel = opts.roleLevel;
-    this.exp = opts.exp;
-    this.curHeroPos = opts.curHeroPos;
-
-    this.dailyEndlessBoxToHeroCnt = opts.dailyEndlessBoxToHeroCnt || 0;
-    this.dailyEndlessBoxToHeroCntRstTick = opts.dailyEndlessBoxToHeroCntRstTick || 0;
-    this.endlessAddEffect =  opts.endlessAddEffect || 0;
-    //this.currBrotherHeroPoss = opts.currBrotherHeroPoss || [];
-    if(opts.currBrotherHeroPoss != "" && opts.currBrotherHeroPoss != null )//if(null!=opts.currBrotherHeroPoss)
-    {
-        this.currBrotherHeroPoss = JSON.parse(opts.currBrotherHeroPoss)
-    }
-    else
-    {
-        this.currBrotherHeroPoss = [];
-    }
-    this.curPetPos = opts.curPetPos;
-    this.VIPLevel = opts.VIPLevel;
-    this.diamondCnt = opts.diamondCnt;
-    this.buyGetDiamond = opts.buyGetDiamond;
-    this.goldCnt = opts.goldCnt;
-    this.bronzeCoin = opts.bronzeCoin;
-    this.silverCoin = opts.silverCoin;
-    this.goldCoin = opts.goldCoin;
-    this.randRefreshCoin = opts.randRefreshCoin;
-    this.challengeTicket = opts.challengeTicket;
-    this.snatchSingleCnt = opts.snatchSingleCnt;
-    this.weekCardEndTick = opts.weekCardEndTick;
-    this.monthCardEndTick = opts.monthCardEndTick;
-    this.foreverCardEndTick = opts.foreverCardEndTick;
-    this.weekCardWelfareTick = opts.weekCardWelfareTick;
-    this.monthCardWelfareTick = opts.monthCardWelfareTick;
-    this.foreverCardWelfareTick = opts.foreverCardWelfareTick;
-    if(opts.barrierPromoteDropIds != "" && opts.barrierPromoteDropIds != null )
-    {
-        this.barrierPromoteDropIds = JSON.parse( opts.barrierPromoteDropIds ) ;
-    }
-    else
-    {
-        this.barrierPromoteDropIds = [];
-    }
-    this.barrierPromoteEndTick = opts.barrierPromoteEndTick;
-
-    this.totalRechargeNum = opts.totalRechargeNum;
-    this.energy = opts.energy;
-
-    this.dispatchEnergyTime = opts.dispatchEnergyTime;
-    this.buyEnergyCnt = opts.buyEnergyCnt;
-    this.resetBuyEnergyCntTime = opts.resetBuyEnergyCntTime;
-    this.maxEnergy = dataUtils.getOptionValue('strengthmax', 200);
-    this.logoffTime = opts.logoffTime;
-    this.keyCount = opts.keyCount || 0;
-    this.wipeTicket = opts.wipeTicket || 0;
-    this.highPower = opts.highPower || 0;
-
-    //邀请码部分
-    this.inviteId = opts.inviteId || 0;
-    this.inviteCount = opts.inviteCount || 0;
-    this.inviteCode = opts.inviteCode || opts.id + String(Math.random()).replace(".", "").substring(0, 3);
-
-    var freeRefine = dataUtils.getOptionValue('equip_refineFree', 8),
-        diamondRefine = dataUtils.getOptionValue('equip_refineCostTime', 8);
-    this.refineResetMgr = new DailyResetManager(this, {
-        properties: {
-            dailyFreeRefine: {init: freeRefine, reset: freeRefine},
-            dailyDiamondRefine: {init: diamondRefine, reset: diamondRefine}
-        },
-        recordTimeProp: 'dailyRefineResetTick',
-        cronId: consts.AREA_CRON.RESET_REFINE
-    });
-    this.refineResetMgr.load(opts);
-    this.comPoint = opts.comPoint || 0;
-    this.meltPoint = opts.meltPoint || 0;
-
-    //洗炼石
-    this.washPoint = opts.washPoint || 0;
-    this.highScore = opts.highScore;
-    //this.weekHighScore = opts.weekHighScore;
-    this.weekHighScoreMgr = new DailyResetManager(this, {
-        properties: {weekHighScore: {init: 0, reset: 0}},
-        recordTimeProp: 'weekHighScoreResetTick',
-        cronId: consts.AREA_CRON.RESET_WEEK_HIGH_SCORE
-    });
-    this.weekHighScoreMgr.load(opts);
-    this.endlessBuffBuyCntResetTick = opts.endlessBuffBuyCntResetTick || 0;
-    this.buffManager = buffManager.create(this);
-    this.endlessOccasionCntResetTick = opts.endlessOccasionCntResetTick || 0;
-    this.occasionManager = occasionManager.create(this);
-    this.skillStates = false;
-
-    this.timeCount = 0;                                     // 加载进度计时
     this.sessionId = opts.sessionId;
     this.frontendId = opts.frontendId;
-    this.passedBarrierMgr = new PassedBarrierManager(this);
-    this.missionMgr = new missionManager(this);
-    this.unlockChapterMgr = new UnlockChapterManager(this);
-    this.on(EVENTS.UPDATE_PROP, onUpdateProp.bind(this));
-    this.singleEndlessFighting = false;
-    this.singleEndlessReviveCnt = 0;
-    if(opts.canBuyHeroList != "" && opts.canBuyHeroList != null )
-    {
-        this.canBuyHeroList = JSON.parse( opts.canBuyHeroList ) ;
-    }
-    else
-    {
-        this.canBuyHeroList = [];
-    }
 
-    this.dailyMissionReset = opts.dailyMissionReset || 0;
-    this.dailyActivityEnergyReset = opts.dailyMissionReset || 0;
-    this.dataStatisticManager = new DataStatisticManager(this );
+    this.MAC = opts.MAC;
+    this.playerName = opts.playerName;
+    this.createTime = opts.createTime;
+    this.diamondCnt = opts.diamondCnt;
+    this.goldCnt = opts.goldCnt;
 
-    this.dailyEndlessBoxToHeroCntManager = new DailyResetManager(this, {
-        recordTimeProp: 'dailyEndlessBoxToHeroCntRstTick',
-        cronId: Consts.AREA_CRON.RESET_ENDLESSBOX_HERO
-    });
-    this.dailyEndlessBoxToHeroCntManager.addProp('dailyEndlessBoxToHeroCnt', {init: 0, reset: 0});
-    this.dailyEndlessBoxToHeroCntManager.load(opts);
+
 };
 
 util.inherits(Player, Entity);
@@ -788,9 +661,7 @@ pro.resetBarrierAfterExit = function (playerId, barrierId, newStar, costTick, re
  * */
 pro.onLogoff = function () {
     this.clearLeaveTime();
-    if (this.activityMgr) {
-        this.activityMgr.clear();
-    }
+
 };
 
 pro.clearLeaveTime = function () {
@@ -841,88 +712,13 @@ pro.setSession = function (newSession) {
 
 pro.getClientInfo = function () {
     var info = {};
-    info.playerName = this.playername;
+    info.MAC = this.MAC;
+    info.playerName = this.playerName;
     info.playerId = this.id;
-    info.roleLevel = this.roleLevel;
-    info.headPicId = this.headPicId;
-    info.exp = this.exp;
-    info.VIPLevel = this.VIPLevel;
-    info.energy = this.energy;
-    info.maxEnergy = this.maxEnergy;
-    info.goldCnt = this.goldCnt;
     info.diamondCnt = this.diamondCnt;
-    info.totalRechargeNum = this.totalRechargeNum;
-    info.dispatchEnergyTime = this.dispatchEnergyTime;
-    info.buyEnergyCnt = this.buyEnergyCnt;
-    info.passedBarrierMap = this.passedBarrierMgr.getClientInfo();
-    info.barrierRandBossInfo = this.passedBarrierMgr.randBoss.getClientInfo();
+    info.goldCnt = this.goldCnt;
+    info.createTime = this.createTime;
 
-    if ( this.curHero ) {
-        info.curHero = this.curHero.getClientInfo();
-    }
-
-    info.currBrotherHeroPoss = this.currBrotherHeroPoss;
-    // //出战英雄兄弟列表
-    // if(this.currBrotherHeroPoss){
-    //     info.currBrotherHeroPoss =[];
-    //     _.each(this.curBrotherHeros,function (hero,type) {
-    //         info.curBrotherHeros.push(hero.getClientInfo());
-    //     });
-    // }else{
-    //     info.curBrotherHeros = [];
-    // }
-
-    if (this.curPet) {
-        info.curPet = this.curPet.getClientInfo();
-    }
-    info.unlockChapters = this.unlockChapterMgr.getClientInfo();
-    info.itemBag = this.bag.getClientInfo();
-    info.heroBag = this.heroBag.getClientInfo();
-    info.petBag = this.petBag.getClientInfo();
-    info.fragBag = this.fragBag.getClientInfo();
-    info.keyCount = this.keyCount;
-    info.wipeTicket = this.wipeTicket;
-    info.hasBuyHeroIds = this.hasBuyHeroIds;
-    info.equipBag = this.getEquipBagInfo();
-    info.armBag = this.armBag.getClientInfo();
-    info.dailyFreeRefine = this.dailyFreeRefine;
-    info.dailyDiamondRefine = this.dailyDiamondRefine;
-    info.comPoint = this.comPoint;
-    info.meltPoint = this.meltPoint;
-    info.washPoint = this.washPoint;
-    info.bronzeCoin = this.bronzeCoin;
-    info.silverCoin = this.silverCoin;
-    info.goldCoin = this.goldCoin;
-    info.randRefreshCoin = this.randRefreshCoin;
-    info.challengeTicket = this.challengeTicket;
-    info.snatchSingleCnt = this.snatchSingleCnt;
-    info.weekCardEndTick = this.weekCardEndTick;
-    info.monthCardEndTick = this.monthCardEndTick;
-    info.foreverCardEndTick = this.foreverCardEndTick;
-    info.weekCardWelfareTick = this.weekCardWelfareTick;
-    info.monthCardWelfareTick = this.monthCardWelfareTick;
-    info.foreverCardWelfareTick = this.foreverCardWelfareTick;
-    info.barrierPromoteDropIds = this.barrierPromoteDropIds;
-    info.barrierPromoteEndTick = this.barrierPromoteEndTick;
-    info.endlessBuffs = this.buffManager.getClientInfo();
-    info.endlessOccasions = this.occasionManager.getClientInfo();
-    info.wakeUpBag = this.wakeUpBag.getClientInfo();
-    info.equipWashAll = this.equipWashAll.getClientInfo();
-    info.highScore = this.highScore;
-    info.weekHighScore = this.weekHighScore;
-    info.equipAchievedList = this.equipAchievedList.getClientInfo();
-    info.canBuyHeroList = this.canBuyHeroList;
-    info.missionList = this.missionMgr.getClientInfo();
-    info.dailyEndlessBoxToHeroCnt = this.dailyEndlessBoxToHeroCnt;
-    info.rechargeTotal = this.rechargeTotal;
-    info.fristRechargeAwardTime = this.fristRechargeAwardTime;
-    info.setNameCnt = this.setNameCnt;
-    info.inviteId = this.inviteId;
-    info.inviteCount = this.inviteCount;
-    info.inviteCode = this.inviteCode;
-    info.endlessSingleOldWave= this.endlessSingleOldWave;
-    info.endlessAddEffect = this.endlessAddEffect;
-    info.randomShopCloseTime = this.randomShop.getCloseTime();
     return info;
 };
 

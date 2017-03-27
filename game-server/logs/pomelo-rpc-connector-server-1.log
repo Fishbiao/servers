@@ -1,1 +1,121 @@
 [2017-03-27 00:35:26.683] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc socket connector-server-1 is error, remote server cluster-server-area-0 host: 127.0.0.1, port: 3250
+[2017-03-27 21:49:35.672] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc connector-server-1 callback timeout 30000, remote server 1 host: 127.0.0.1, port: 3250
+[2017-03-27 21:49:35.676] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc connector-server-1 callback timeout 30000, remote server 1 host: 127.0.0.1, port: 3250
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-03-27 21:49:35.678] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: cluster-server-area-0, msg: {"namespace":"sys","serverType":"area","service":"msgRemote","method":"forwardMessage","args":[{"id":6,"type":0,"compressRoute":0,"route":"area.playerHandler.enterScene","body":{"language":""},"compressGzip":0},{"id":2,"frontendId":"connector-server-1","uid":9,"settings":{"MAC":"default_fisher","rawUid":"fisher","playerId":9}}]}, error code: 5
+[2017-03-27 21:49:38.613] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mmqtt rpc client connector-server-1 checkKeepAlive timeout from remote server cluster-server-area-0 for 20000 lastPing: 1490622548612 lastPong: 1490622538615
+[2017-03-27 22:54:42.709] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc connector-server-1 callback timeout 30000, remote server 0 host: 127.0.0.1, port: 3250
+[2017-03-27 22:54:42.713] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc connector-server-1 callback timeout 30000, remote server 0 host: 127.0.0.1, port: 3250
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-03-27 22:54:42.714] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: cluster-server-area-0, msg: {"namespace":"sys","serverType":"area","service":"msgRemote","method":"forwardMessage","args":[{"id":3,"type":0,"compressRoute":0,"route":"area.playerHandler.enterScene","body":{"language":""},"compressGzip":0},{"id":1,"frontendId":"connector-server-1","uid":10,"settings":{"MAC":"default_fisher","rawUid":"fisher","playerId":10}}]}, error code: 5
+[2017-03-27 22:55:02.711] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mmqtt rpc client connector-server-1 checkKeepAlive timeout from remote server cluster-server-area-0 for 20000 lastPing: 1490626482708 lastPong: 1490626475177
+[2017-03-27 23:13:20.172] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc connector-server-1 callback timeout 30000, remote server 0 host: 127.0.0.1, port: 3250
+[2017-03-27 23:13:20.178] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc connector-server-1 callback timeout 30000, remote server 0 host: 127.0.0.1, port: 3250
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-03-27 23:13:20.179] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: cluster-server-area-0, msg: {"namespace":"sys","serverType":"area","service":"msgRemote","method":"forwardMessage","args":[{"id":6,"type":0,"compressRoute":0,"route":"area.playerHandler.enterScene","body":{"language":""},"compressGzip":0},{"id":1,"frontendId":"connector-server-1","uid":10,"settings":{"MAC":"default_fisher","rawUid":"fisher","playerId":10}}]}, error code: 5
+[2017-03-27 23:13:46.844] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc connector-server-1 callback timeout 30000, remote server 1 host: 127.0.0.1, port: 3250
+[2017-03-27 23:13:46.846] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc connector-server-1 callback timeout 30000, remote server 1 host: 127.0.0.1, port: 3250
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-03-27 23:13:46.847] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: cluster-server-area-0, msg: {"namespace":"sys","serverType":"area","service":"msgRemote","method":"forwardMessage","args":[{"id":9,"type":0,"compressRoute":0,"route":"area.playerHandler.enterScene","body":{"language":""},"compressGzip":0},{"id":2,"frontendId":"connector-server-1","uid":10,"settings":{"MAC":"default_fisher","rawUid":"fisher","playerId":10}}]}, error code: 5
+[2017-03-27 23:13:58.883] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc connector-server-1 callback timeout 30000, remote server 2 host: 127.0.0.1, port: 3250
+[2017-03-27 23:13:58.884] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc connector-server-1 callback timeout 30000, remote server 2 host: 127.0.0.1, port: 3250
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-03-27 23:13:58.885] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: cluster-server-area-0, msg: {"namespace":"sys","serverType":"area","service":"msgRemote","method":"forwardMessage","args":[{"id":3,"type":0,"compressRoute":0,"route":"area.playerHandler.enterScene","body":{"language":""},"compressGzip":0},{"id":3,"frontendId":"connector-server-1","uid":10,"settings":{"MAC":"default_fisher","rawUid":"fisher","playerId":10}}]}, error code: 5
+[2017-03-27 23:14:34.318] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc connector-server-1 callback timeout 30000, remote server 3 host: 127.0.0.1, port: 3250
+[2017-03-27 23:14:34.319] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc connector-server-1 callback timeout 30000, remote server 3 host: 127.0.0.1, port: 3250
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-03-27 23:14:34.320] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: cluster-server-area-0, msg: {"namespace":"sys","serverType":"area","service":"msgRemote","method":"forwardMessage","args":[{"id":6,"type":0,"compressRoute":0,"route":"area.playerHandler.enterScene","body":{"language":""},"compressGzip":0},{"id":4,"frontendId":"connector-server-1","uid":10,"settings":{"MAC":"default_fisher","rawUid":"fisher","playerId":10}}]}, error code: 5
+[2017-03-27 23:14:46.839] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc connector-server-1 callback timeout 30000, remote server 4 host: 127.0.0.1, port: 3250
+[2017-03-27 23:14:46.840] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc connector-server-1 callback timeout 30000, remote server 4 host: 127.0.0.1, port: 3250
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-03-27 23:14:46.841] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: cluster-server-area-0, msg: {"namespace":"sys","serverType":"area","service":"msgRemote","method":"forwardMessage","args":[{"id":9,"type":0,"compressRoute":0,"route":"area.playerHandler.enterScene","body":{"language":""},"compressGzip":0},{"id":5,"frontendId":"connector-server-1","uid":10,"settings":{"MAC":"default_fisher","rawUid":"fisher","playerId":10}}]}, error code: 5
+[2017-03-27 23:14:50.185] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mmqtt rpc client connector-server-1 checkKeepAlive timeout from remote server cluster-server-area-0 for 20000 lastPing: 1490627660185 lastPong: 1490627650670
+[2017-03-27 23:22:02.061] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mmqtt rpc client connector-server-1 checkKeepAlive timeout from remote server cluster-server-area-0 for 20000 lastPing: 1490628102059 lastPong: -1
+[2017-03-27 23:22:02.062] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc connector-server-1 callback timeout 30000, remote server 0 host: 127.0.0.1, port: 3250
+[2017-03-27 23:22:02.067] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc connector-server-1 callback timeout 30000, remote server 0 host: 127.0.0.1, port: 3250
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-03-27 23:22:02.069] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: cluster-server-area-0, msg: {"namespace":"sys","serverType":"area","service":"msgRemote","method":"forwardMessage","args":[{"id":12,"type":0,"compressRoute":0,"route":"area.playerHandler.enterScene","body":{"language":""},"compressGzip":0},{"id":1,"frontendId":"connector-server-1","uid":10,"settings":{"MAC":"default_fisher","rawUid":"fisher","playerId":10}}]}, error code: 5
+[2017-03-27 23:44:13.736] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc client connector-server-1 process remote server cluster-server-area-0 message with error: ReferenceError: code is not defined
+    at D:\chessProject\servers\game-server\app\servers\connector\handler\entryHandler.js:102:17
+    at Object.Utils.applyCallback (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\util\utils.js:11:6)
+    at D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:268:15
+    at doFilter (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:356:5)
+    at D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:264:7
+    at processMsg (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:245:3)
+    at Connection.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:79:9)
+    at emitOne (events.js:77:13)
+    at Connection.emit (events.js:169:7)
+    at Connection.emitPacket (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\node_modules\mqtt-connection\connection.js:14:8)
+[2017-03-27 23:45:12.187] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc socket connector-server-1 is error, remote server cluster-server-area-0 host: 127.0.0.1, port: 3250
+[2017-03-27 23:45:49.552] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc client connector-server-1 process remote server cluster-server-area-0 message with error: ReferenceError: code is not defined
+    at D:\chessProject\servers\game-server\app\servers\connector\handler\entryHandler.js:102:17
+    at Object.Utils.applyCallback (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\util\utils.js:11:6)
+    at D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:268:15
+    at doFilter (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:356:5)
+    at D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:264:7
+    at processMsg (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:245:3)
+    at Connection.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:79:9)
+    at emitOne (events.js:77:13)
+    at Connection.emit (events.js:169:7)
+    at Connection.emitPacket (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\node_modules\mqtt-connection\connection.js:14:8)
+[2017-03-27 23:45:49.553] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc client connector-server-1 process remote server cluster-server-area-0 message with error: ReferenceError: code is not defined
+    at D:\chessProject\servers\game-server\app\servers\connector\handler\entryHandler.js:102:17
+    at Object.Utils.applyCallback (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\util\utils.js:11:6)
+    at D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:268:15
+    at doFilter (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:356:5)
+    at D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:264:7
+    at processMsg (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:245:3)
+    at Connection.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:79:9)
+    at emitOne (events.js:77:13)
+    at Connection.emit (events.js:169:7)
+    at Connection.emitPacket (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\node_modules\mqtt-connection\connection.js:14:8)
+[2017-03-27 23:45:49.554] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc client connector-server-1 process remote server cluster-server-area-0 message with error: ReferenceError: code is not defined
+    at D:\chessProject\servers\game-server\app\servers\connector\handler\entryHandler.js:102:17
+    at Object.Utils.applyCallback (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\util\utils.js:11:6)
+    at D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:268:15
+    at doFilter (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:356:5)
+    at D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:264:7
+    at processMsg (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:245:3)
+    at Connection.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:79:9)
+    at emitOne (events.js:77:13)
+    at Connection.emit (events.js:169:7)
+    at Connection.emitPacket (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\node_modules\mqtt-connection\connection.js:14:8)
+[2017-03-27 23:46:18.590] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc client connector-server-1 process remote server cluster-server-area-0 message with error: ReferenceError: code is not defined
+    at D:\chessProject\servers\game-server\app\servers\connector\handler\entryHandler.js:102:17
+    at Object.Utils.applyCallback (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\util\utils.js:11:6)
+    at D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:268:15
+    at doFilter (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:356:5)
+    at D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailstation.js:264:7
+    at processMsg (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:245:3)
+    at Connection.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:79:9)
+    at emitOne (events.js:77:13)
+    at Connection.emit (events.js:169:7)
+    at Connection.emitPacket (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\node_modules\mqtt-connection\connection.js:14:8)
+[2017-03-27 23:49:13.718] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mmqtt rpc client connector-server-1 checkKeepAlive timeout from remote server cluster-server-area-0 for 20000 lastPing: 1490629733716 lastPong: 1490629723075
+[2017-03-27 23:49:23.712] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc connector-server-1 callback timeout 30000, remote server 7 host: 127.0.0.1, port: 3250
+[2017-03-27 23:58:51.795] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc socket connector-server-1 is error, remote server cluster-server-area-0 host: 127.0.0.1, port: 3250
+[2017-03-28 00:00:42.750] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mmqtt rpc client connector-server-1 checkKeepAlive timeout from remote server cluster-server-area-0 for 20000 lastPing: 1490630422747 lastPong: 1490630412747
+[2017-03-28 00:00:47.324] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc connector-server-1 callback timeout 30000, remote server 3 host: 127.0.0.1, port: 3250
+[2017-03-28 00:00:47.325] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc connector-server-1 callback timeout 30000, remote server 3 host: 127.0.0.1, port: 3250
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-03-28 00:00:47.325] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: cluster-server-area-0, msg: {"namespace":"sys","serverType":"area","service":"msgRemote","method":"forwardMessage","args":[{"id":6,"type":0,"compressRoute":0,"route":"area.playerHandler.createRoom","body":{},"compressGzip":0},{"id":3,"frontendId":"connector-server-1","uid":10,"settings":{"MAC":"default_fisher","rawUid":"fisher","playerId":10}}]}, error code: 5
+[2017-03-28 00:03:01.355] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mmqtt rpc client connector-server-1 checkKeepAlive timeout from remote server cluster-server-area-0 for 20000 lastPing: 1490630561353 lastPong: -1
+[2017-03-28 00:03:02.229] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc connector-server-1 callback timeout 30000, remote server 2 host: 127.0.0.1, port: 3250
+[2017-03-28 00:03:02.230] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc connector-server-1 callback timeout 30000, remote server 2 host: 127.0.0.1, port: 3250
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-03-28 00:03:02.230] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: cluster-server-area-0, msg: {"namespace":"sys","serverType":"area","service":"msgRemote","method":"forwardMessage","args":[{"id":3,"type":0,"compressRoute":0,"route":"area.playerHandler.enterScene","body":{"language":""},"compressGzip":0},{"id":4,"frontendId":"connector-server-1","uid":10,"settings":{"MAC":"default_fisher","rawUid":"fisher","playerId":10}}]}, error code: 5
+[2017-03-28 00:03:14.928] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc connector-server-1 callback timeout 30000, remote server 3 host: 127.0.0.1, port: 3250
+[2017-03-28 00:03:14.930] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc connector-server-1 callback timeout 30000, remote server 3 host: 127.0.0.1, port: 3250
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-03-28 00:03:14.930] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: cluster-server-area-0, msg: {"namespace":"sys","serverType":"area","service":"msgRemote","method":"forwardMessage","args":[{"id":6,"type":0,"compressRoute":0,"route":"area.playerHandler.enterScene","body":{"language":""},"compressGzip":0},{"id":5,"frontendId":"connector-server-1","uid":10,"settings":{"MAC":"default_fisher","rawUid":"fisher","playerId":10}}]}, error code: 5

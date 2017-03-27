@@ -84,5 +84,23 @@ Handler.prototype.entry = function(msg, session, next) {
 
 
 var onUserLeave = function (app, session) {
+    if (!session || !session.uid) {
+        return;
+    }
+    app.set('onlineCnt', app.get('onlineCnt') - 1);
 
+    var playerId = session.get('playerId');
+
+    if (!!playerId) {
+        app.rpc.area.playerRemote.playerLeave(session, {
+            playerId: playerId, sessionId: session.id,
+            frontendId: session.frontendId
+        }, function (err) {
+            if (!!err) {
+                logger.error('onPlayerLeave error %s', err.stack);
+            }
+            logger.info('onUserLeave leave area ok!');
+        });
+    }
+    app.get('sessionService').kickBySessionId(session.id, null);
 }

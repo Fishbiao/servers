@@ -5,7 +5,10 @@ var pomelo = require('pomelo');
  */
 var app = pomelo.createApp();
 
-var cronTriggerManager = require('./app/util/cronTriggerManager');
+var cronTriggerManager = require('./app/util/cronTriggerManager'),
+    routeUtil = require('./app/util/routeUtil'),
+    unregisterFilter = require('./app/servers/area/filter/unregisterFilter'),
+    area = require('./app/domain/area/area');
 
 app.set('name', 'servers');
 
@@ -61,6 +64,22 @@ app.configure('production|development', 'gate', function () {
             connector: pomelo.connectors.hybridconnector//,
             //useProtobuf : true
         });
+});
+
+app.configure('production|development', 'area', function () {
+    app.before(unregisterFilter());
+    app.filter(pomelo.filters.serial());
+    var areas = app.get('servers').area;
+    var areaIdMap = {};
+    var areaId = app.get('curServer').area;
+    for (var id in areas) {
+        areaIdMap[areas[id].area] = areas[id].id;
+    }
+    app.set('areaIdMap', areaIdMap);
+    // route configures
+    app.route('area', routeUtil.area);
+
+    area.init({id: areaId});
 });
 
 // start app

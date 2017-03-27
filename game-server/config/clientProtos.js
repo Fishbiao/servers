@@ -42,7 +42,21 @@ module.exports = {
     "area.playerHandler.createPlayerName": { 
 		"optional string name": 1
     },
-	
+
+    //创建房间
+    "area.playerHandler.createRoom": {
+    },
+
+
+
+
+
+
+
+
+
+
+
 	// 攻打随机boss
     "area.playerHandler.atkRandBoss": { 
 		"optional uInt32 randomBossId": 1

@@ -18,10 +18,6 @@ module.exports = {
     "connector.entryHandler.entry": {
         "optional short code": 1
     },
-    // 创角
-    "connector.roleHandler.createPlayer": {
-        "optional short code": 1
-    },
     // 心跳
     "connector.heartHandler.clientHeart": {
         // 无需参数
@@ -31,283 +27,22 @@ module.exports = {
         // 服务器当前时间
         "optional long time": 1
     },
-    // 装备信息
-    "message Equip": {
-        // 装备在背包中的位置
-        "optional uInt32 pos": 1,
-        // 装备数据id
-        "optional uInt32 dataId": 2,
-        // 装备强化等级
-        "optional uInt32 lv": 3,
-		// 装备品质
-        "optional uInt32 quality": 4
-    },
-    // 装备格子信息
-    "message ArmSlot": {
-        // 装备在背包中的位置
-        "optional uInt32 part": 1,
-        // 精炼等级
-        "optional uInt32 refineLV": 2,
-        // 精炼经验
-        "optional uInt32 refineExp": 3,
-        // 装备信息
-        "optional Equip equip": 4,
-        // 觉醒等级，0-59
-        "optional uInt32 wakeUpLV": 5
-    },
-    // 无尽加成信息
-    "message EndlessBuff": {
-        // 加成项数据id
-        "optional uInt32 dataId": 1,
-        // 已拥有数量
-        "optional uInt32 cnt": 2,
-        // 已购买次数
-        "optional uInt32 buyCnt": 3
-    },
-    // 无尽赛事记录
-    "message EndlessOccasion": {
-        // 赛事数据id
-        "optional uInt32 occasionId": 1,
-        // 已挑战次数
-        "optional uInt32 dailyCnt": 2
-    },
-    // 关卡商店数据[dropid, priceOld，price，priceType]
-    "message PromoteData": {
-        // 掉落id
-        "optional uInt32 dropId": 1,
-        // 原价
-        "optional uInt32 priceOld": 2,
-        // 现价
-        "optional uInt32 price": 3,
-        // 货币类型
-        "optional uInt32 priceType": 4
-    },
     // 角色初始化数据
     "message PlayerInitData": {
+        // 玩家id
+        "optional uInt32 playerId": 1,
+        // 带前缀的用户名
+        "optional string MAC": 2,
         // 名字
-        "optional string playerName": 1, 
-        // 等级
-        "optional uInt32 roleLevel": 2,
-        // 头像id
-        "optional byte headPicId": 3,
-        // 当前经验
-        "optional uInt32 exp": 4,
-        // vip等级
-        "optional uInt32 VIPLevel": 5,
-        // 当前体力
-        "optional uInt32 energy": 6,
-        // 最大体力
-        "optional uInt32 maxEnergy": 7,
-        // 金币
-        "optional uInt32 goldCnt": 8,
-        // 钻石
-        "optional uInt32 diamondCnt": 9,
-        // 总充值金额
-        "optional uInt32 totalRechargeNum": 10,
-        // 最后一次发放体力时间
-        "optional long dispatchEnergyTime": 11,
-        // 购买体力次数
-        "optional byte buyEnergyCnt": 12,
-        // 已通关列表
-        "repeated PassedBarrier passedBarrierMap": 13,
-        // 当前出战猎魔人
-        "optional Hero curHero": 14,
-        // 当前出战宠物
-        "optional Pet curPet": 15,
-        // 已解锁章节列表
-        "repeated unlockChapter unlockChapters": 16,
-        // 背包物品列表
-        "repeated Item itemBag": 17,
-        // 猎魔人列表
-        "repeated Hero heroBag": 18,
-        // 宠物列表
-        "repeated Pet petBag": 19,
-        // 已购买猎魔人的id列表，HeroAttribute表的id字段
-        "repeated uInt32 hasBuyHeroIds": 20,
-        // 装备仓库，已按格子顺序排列。这个是获得装备时放入的背包，不是已装备装备的背包。已装备的装备已过滤掉(可能导致格子不连续)，不会出现在这里
-        "repeated Equip equipBag": 21,
-        // 已装备装备
-        "repeated ArmSlot armBag": 22,
-        // 剩余免费精炼次数
-        "optional uInt32 dailyFreeRefine": 23,
-        // 剩余钻石精炼次数
-        "optional uInt32 dailyDiamondRefine": 24,
-        // 竞技点
-        "optional uInt32 comPoint": 25,
-        // 熔炼值
-        "optional uInt32 meltPoint": 26,
-        // 无尽加成信息
-        "repeated EndlessBuff endlessBuffs": 27,
-        // 无尽赛事记录
-        "repeated EndlessOccasion endlessOccasions": 28,
-        // 觉醒材料
-        "repeated Item wakeUpBag": 29,
-        // 洗练石
-        "optional uInt32 washPoint": 30,
-        // 历史最高得分
-        "optional uInt32 highScore": 31,
-        // 本周最高得分
-        "optional uInt32 weekHighScore": 32,
-        // 装备成就数据列表
-        "repeated EquipAchievedItem equipAchievedList": 33,
-		//任务成就数据列表
-		"repeated MissionInfo missionList": 34,
-		//玩家id
-		 "optional uInt32 playerId": 35,
-        //当前出战的兄弟英雄
-        "optional string currBrotherHeroPoss": 36,
-		//每日无尽产出英雄数量
-        "optional uInt32 dailyEndlessBoxToHeroCnt": 37,
-		"optional uInt32 rechargeTotal": 38, 
-		"optional uInt32 fristRechargeAwardTime": 39, 
-		//修改名字次数
-		"optional uInt32 setNameCnt": 40,
-		//邀请码id		
-		"optional uInt32 inviteId": 41, 
-		//已邀请人数
-		"optional uInt32 inviteCount": 42, 
-		//我的邀请码
-		"optional uInt32 inviteCode": 43, 
-		//无尽历史最高波次
-		"optional uInt32 endlessSingleOldWave": 44, 
-		//随机boss信息
-		"optional BarrierRandBossInfo barrierRandBoss": 45, 
-		//* 随机商店的关闭时间 ：为0没有随机商店 、大于当前时间 表示商店已经关闭
-		"optional uInt32 randomShopCloseTime": 46, 	
-		//随机商店刷新券
-		"optional uInt32 randRefreshCoin": 47,
-		//挑战券		
-		"optional uInt32 challengeTicket": 48	,
-		// 碎片列表
-        "repeated Item fragBag": 49,
-		//10 青铜币
-		"repeated uInt32 bronzeCoin": 50,
-		 //11 白银币
-		"repeated uInt32 silverCoin": 51,
-		 //12 黄金币
-		"repeated uInt32 goldCoin": 52, 
-		 //单抽次数
-		"repeated uInt32 snatchSingleCnt": 53,
-        //周卡结束时间
-        "repeated uInt32 weekCardEndTick": 54,
-        //月卡结束时间
-        "repeated uInt32 monthCardEndTick": 55,
-        //永卡结束时间
-        "repeated uInt32 foreverCardEndTick": 56,
-        //周卡领取福利时间
-        "repeated uInt32 weekCardWelfareTick": 57,
-        //月卡领取福利时间
-        "repeated uInt32 monthCardWelfareTick": 58,
-        //永久卡领取福利时间
-        "repeated uInt32 foreverCardWelfareTick": 59,
-        //关卡进度推销的掉落id
-        "repeated PromoteData barrierPromoteDropIds": 60,
-        //关卡推销结算时间
-        "repeated uInt32 barrierPromoteEndTick": 61,
-
-    },
-	
-	//随机boss信息
-	"message BarrierRandBossInfo": { 
-		//所在的关卡id
-		"optional uInt32 barrierId": 1 ,
-		//冷却时间点
-		"optional uInt32 coolTime": 2 ,
-		//创建时间
-		"optional uInt32 createTime": 3,
-		//剩余血
-		"optional uInt32 currHp": 4,
-		//已经攻打次数
-		"optional uInt32 atkCnt": 5,
-        //随机bossid
-        "optional uInt32 randomBossId": 6
-	}, 
-	
-	//任务成就信息
-	"message MissionInfo": {
-		//任务成就进度
-		"optional uInt32 progress": 1 ,
-		"optional uInt32 conditionType": 2 ,
-		"optional uInt32 missionType": 3,
-		"optional uInt32 groupType": 4,
-		//已领取的成就记录（成就id）（数组）
-		"repeated json drewList": 5
-	},
-	
-    // 装备洗练成就
-    "message EquipAchievedItem": {
-        //  
-        "optional uInt32 id": 1,
-        //  
-        "optional uInt32 type": 2,
-        //  
-        "optional uInt32 value": 3
+        "optional string playerName": 3,
+        // 金币（游戏内普通货币）
+        "optional uInt32 goldCnt": 4,
+        // 钻石（需要花钱购买的货币）
+        "optional uInt32 diamondCnt": 5,
+        //创建角色的时间戳（ms）
+        "repeated uInt32 createTime": 6
     },
 
-    // 背包物品
-    "message Item": {
-        // 位置
-        "optional uInt32 pos": 1,
-        // 物品id，即策划表id
-        "optional uInt32 itemId": 2,
-        // 物品数量
-        "optional uInt32 itemCount": 3
-    },
-    // 猎魔人
-    "message Hero": {
-        // 位置
-        "optional uInt32 pos": 1,
-        // 猎魔人id，策划表的heroId
-        "optional uInt32 heroId": 2,
-        // 当前等级
-        "optional byte curLevel": 3,
-        // 当前经验
-        "optional uInt32 curExperience": 4,
-        // 当前品质
-        "optional byte quality": 5,
-        // 技能列表
-        "repeated Skill skills": 6,
-        // 猎魔人id，即策划表id
-        "optional uInt32 dataId": 7
-    },
-    // 技能
-    "message Skill": {
-        // id
-        "optional uInt32 id": 1,
-        // 等级
-        "optional uInt32 lv": 2
-    },
-    // 宠物
-    "message Pet": {
-        // 位置
-        "optional uInt32 pos": 1,
-        // 宠物id，策划表roleId
-        "optional uInt32 petId": 2,
-        // 等级
-        "optional byte lv": 3,
-        // 经验
-        "optional uInt32 exp": 4,
-        // 品质
-        "optional byte quality": 5
-    },
-    // 已通关关卡
-    "message PassedBarrier": {
-        // 关卡id
-        "optional uInt32 barrierId": 1,
-        // 星级
-        "optional byte star": 2,
-        // 今日攻打次数
-        "optional byte dailyTimes": 3,
-        // 今日重置次数
-        "optional byte resetTimes": 4
-    },
-    // 已解锁章节
-    "message unlockChapter": {
-        // 章节id
-        "optional uInt32 chapterId": 1,
-        // 领取星级宝箱标志位1、2、4分别表示已领取第1、2、3个星级宝箱
-        "optional uInt32 drawFlag": 2
-    },
     // 进入场景
     "area.playerHandler.enterScene": {
         "optional short code": 1,
@@ -319,6 +54,32 @@ module.exports = {
     "area.playerHandler.createPlayerName": {
          "optional short code": 1,
     },
+
+    //创建房间
+    "area.playerHandler.createRoom": {
+        "optional uInt32 code": 1,
+        //房间号
+        "optional uInt32 roomNum": 2,
+        //房间类型
+        "optional uInt32 roomType": 3,
+
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	// 攻打随机boss
     "area.playerHandler.atkRandBoss": { 
 		"optional short code": 1,
