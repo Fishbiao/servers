@@ -7,35 +7,7 @@ var logger = require('pomelo-logger').getLogger(__filename),
     async = require('async');
 
 var Player = require('../domain/entity/player'),
-    utils = require('../util/utils'),
-
-
-
-    bagDao = require('./bagDao'),
-    heroBagDao = require('./heroBagDao'),
-    petBagDao = require('./petBagDao'),
-    passedBarrierDao = require('./passedBarrierDao'),
-    unlockChapterDao = require('./unlockChapterDao'),
-    hasBuyHeroDao = require('./hasBuyHeroDao'),
-    dataUtils = require('../util/dataUtils'),
-    Consts = require('../consts/consts'),
-    guidePrizeDao = require('./guidePrizeDao'),
-    clientSaveDao = require('./clientSaveDao'),
-    playerShopDao = require('./playerShopDao'),
-    playerActivityDao = require('./playerActivityDao'),
-    equipBagDao = require('./equipBagDao'),
-    equipConfDao = require('./equipConfDao'),
-    endlessBuffDao = require('./endlessBuffDao'),
-    endlessOccasionDao = require('./endlessOccasionDao'),
-    wakeUpBagDao = require('./wakeUpBagDao'),
-    equipWashDao = require('./equipWashDao'),
-    equipAchievedDao = require('./equipAchievedDao'),
-    orderListDao =  require('./orderListDao'),
-    missionDao = require('./missionDao'),
-    randBossDao = require('./randBossDao'),
-    randomShopDao = require('./randomShopDao'),
-    statisticsDao = require('./statisticsDao'),
-    randBossRecordDao = require('./randBossRecordDao');
+    utils = require('../util/utils');
 
 var playerDao = module.exports;
 

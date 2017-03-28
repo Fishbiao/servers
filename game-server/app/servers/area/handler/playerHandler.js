@@ -12,9 +12,10 @@ var area = require('../../../domain/area/area'),
     dataApi = require('../../../util/dataApi'),
     dataUtils = require('../../../util/dataUtils'),
     //dropUtils = require('../../../domain/area/dropUtils'),
-    consts = require('../../../consts/consts')
-    /*guidePrizeManager = require('../../../domain/area/guidePrizeManager'),
-    playerShop = require('../../../domain/entity/playerShop'),
+    consts = require('../../../consts/consts'),
+    roomManager = require('../../../domain/area/roomManager'),
+    roomDao = require('../../../dao/roomDao');
+    /*playerShop = require('../../../domain/entity/playerShop'),
     randomShop = require('../../../domain/entity/randomShop'),
     playerRecharge = require('../../../domain/entity/playerRecharge'),
     activityManager = require('../../../domain/activity/activityManager'),
@@ -23,7 +24,7 @@ var area = require('../../../domain/area/area'),
     inviteManager = require('../../../domain/area/inviteManager'),
     randBossRecordDao = require('../../../dao/randBossRecordDao'),
     common = require('../../../util/common'),
-    randBossDao = require('../../../dao/randBossDao')*/;
+    randBossDao = require('../../../dao/randBossDao')*/
 
 var Handler = function (app) {
     this.app = app;
@@ -158,7 +159,26 @@ function createPlayer(session, allData, next) {
 
 //create game room
 pro.createRoom = function (msg, session, next) {
-    next(null, {code: Code.OK, roomNum: 1,roomType:1});
+    var playerId = session.get('playerId');
+    var player = area.getPlayer(playerId);
+    logger.debug('createRoom playerId = %s', playerId);
+
+    //判断货币是否足够，扣除创建房间的花费
+    //XXXX
+
+    //调用数据库创建房间
+    roomDao.createRoom(playerId, function (err, roomId) {
+        if(err){
+            return next(null, {code: Code.DB_ERROR});
+        }
+        var newRoomData = {};
+        newRoomData.id = roomId;
+        newRoomData.createPlayerId = playerId;
+        var room = roomManager.addRoom(newRoomData);
+        next(null,{code:Code.OK,room:room.getClientInfo()});
+    });
+
+
 }
 
 //=================================================取名字===============================================================

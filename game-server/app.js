@@ -8,7 +8,8 @@ var app = pomelo.createApp();
 var cronTriggerManager = require('./app/util/cronTriggerManager'),
     routeUtil = require('./app/util/routeUtil'),
     unregisterFilter = require('./app/servers/area/filter/unregisterFilter'),
-    area = require('./app/domain/area/area');
+    area = require('./app/domain/area/area'),
+    roomManager = require('./app/domain/area/roomManager');
 
 app.set('name', 'servers');
 
@@ -80,6 +81,7 @@ app.configure('production|development', 'area', function () {
     app.route('area', routeUtil.area);
 
     area.init({id: areaId});
+    roomManager.init({id:areaId});
 });
 
 // start app

@@ -1,13 +1,17 @@
 /**
- * Created by employee11 on 2015/12/11.
+ * Created by fisher on 2017/03/20.
  */
+/*
+* 这其实是一个playerManager
+* */
 
 var _ = require('underscore');
 
 var Player = require('../entity/player');
 var eventManager = require('../event/eventManager');
 var logger = require('pomelo-logger').getLogger(__filename);
-var dataApi = require('../../util/dataApi');
+var dataApi = require('../../util/dataApi'),
+    consts = require('../../consts/consts');
 
 
 var exp = module.exports;
@@ -47,12 +51,6 @@ exp.init = function (opts) {
 exp.clear = function () {
     players = {};
     entities = {};
-    /*释放队伍管理器*/
-    teamManager.clear();
-    /*释放战斗管理器*/
-    barrierManager.clear();
-    /*释放定时器*/
-    teamTiming.clear();
 };
 
 /*获取玩家信息*/
@@ -76,8 +74,8 @@ exp.addEntity = function (entity) {
     }
     eventManager.addEvent(entity);
     entities[entityId] = entity;
-    if (entity.type === 1) {
-        players[entity.id] = entityId;//可以通过playerId查找恩tityId
+    if (entity.type === consts.ENTITY_TYPE.PLAYER) {
+        players[entity.id] = entityId;//可以通过playerId查找entityId
     }
     return true;
 };
@@ -89,7 +87,7 @@ exp.removeEntity = function (entityId) {
         return true;
     }
     eventManager.clearEvent(entity);
-    if (entity.type === 1) {
+    if (entity.type === consts.ENTITY_TYPE.PLAYER) {
         delete players[entity.id];
     }
     delete entities[entityId];

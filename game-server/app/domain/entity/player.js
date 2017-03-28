@@ -52,7 +52,7 @@ function onUpdateProp(prop, value) {
  */
 var Player = function (opts) {
     opts = opts || {};
-    opts.type = 1;
+    opts.type = consts.ENTITY_TYPE.PLAYER;
 //  Character.call(this, opts);
     Entity.call(this, opts);
     this.saveProperties = [

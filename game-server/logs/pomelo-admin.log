@@ -738,3 +738,86 @@
 [2017-03-27 23:58:56.246] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
 [2017-03-28 00:03:33.077] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect connector-server-1 connector {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":"--debug=3123","serverType":"connector","pid":7952}
 [2017-03-28 00:03:33.094] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":4868}
+[2017-03-28 22:18:34.711] [INFO] pomelo-admin - [32m[MqttServer] [39m[MqttServer] listen on 3005
+[2017-03-28 22:18:34.815] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2017-03-28 22:18:36.690] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "area", "127.0.0.1", 3005
+[2017-03-28 22:18:36.709] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2017-03-28 22:18:36.880] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2017-03-28 23:33:36.085] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":6912}
+[2017-03-28 23:34:24.176] [INFO] pomelo-admin - [32m[MqttServer] [39m[MqttServer] listen on 3005
+[2017-03-28 23:34:24.219] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2017-03-28 23:34:24.915] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "area", "127.0.0.1", 3005
+[2017-03-28 23:34:24.943] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2017-03-28 23:34:25.050] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2017-03-28 23:36:25.691] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":5324}
+[2017-03-28 23:36:25.706] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect connector-server-1 connector {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":"--debug=3123","serverType":"connector","pid":7824}
+[2017-03-28 23:36:25.730] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect gate-server-1 gate {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientHost":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--debug=3122","serverType":"gate","pid":6768}
+[2017-03-28 23:36:27.896] [INFO] pomelo-admin - [32m[MqttServer] [39m[MqttServer] listen on 3005
+[2017-03-28 23:36:27.942] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2017-03-28 23:36:28.651] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "area", "127.0.0.1", 3005
+[2017-03-28 23:36:28.728] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2017-03-28 23:36:28.736] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2017-03-28 23:37:11.276] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":7676}
+[2017-03-28 23:37:14.193] [INFO] pomelo-admin - [32m[MqttServer] [39m[MqttServer] listen on 3005
+[2017-03-28 23:37:14.239] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2017-03-28 23:37:15.006] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2017-03-28 23:37:15.019] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2017-03-28 23:37:15.025] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "area", "127.0.0.1", 3005
+[2017-03-28 23:37:56.824] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":6168}
+[2017-03-28 23:37:56.846] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect gate-server-1 gate {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientHost":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--debug=3122","serverType":"gate","pid":7172}
+[2017-03-28 23:37:56.849] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect connector-server-1 connector {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":"--debug=3123","serverType":"connector","pid":4716}
+[2017-03-28 23:37:59.343] [INFO] pomelo-admin - [32m[MqttServer] [39m[MqttServer] listen on 3005
+[2017-03-28 23:37:59.384] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2017-03-28 23:38:00.107] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "area", "127.0.0.1", 3005
+[2017-03-28 23:38:00.277] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2017-03-28 23:38:00.371] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2017-03-29 00:12:55.100] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":5132}
+[2017-03-29 00:13:01.407] [INFO] pomelo-admin - [32m[MqttServer] [39m[MqttServer] listen on 3005
+[2017-03-29 00:13:01.450] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2017-03-29 00:13:02.098] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "area", "127.0.0.1", 3005
+[2017-03-29 00:13:02.153] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2017-03-29 00:13:02.249] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2017-03-29 00:13:40.839] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":5000}
+[2017-03-29 00:13:40.851] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect connector-server-1 connector {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":"--debug=3123","serverType":"connector","pid":7720}
+[2017-03-29 00:13:44.405] [INFO] pomelo-admin - [32m[MqttServer] [39m[MqttServer] listen on 3005
+[2017-03-29 00:13:44.448] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2017-03-29 00:13:45.121] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "area", "127.0.0.1", 3005
+[2017-03-29 00:13:45.174] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2017-03-29 00:13:45.285] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2017-03-29 00:15:40.749] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":7148}
+[2017-03-29 00:15:44.074] [INFO] pomelo-admin - [32m[MqttServer] [39m[MqttServer] listen on 3005
+[2017-03-29 00:15:44.122] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2017-03-29 00:15:44.895] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "area", "127.0.0.1", 3005
+[2017-03-29 00:15:44.915] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2017-03-29 00:15:44.970] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2017-03-29 00:17:00.593] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":7920}
+[2017-03-29 00:17:00.612] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect connector-server-1 connector {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":"--debug=3123","serverType":"connector","pid":4840}
+[2017-03-29 00:17:00.616] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect gate-server-1 gate {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientHost":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--debug=3122","serverType":"gate","pid":4312}
+[2017-03-29 00:17:04.401] [INFO] pomelo-admin - [32m[MqttServer] [39m[MqttServer] listen on 3005
+[2017-03-29 00:17:04.446] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2017-03-29 00:17:05.125] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2017-03-29 00:17:05.150] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "area", "127.0.0.1", 3005
+[2017-03-29 00:17:05.253] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2017-03-29 00:18:29.770] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":7480}
+[2017-03-29 00:18:33.069] [INFO] pomelo-admin - [32m[MqttServer] [39m[MqttServer] listen on 3005
+[2017-03-29 00:18:33.120] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2017-03-29 00:18:33.798] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "area", "127.0.0.1", 3005
+[2017-03-29 00:18:33.882] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2017-03-29 00:18:33.968] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2017-03-29 00:20:08.766] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":7528}
+[2017-03-29 00:20:11.536] [INFO] pomelo-admin - [32m[MqttServer] [39m[MqttServer] listen on 3005
+[2017-03-29 00:20:11.578] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2017-03-29 00:20:12.264] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "area", "127.0.0.1", 3005
+[2017-03-29 00:20:12.327] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2017-03-29 00:20:12.397] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2017-03-29 00:22:30.127] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":5096}
+[2017-03-29 00:22:30.146] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect connector-server-1 connector {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":"--debug=3123","serverType":"connector","pid":7720}
+[2017-03-29 00:22:30.172] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect gate-server-1 gate {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientHost":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--debug=3122","serverType":"gate","pid":6432}
+[2017-03-29 00:22:32.246] [INFO] pomelo-admin - [32m[MqttServer] [39m[MqttServer] listen on 3005
+[2017-03-29 00:22:32.289] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "master", "127.0.0.1", 3005
+[2017-03-29 00:22:32.975] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "connector", "127.0.0.1", 3005
+[2017-03-29 00:22:32.977] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "area", "127.0.0.1", 3005
+[2017-03-29 00:22:33.095] [INFO] pomelo-admin - [32m[ConsoleService] [39mtry to connect master: "gate", "127.0.0.1", 3005
+[2017-03-29 00:22:46.957] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect cluster-server-area-0 area {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"cluster-server-area-0","host":"127.0.0.1","port":3250,"clusterCount":1,"area":1,"args":"--debug=32314","serverType":"area","pid":5700}
+[2017-03-29 00:22:46.975] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect connector-server-1 connector {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":"--debug=3123","serverType":"connector","pid":7972}
+[2017-03-29 00:22:46.996] [DEBUG] pomelo-admin - [36m[MasterSocket] [39mdisconnect gate-server-1 gate {"main":"D:\\chessProject\\servers\\game-server\\app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientHost":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--debug=3122","serverType":"gate","pid":8036}

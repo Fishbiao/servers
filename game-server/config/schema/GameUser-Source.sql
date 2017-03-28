@@ -19,6 +19,20 @@ CREATE TABLE `player` (
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 
+-- ----------------------------
+-- Table structure for `room`
+-- ----------------------------
+DROP TABLE IF EXISTS `room`;
+CREATE TABLE `room` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '房间自增id',
+  `createPlayerId` bigint(20) NOT NULL COMMENT '创建房间的玩家id',
+  `createTime` bigint(20) NOT NULL COMMENT '创建时间',
+  `currOutCardPlayerId` bigint(20) DEFAULT '0' COMMENT '当前出牌玩家id',
+  `finshGameCnt` bigint(20) DEFAULT '0' COMMENT '已完成游戏局数',
+  `seatDataList` varchar(512) NOT NULL DEFAULT '[]' COMMENT '作为列表',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 
 

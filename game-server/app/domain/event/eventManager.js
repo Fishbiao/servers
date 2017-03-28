@@ -5,17 +5,31 @@ var pomelo = require('pomelo');
 
 var exp = module.exports;
 
+var consts = require('../../consts/consts');
+
 /**
  * Listen event for entity
  */
 exp.addEvent = function (entity) {
     switch (entity.type) {
-        case 1:
+        case consts.ENTITY_TYPE.PLAYER:
             addSaveEvent(entity);
             break;
+        case consts.ENTITY_TYPE.ROOM:
+            addSaveRoomEvent(entity);
+            break;
+
         default :
     }
 };
+
+/**
+ * Add save event for room
+ * @param {Object} room The roomData to add save event for.
+ */
+function addSaveRoomEvent(room) {
+
+}
 
 /**
  * Add save event for player
@@ -132,7 +146,10 @@ function addSaveEvent(player) {
 
 exp.clearEvent = function (entity) {
     switch (entity.type) {
-        case 1:
+        case consts.ENTITY_TYPE.PLAYER:
+            entity.removeAllListeners();
+            break;
+        case consts.ENTITY_TYPE.ROOM:
             entity.removeAllListeners();
             break;
         default :
