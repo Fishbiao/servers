@@ -29,6 +29,10 @@ module.exports = {
     AREA: {
         //已经在线
         AREADY_ONLINE : 3000,
+        //没有这个房间
+        ROOM_NOT_FOUND : 3001,
+        //房间满员
+        ROOM_MEMBER_FULL : 3002,
     },
     HERO: {
         // 添加猎魔人失败

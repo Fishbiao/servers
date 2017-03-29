@@ -18,9 +18,9 @@
     ""
   ],
   [
-    "init_Gold",
-    10000,
-    "创角初始金币",
+    "NumEachRoom_shisanshui",
+    3,
+    "十三水每个房间人数",
     ""
   ]
 ]

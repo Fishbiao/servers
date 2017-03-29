@@ -20,4 +20,19 @@ module.exports = {
     //    // 技能列表
     //    "repeated Skill skills": 6
     //},
+    // 座位信息
+    "seatData.push": {
+        // 座位编号
+        "optional uInt32 id": 1,
+        // 座位上的玩家id
+        "optional uInt32 playerId": 2,
+        // 墙牌牌数量
+        "optional uInt32 WallCardCnt": 3,
+        // 吃牌数据
+        "repeated uInt32 eatData": 4,
+        // 碰牌数据
+        "repeated uInt32 pengData": 5,
+        // 杠牌数据
+        "repeated uInt32 gangData": 6
+    },
 };

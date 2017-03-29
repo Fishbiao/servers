@@ -175,10 +175,29 @@ pro.createRoom = function (msg, session, next) {
         newRoomData.id = roomId;
         newRoomData.createPlayerId = playerId;
         var room = roomManager.addRoom(newRoomData);
+        room.addSeatData(playerId);
         next(null,{code:Code.OK,room:room.getClientInfo()});
     });
+}
 
+pro.joinRoom = function (msg,session,next) {
+    var playerId = session.get('playerId');
+    var player = area.getPlayer(playerId);
+    logger.debug('joinRoom playerId = %s data=%j', playerId, msg);
 
+    var roomId = msg.id;//要加入的房间号
+
+    var room = roomManager.getRoom(roomId);
+    if(!room){//没找到房间
+        return next(null,{code:Code.AREA.ROOM_NOT_FOUND});
+    }
+
+    if(room.isMemberFull()){//房间满员
+        return next(null,{code:Code.AREA.ROOM_MEMBER_FULL});
+    }
+
+    room.addSeatData(playerId);
+    next(null,{code:Code.OK,room:room.getClientInfo()});
 }
 
 //=================================================取名字===============================================================

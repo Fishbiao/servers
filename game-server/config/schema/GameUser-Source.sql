@@ -16,7 +16,7 @@ CREATE TABLE `player` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `INDEX_PLAYER_USER_ID` (`MAC`),
   UNIQUE KEY `INDEX_PLAYER_PLAYERNAME` (`playerName`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10000 DEFAULT CHARSET=utf8;
 
 
 -- ----------------------------
@@ -31,7 +31,7 @@ CREATE TABLE `room` (
   `finshGameCnt` bigint(20) DEFAULT '0' COMMENT '已完成游戏局数',
   `seatDataList` varchar(512) NOT NULL DEFAULT '[]' COMMENT '作为列表',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8;
 
 
 

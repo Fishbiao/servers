@@ -4,6 +4,12 @@ module.exports = {
         ROOM:2,//房间，
         SEAT:3,//座位
     },
+    SEAT_NUM:{
+        FIRST:1,//一号位
+        SECOND:2,//二号位
+        THIRD:3,//三号位
+        FORUTH:4//四号位
+    },
 
 
     DROP_TYPE: {

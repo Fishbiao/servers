@@ -49,7 +49,21 @@ module.exports = {
         // 角色初始数据
         "optional PlayerInitData curPlayer": 2
     },
-	
+
+    // 房间信息
+    "message Room": {
+        // 房间号
+        "optional uInt32 id": 1,
+        // 开房玩家id
+        "optional uInt32 createPlayerId": 2,
+        // 当前出牌玩家id 0=没有玩家出牌
+        "optional uInt32 currOutCardPlayerId": 3,
+        // 创建房间时间
+        "optional uInt32 createTime": 4,
+        // 已完成游戏局数
+        "optional uInt32 finshGameCnt": 5
+
+    },
 	// 角色取名字
     "area.playerHandler.createPlayerName": {
          "optional short code": 1,
@@ -58,14 +72,16 @@ module.exports = {
     //创建房间
     "area.playerHandler.createRoom": {
         "optional uInt32 code": 1,
-        //房间号
-        "optional uInt32 roomNum": 2,
-        //房间类型
-        "optional uInt32 roomType": 3,
-
+        //房间信息
+        "optional Room room": 2,
     },
 
-
+    //加入一个房间
+    "area.playerHandler.joinRoom": {
+        "optional uInt32 code": 1,
+        //房间信息
+        "optional Room room": 2,
+    },
 
 
 

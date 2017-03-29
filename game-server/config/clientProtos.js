@@ -47,6 +47,11 @@ module.exports = {
     "area.playerHandler.createRoom": {
     },
 
+    //加入一个房间
+    "area.playerHandler.joinRoom": {
+        //房间号
+        "optional uInt32 id": 1
+    },
 
 
 
