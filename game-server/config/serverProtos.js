@@ -20,8 +20,33 @@ module.exports = {
     //    // 技能列表
     //    "repeated Skill skills": 6
     //},
-    // 座位信息
-    "seatData.push": {
+	
+    // 更新角色属性
+    "player.updateProp": {
+        // 属性名
+        "optional string prop": 1,
+        // 属性值
+        "optional uInt32 value": 2
+    },
+	
+    // 更新房间属性
+    "room.updateProp": {
+        // 属性名
+        "optional string prop": 1,
+        // 属性值
+        "optional uInt32 value": 2
+    },
+	
+    // 更新座位属性
+    "seat.updateProp": {
+        // 属性名
+        "optional string prop": 1,
+        // 属性值
+        "optional uInt32 value": 2
+    },
+	
+
+    "message PublicSeatData": {
         // 座位编号
         "optional uInt32 id": 1,
         // 座位上的玩家id
@@ -35,4 +60,15 @@ module.exports = {
         // 杠牌数据
         "repeated uInt32 gangData": 6
     },
+    // 座位的公开信息
+    "seatData.push": {
+        "repeated PublicSeatData seats": 1
+    },
+	
+	//座位准备的通知
+	"seat.ready":{
+		//准备好了的坐地
+        "optional uInt32 seatId": 1,
+	}
+	
 };

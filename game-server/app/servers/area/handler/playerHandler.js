@@ -175,7 +175,7 @@ pro.createRoom = function (msg, session, next) {
         newRoomData.id = roomId;
         newRoomData.createPlayerId = playerId;
         var room = roomManager.addRoom(newRoomData);
-        room.addSeatData(playerId);
+        room.addSeatData(player);
         next(null,{code:Code.OK,room:room.getClientInfo()});
     });
 }
@@ -196,8 +196,21 @@ pro.joinRoom = function (msg,session,next) {
         return next(null,{code:Code.AREA.ROOM_MEMBER_FULL});
     }
 
-    room.addSeatData(playerId);
+    room.addSeatData(player);
     next(null,{code:Code.OK,room:room.getClientInfo()});
+}
+
+pro.ready = function (msg,session,next) {
+    var playerId = session.get('playerId');
+    var player = area.getPlayer(playerId);
+    logger.debug('ready playerId = %s data=%j', playerId, msg);
+
+    var room = roomManager.getRoom(player.roomId);
+    if(!room){//没找到房间
+        return next(null,{code:Code.AREA.ROOM_NOT_FOUND});
+    }
+    var _code = room.getReadByPlayerId(playerId);
+    return next(null,{code:_code});
 }
 
 //=================================================取名字===============================================================

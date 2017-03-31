@@ -83,6 +83,10 @@ module.exports = {
         "optional Room room": 2,
     },
 
+    //准备
+    "area.playerHandler.ready": {
+        "optional uInt32 code": 1,
+    },
 
 
 

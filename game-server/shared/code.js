@@ -33,6 +33,8 @@ module.exports = {
         ROOM_NOT_FOUND : 3001,
         //房间满员
         ROOM_MEMBER_FULL : 3002,
+        //玩家不在本房间
+        NOT_MEMBER_ROOM : 3003,
     },
     HERO: {
         // 添加猎魔人失败

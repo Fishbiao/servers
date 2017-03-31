@@ -20,15 +20,16 @@
       var pomelo = window.pomelo;
       var host = "127.0.0.1";
       var port = "3014";
-      var _uid = 'fisher';
-      var _pwd = '123456';
-      function show() {
+      function enterServer() {
+          var _uid = document.getElementById("uid").value;//'fisher';
+          var _pwd = document.getElementById("pwd").value;//'123456';
+
         pomelo.init({
           host: host,
           port: port,
           log: true
         }, function() {
-            pomelo.request("gate.gateHandler.queryEntry", {'uid':'fisher'}, function(data) {
+            pomelo.request("gate.gateHandler.queryEntry", {uid:_uid}, function(data) {
                 //alert("host="+data.host+"  port="+data.port);
                 pomelo.disconnect();//断开gate服务器的连接
 
@@ -46,27 +47,48 @@
                     port: data.port,
                     log: true
                 }, function() {
-                    pomelo.request("connector.entryHandler.entry", {MAC: _uid, password: _pwd,platform:"default",playerName:'yangCong'}, function(data) {
+                    pomelo.request("connector.entryHandler.entry", {MAC: _uid, password: _pwd,platform:"default",playerName:_uid}, function(data) {
                         console.log("success connector.entryHandler.entry=%j",data)
-
                         pomelo.request("area.playerHandler.enterScene",{language:""},function (data){
-                            console.log("success area.playerHandler.enterScene code = %d curPlayer=%j",data.code,data.curPlayer)
-
-                            pomelo.request("area.playerHandler.createRoom",{},function (data){
-                                console.log("success area.playerHandler.createRoom data=%j",data);
-                            });
-
+                            console.log("success area.playerHandler.enterScene code = %d curPlayer=%j",data.code,data.curPlayer);
                         });
                     });
                 });
             });
-        /*pomelo.request("connector.entryHandler.entry", "hello pomelo", function(data) {
-            alert(data.msg);
-          });*/
         });
+        pomelo.on("player.updateProp",function(data){
+            console.log("player.updateProp data=%j",data);
+        });
+        pomelo.on("room.updateProp",function(data){
+            console.log("room.updateProp data=%j",data);
+        });
+        pomelo.on("seat.updateProp",function(data){
+            console.log("seat.updateProp data=%j",data);
+        });
+        pomelo.on("seat.ready",function(data){
+            console.log("seat.ready data=%j",data);
+        });
+        pomelo.on("seatData.push",function(data){
+            console.log("seatData.push data=%j",data);
+        });
+      }
 
-          pomelo.on("seatData.push",function(data){
-              console.log("seatData.push data=%j",data);
+      function createRoom(){
+        pomelo.request("area.playerHandler.createRoom",{},function (data){
+              console.log("success area.playerHandler.createRoom data=%j",data);
+         });
+      }
+
+      function enterRoom(){
+          var roomid = document.getElementById("roomId").value;
+          pomelo.request("area.playerHandler.joinRoom",{id:roomid},function (data){
+              console.log("area.playerHandler.joinRoom data=%j",data);
+          });
+      }
+
+      function ready(){
+          pomelo.request("area.playerHandler.ready",{},function (data){
+              console.log("success area.playerHandler.ready data=%j",data);
           });
       }
     </script>
@@ -88,8 +110,20 @@
         <a href="https://github.com/Fishbiao/servers">https://github.com/Fishbiao/servers</a>
       </div>
       <div class="g-button">
-        <input id="test" type="button" value="Test Game Server" onclick="show()"/>
+        <input id="uid" type="text" value="fisher" >
+        <input id="pwd" type="text" value="123456" >
+        <input id="enterServer" type="button" value="enterServer" onclick="enterServer()"/>
       </div>
+      <div class="g-button">
+        <input id="createRoom" type="button" value="createRoom" onclick="createRoom()"/>
+      </div>
+      <div class="g-button">
+        <input id="roomId" type="text" value="" >
+        <input id="enterRoom" type="button" value="enterRoom" onclick="enterRoom()"/>
+      </div>
+        <div class="g-button">
+            <input id="ready" type="button" value="ready" onclick="ready()"/>
+        </div>
     </div>
   </body>
 </html>

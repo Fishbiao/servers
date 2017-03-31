@@ -12,6 +12,12 @@ module.exports = {
     },
 
 
+    CONFIG: {
+        INIT_DIAMOND: "init_Diamond",
+        INIT_GOLD: "init_Gold"
+    },
+
+
     DROP_TYPE: {
         HERO: 1,
         PET: 2,

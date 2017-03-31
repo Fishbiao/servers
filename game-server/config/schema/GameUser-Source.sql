@@ -13,6 +13,7 @@ CREATE TABLE `player` (
   `goldCnt` int(10) unsigned DEFAULT '0',
   `logonTime` bigint(20) DEFAULT NULL,
   `dailyLogonCount` int(10) DEFAULT '0',
+  `roomId` bigint(20) DEFAULT NULL,  
   PRIMARY KEY (`id`),
   UNIQUE KEY `INDEX_PLAYER_USER_ID` (`MAC`),
   UNIQUE KEY `INDEX_PLAYER_PLAYERNAME` (`playerName`)

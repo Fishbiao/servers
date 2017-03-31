@@ -53,7 +53,9 @@ module.exports = {
         "optional uInt32 id": 1
     },
 
-
+    //准备
+    "area.playerHandler.ready": {
+    },
 
 
 
