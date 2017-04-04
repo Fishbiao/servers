@@ -200,6 +200,7 @@ pro.joinRoom = function (msg,session,next) {
     next(null,{code:Code.OK,room:room.getClientInfo()});
 }
 
+//准备发牌
 pro.ready = function (msg,session,next) {
     var playerId = session.get('playerId');
     var player = area.getPlayer(playerId);
@@ -210,6 +211,20 @@ pro.ready = function (msg,session,next) {
         return next(null,{code:Code.AREA.ROOM_NOT_FOUND});
     }
     var _code = room.getReadByPlayerId(playerId);
+    return next(null,{code:_code});
+}
+
+//出牌
+pro.play = function (msg,session,next) {
+    var playerId = session.get('playerId');
+    var player = area.getPlayer(playerId);
+    logger.debug('play playerId = %s data=%j', playerId, msg);
+
+    var room = roomManager.getRoom(player.roomId);
+    if(!room){//没找到房间
+        return next(null,{code:Code.AREA.ROOM_NOT_FOUND});
+    }
+    var _code = room.setPlayCards(playerId,msg.specialType , msg.cards);
     return next(null,{code:_code});
 }
 

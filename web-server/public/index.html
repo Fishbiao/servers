@@ -68,9 +68,13 @@
         pomelo.on("seat.ready",function(data){
             console.log("seat.ready data=%j",data);
         });
+        pomelo.on("seat.getHandCards",function(data){
+            console.log("seat.getHandCards data=%j",data);
+        });
         pomelo.on("seatData.push",function(data){
             console.log("seatData.push data=%j",data);
         });
+
       }
 
       function createRoom(){

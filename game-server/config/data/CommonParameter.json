@@ -19,8 +19,14 @@
   ],
   [
     "NumEachRoom_shisanshui",
-    3,
+    2,
     "十三水每个房间人数",
+    ""
+  ],
+  [
+    "NumEachSeat_shisanshui",
+    13,
+    "十三水每个座位发牌数量",
     ""
   ]
 ]

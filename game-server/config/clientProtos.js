@@ -57,6 +57,13 @@ module.exports = {
     "area.playerHandler.ready": {
     },
 
+    //出牌
+    "area.playerHandler.play": {
+        //特殊牌型的类型，SHISANSHUI_SPECIAL中的值
+        "optional uInt32 specialType": 1,
+		//非特殊牌型时的顺序,如果是特殊牌就不用发
+        "repeated uInt32 cards": 2,		
+    },
 
 
 

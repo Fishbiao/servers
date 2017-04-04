@@ -88,6 +88,10 @@ module.exports = {
         "optional uInt32 code": 1,
     },
 
+    //出牌
+    "area.playerHandler.play": {
+        "optional uInt32 code": 1,
+    },
 
 
 

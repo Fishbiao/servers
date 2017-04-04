@@ -1,0 +1,12 @@
+[2017-04-03 16:14:22.744] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc cluster-server-area-0 callback timeout 30000, remote server 7 host: 127.0.0.1, port: 3150
+[2017-04-03 16:14:22.745] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc cluster-server-area-0 callback timeout 30000, remote server 7 host: 127.0.0.1, port: 3150
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-04-03 16:14:22.746] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: connector-server-1, msg: {"namespace":"sys","service":"channelRemote","method":"pushMessage","args":["seat.ready",{"seatId":0},[10],{"type":"push","userOptions":{},"isPush":true}]}, error code: 5
+[2017-04-03 16:14:22.748] [ERROR] pomelo-rpc - [31m[mqtt-mailbox] [39mrpc cluster-server-area-0 callback timeout 30000, remote server 8 host: 127.0.0.1, port: 3150
+[2017-04-03 16:14:22.749] [ERROR] pomelo-rpc - [31m[MailStation] [39m[pomelo-rpc] fail to send message Error: rpc cluster-server-area-0 callback timeout 30000, remote server 8 host: 127.0.0.1, port: 3150
+    at null.<anonymous> (D:\chessProject\servers\game-server\node_modules\pomelo\node_modules\pomelo-rpc\lib\rpc-client\mailboxes\mqtt-mailbox.js:257:16)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2017-04-03 16:14:22.749] [ERROR] pomelo-rpc - [31m[failprocess] [39mrpc failed with error, remote server: connector-server-1, msg: {"namespace":"sys","service":"channelRemote","method":"pushMessage","args":["seat.ready",{"seatId":0},[11],{"type":"push","userOptions":{},"isPush":true}]}, error code: 5
+[2017-04-03 16:14:22.771] [WARN] pomelo-rpc - [33m[mqtt-mailbox] [39mtimer is not exsits, serverId: cluster-server-area-0 remote: 7, host: 127.0.0.1, port: 3150
+[2017-04-03 16:14:22.771] [WARN] pomelo-rpc - [33m[mqtt-mailbox] [39mtimer is not exsits, serverId: cluster-server-area-0 remote: 8, host: 127.0.0.1, port: 3150

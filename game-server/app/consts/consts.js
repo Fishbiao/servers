@@ -17,6 +17,24 @@ module.exports = {
         INIT_GOLD: "init_Gold"
     },
 
+    //同花十三水（清龙）>十三水（一条龙）>十二皇族>三同花顺>三套炸弹>全大>全小>凑一色>四套冲三>五对冲三>六对半>三同花>三顺子
+    SHISANSHUI_SPECIAL:{
+        NULL:0,//不是特殊牌型
+        SANSHUNZI:1,//三顺子
+        SANTONGHUA:2,//三同花
+        LIUDUIBAN:3,//六对半
+        WUDUICHONGSAN:4,//五对冲三
+        SITAOCHONGSAN:5,//四套冲三
+        CHOUYISE:6,//凑一色
+        QUANXIAO:7,//全小
+        QUANDA:8,//全大
+        SANTAOZADAN:9,//三套炸弹
+        SANTONGHUASHUN:10,//三同花顺
+        SHIERHUANGZU:11,//十二皇族
+        SHISANSHUI:12,//十三水（一条龙）
+        TONGHUASHISANSHUI:13,//同花十三水（清龙）
+    },
+
 
     DROP_TYPE: {
         HERO: 1,

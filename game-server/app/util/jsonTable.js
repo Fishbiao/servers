@@ -34,7 +34,7 @@ Data.prototype.makeColumnIndex = function (data) {
 };
 
 Data.prototype.load = function (data, rowParser) {
-    var self = this, result = {}, item, primaryKey = self.getPrimaryKey();
+    var self = this, result = {}, item, primaryKey = self.getPrimaryKey(),length = 0;
     self.makeColumnIndex(data);
     rowParser = rowParser || self.rowParser || _.identity;
     data.forEach(function (k, rowIndex) {
@@ -44,8 +44,10 @@ Data.prototype.load = function (data, rowParser) {
         } else {
             result[rowIndex + 1] = item;
         }
+        length = length + 1;
     });
 
+    self.dataLength = length;
     self.data = result;
 };
 

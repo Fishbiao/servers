@@ -35,6 +35,10 @@ module.exports = {
         ROOM_MEMBER_FULL : 3002,
         //玩家不在本房间
         NOT_MEMBER_ROOM : 3003,
+        //不是指定的特殊牌
+        NOT_FIGER_SPECIALTYPE : 3004,
+
+
     },
     HERO: {
         // 添加猎魔人失败
