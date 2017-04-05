@@ -2,3 +2,7 @@
 .idea/workspace.xml
 game-server/app/domain
 game-server/app/dao
+game-server/node_modules
+game-server/logs
+authServer/node_modules
+web-server/node_modules
