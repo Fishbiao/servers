@@ -24,11 +24,11 @@ module.exports = {
         SANTONGHUA:2,//三同花
         LIUDUIBAN:3,//六对半
         WUDUICHONGSAN:4,//五对冲三
-        SITAOCHONGSAN:5,//四套冲三
+        SITAOCHONGSAN:5,//四套冲三(四套三条)
         CHOUYISE:6,//凑一色
         QUANXIAO:7,//全小
         QUANDA:8,//全大
-        SANTAOZADAN:9,//三套炸弹
+        SANTAOZADAN:9,//三套炸弹(三分天下)
         SANTONGHUASHUN:10,//三同花顺
         SHIERHUANGZU:11,//十二皇族
         SHISANSHUI:12,//十三水（一条龙）
