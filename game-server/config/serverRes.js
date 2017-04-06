@@ -61,7 +61,9 @@ module.exports = {
         // 创建房间时间
         "optional uInt32 createTime": 4,
         // 已完成游戏局数
-        "optional uInt32 finshGameCnt": 5
+        "optional uInt32 finshGameCnt": 5,
+        // 庄家的座位号
+        "optional uInt32 bankerSeatIndex": 6		
 
     },
 	// 角色取名字

@@ -69,7 +69,7 @@ module.exports = {
 	"seat.ready":{
 		//准备好了的座位
         "optional uInt32 seatId": 1,
-	}
+	},
 	//获得手牌
 	"seat.getHandCards":{
         "repeated uInt32 cards": 1,

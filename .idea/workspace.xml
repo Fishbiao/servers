@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="99cedcdd-9876-4e1b-a521-623a9f83b665" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/app/consts/consts.js" afterPath="$PROJECT_DIR$/game-server/app/consts/consts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/config/data/CommonParameter.json" afterPath="$PROJECT_DIR$/game-server/config/data/CommonParameter.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/config/serverProtos.js" afterPath="$PROJECT_DIR$/game-server/config/serverProtos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/config/serverRes.js" afterPath="$PROJECT_DIR$/game-server/config/serverRes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/shared/code.js" afterPath="$PROJECT_DIR$/game-server/shared/code.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/日志.txt" afterPath="$PROJECT_DIR$/game-server/日志.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,21 +25,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RoomData.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RoomData.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="140" column="72" lean-forward="false" selection-start-line="140" selection-start-column="72" selection-end-line="140" selection-end-column="72" />
+            <state relative-caret-position="468">
+              <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PkConfig.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/app/util/rowParser/PkConfig.js">
+      <file leaf-file-name="SeatData.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/SeatData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="200">
+              <caret line="170" column="0" lean-forward="false" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,49 +49,17 @@
         <entry file="file://$PROJECT_DIR$/game-server/config/data/PkConfig.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="243" lean-forward="false" selection-start-line="0" selection-start-column="243" selection-end-line="0" selection-end-column="243" />
+              <caret line="0" column="69" lean-forward="false" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommonParameter.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/app/util/rowParser/CommonParameter.js">
+      <file leaf-file-name="CommonParameter.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/config/data/CommonParameter.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thirteenCards.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="708" column="54" lean-forward="true" selection-start-line="708" selection-start-column="54" selection-end-line="708" selection-end-column="54" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#!!block;n#arraysubtract#0" expanded="false" />
-                <element signature="e#4307#6527#0" expanded="false" />
-                <element signature="n#!!block;n#isQuanxiaoByPkIds#0" expanded="false" />
-                <element signature="n#!!block;n#isQuandaByPkIds#0" expanded="false" />
-                <element signature="n#!!block;n#isTonghuashisanshuiByPkIds#0" expanded="false" />
-                <marker date="1491482014311" expanded="false" signature="8799:9284" ph="{...}" />
-                <marker date="1491482014311" expanded="false" signature="9346:9973" ph="{...}" />
-                <marker date="1491482014311" expanded="false" signature="12355:12937" ph="{...}" />
-                <marker date="1491482014311" expanded="false" signature="17200:17577" ph="{...}" />
-                <marker date="1491482014311" expanded="false" signature="17635:18110" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataApi.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/app/util/dataApi.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="43" column="75" lean-forward="true" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+            <state relative-caret-position="456">
+              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -96,18 +68,43 @@
       <file leaf-file-name="consts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app/consts/consts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            <state relative-caret-position="219">
+              <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/player.js">
+      <file leaf-file-name="thirteenCards.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25156">
-              <caret line="1324" column="2" lean-forward="false" selection-start-line="1324" selection-start-column="2" selection-end-line="1325" selection-end-column="24" />
+            <state relative-caret-position="210">
+              <caret line="684" column="4" lean-forward="false" selection-start-line="684" selection-start-column="4" selection-end-line="684" selection-end-column="4" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#!!block;n#isShierhuangzuByPkIds#0" expanded="false" />
+                <element signature="n#!!block;n#isShisanshuiByPkIds#0" expanded="false" />
+                <element signature="n#!!block;n#isTonghuashisanshuiByPkIds#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="playerHandler.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="221" column="0" lean-forward="true" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.crt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/shared/server.crt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,21 +113,19 @@
       <file leaf-file-name="code.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/shared/code.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-              <folding>
-                <marker date="1491440669667" expanded="true" signature="607:864" ph="{...}" />
-                <marker date="1491440669667" expanded="true" signature="876:1683" ph="{...}" />
-                <marker date="1491440669667" expanded="true" signature="1694:1843" ph="{...}" />
-                <marker date="1491440669667" expanded="true" signature="1856:2230" ph="{...}" />
-                <marker date="1491440669667" expanded="true" signature="2244:2442" ph="{...}" />
-                <marker date="1491440669667" expanded="true" signature="2460:2501" ph="{...}" />
-                <marker date="1491440669667" expanded="true" signature="2507:2517" ph="/*...*/" />
-                <marker date="1491440669667" expanded="true" signature="2531:2750" ph="{...}" />
-                <marker date="1491440669667" expanded="true" signature="2756:2765" ph="/** 随机商店 ...*/" />
-                <marker date="1491440669667" expanded="true" signature="2783:2903" ph="{...}" />
-                <marker date="1491440669667" expanded="true" signature="2909:2917" ph="/*...*/" />
-              </folding>
+            <state relative-caret-position="441">
+              <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-server/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="89" column="13" lean-forward="true" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,17 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setIsSpecial</find>
-      <find>SHISANSHUI_SPECIAL</find>
-      <find>isSpecialType</find>
-      <find>consts = require('../../consts/consts')SHISANSHUI_SPECIAL.SANSHUNZI</find>
-      <find>ThirteenCards</find>
-      <find>specialType</find>
-      <find>consts</find>
-      <find>SANSHUNZI</find>
-      <find>uniqArray</find>
-      <find>PkConfig</find>
-      <find>arraysubtract</find>
       <find>temp3</find>
       <find>14</find>
       <find>40</find>
@@ -169,6 +153,17 @@
       <find>slice</find>
       <find>isShunzi_10</find>
       <find>dataApi</find>
+      <find>server.crt</find>
+      <find>bankerSeatIndex</find>
+      <find>rea.playerHandler.ready</find>
+      <find>setPlayCards</find>
+      <find>distributeCard</find>
+      <find>originalCards</find>
+      <find>specialType</find>
+      <find>setHandData</find>
+      <find>isReady</find>
+      <find>setIsReady</find>
+      <find>isPlay</find>
     </findStrings>
     <dirStrings>
       <dir>D:\chessProject\servers\game-server</dir>
@@ -180,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/game-server/app/servers/gate/lifecycle.js" />
         <option value="$PROJECT_DIR$/game-server/app/servers/gate/cron/testCron.js" />
         <option value="$PROJECT_DIR$/game-server/app/util/cronTriggerManager.js" />
         <option value="$PROJECT_DIR$/startAllServers.bat" />
@@ -216,21 +210,22 @@
         <option value="$PROJECT_DIR$/game-server/config/clientProtos.js" />
         <option value="$PROJECT_DIR$/game-server/config/serverRes.js" />
         <option value="$PROJECT_DIR$/game-server/app/dao/playerDao.js" />
-        <option value="$PROJECT_DIR$/game-server/config/serverProtos.js" />
         <option value="$PROJECT_DIR$/game-server/app/domain/event/events.js" />
         <option value="$PROJECT_DIR$/game-server/app/domain/entity/entity.js" />
         <option value="$PROJECT_DIR$/game-server/app/dao/mapping/playerSync.js" />
         <option value="$PROJECT_DIR$/game-server/app/util/jsonTable.js" />
         <option value="$PROJECT_DIR$/game-server/app/util/rowParser/PkConfig.js" />
-        <option value="$PROJECT_DIR$/game-server/config/data/CommonParameter.json" />
         <option value="$PROJECT_DIR$/web-server/public/index.html" />
         <option value="$PROJECT_DIR$/game-server/app/domain/entity/player.js" />
         <option value="$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js" />
-        <option value="$PROJECT_DIR$/game-server/app/domain/entity/SeatData.js" />
-        <option value="$PROJECT_DIR$/game-server/shared/code.js" />
         <option value="$PROJECT_DIR$/game-server/app/consts/consts.js" />
-        <option value="$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js" />
         <option value="$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js" />
+        <option value="$PROJECT_DIR$/game-server/config/serverProtos.js" />
+        <option value="$PROJECT_DIR$/game-server/config/data/CommonParameter.json" />
+        <option value="$PROJECT_DIR$/game-server/config/data/code.json" />
+        <option value="$PROJECT_DIR$/game-server/shared/code.js" />
+        <option value="$PROJECT_DIR$/game-server/app/domain/entity/SeatData.js" />
+        <option value="$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js" />
       </list>
     </option>
   </component>
@@ -246,8 +241,7 @@
     <handled-path value="$PROJECT_DIR$/web-server/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="9" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -266,6 +260,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -338,350 +334,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rowParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="area" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="area" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="consts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -885,26 +543,27 @@
       <workItem from="1491400335766" duration="13000" />
       <workItem from="1491402959050" duration="6100000" />
       <workItem from="1491440892028" duration="27298000" />
+      <workItem from="1491485858219" duration="8068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140722000" />
+    <option name="totallyTimeSpent" value="148790000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="9" y="0" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14947917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37632135" sideWeight="0.53125" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30232558" sideWeight="0.47083333" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30232558" sideWeight="0.53125" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30232558" sideWeight="0.46875" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37632135" sideWeight="0.46875" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37632135" sideWeight="0.46666667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -932,14 +591,8 @@
           <line>18</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js</url>
-          <line>490</line>
-          <properties />
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="152" />
+      <option name="time" value="159" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSRemoteDebug">
@@ -951,36 +604,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/game-server/node_modules/chokidar/lib/nodefs-handler.js" />
-    <entry file="file://$PROJECT_DIR$/game-server/config/servers.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/auth.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/adminUser.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/adminServer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodejs-client/script/cmds.js" />
     <entry file="file://$PROJECT_DIR$/game-server/config/crons.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1052,21 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/serverRes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="82" column="32" lean-forward="false" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/serverProtos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="65" column="6" lean-forward="false" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/domain/event/events.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1111,33 +719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/data/CommonParameter.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/domain/area/roomManager.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1406">
           <caret line="74" column="23" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-server/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="74" column="54" lean-forward="false" selection-start-line="74" selection-start-column="54" selection-end-line="74" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4294">
-          <caret line="226" column="27" lean-forward="false" selection-start-line="226" selection-start-column="27" selection-end-line="226" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1178,27 +763,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/clientProtos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/SeatData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3154">
-          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/domain/area/cronTrigger.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,31 +778,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/shared/code.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding>
-            <marker date="1491440669667" expanded="true" signature="607:864" ph="{...}" />
-            <marker date="1491440669667" expanded="true" signature="876:1683" ph="{...}" />
-            <marker date="1491440669667" expanded="true" signature="1694:1843" ph="{...}" />
-            <marker date="1491440669667" expanded="true" signature="1856:2230" ph="{...}" />
-            <marker date="1491440669667" expanded="true" signature="2244:2442" ph="{...}" />
-            <marker date="1491440669667" expanded="true" signature="2460:2501" ph="{...}" />
-            <marker date="1491440669667" expanded="true" signature="2507:2517" ph="/*...*/" />
-            <marker date="1491440669667" expanded="true" signature="2531:2750" ph="{...}" />
-            <marker date="1491440669667" expanded="true" signature="2756:2765" ph="/** 随机商店 ...*/" />
-            <marker date="1491440669667" expanded="true" signature="2783:2903" ph="{...}" />
-            <marker date="1491440669667" expanded="true" signature="2909:2917" ph="/*...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/util/jsonTable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1242,14 +789,216 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/util/rowParser/PkConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="190">
           <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/util/rowParser/CommonParameter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/util/dataApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="75" lean-forward="true" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/config/serverProtos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="74" column="35" lean-forward="true" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/config/serverRes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <marker date="1491489416515" expanded="true" signature="1353:1737" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="1792:1834" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="1885:1975" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="2026:2116" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="2160:2202" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="2245:2287" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="2352:2388" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="2442:2684" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="2744:2839" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="2997:3133" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="3194:3463" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="3500:3671" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="3725:3926" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="3978:4200" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="4255:4348" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="4386:4621" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="4663:4885" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="5041:5081" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="5128:5322" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="5366:5451" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="5498:5589" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="5638:5681" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="5735:5877" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="5924:6014" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="6066:6269" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="6313:6458" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="6506:6600" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="6653:6748" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="6802:6892" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="6924:7094" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="7137:7353" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="7408:7499" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="7565:7656" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="7702:7792" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="7840:7992" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="8041:8082" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="8132:8173" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="8227:8268" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="8316:8357" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="8409:8450" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="8502:8543" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="8592:8633" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="8684:8725" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="8779:8820" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="8877:8918" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="8973:9014" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="9081:9122" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="9187:9228" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="9271:9364" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="9408:9499" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="9553:9594" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="9648:9747" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="9800:9945" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="9996:10037" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="10072:10575" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="10615:10822" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="10876:10973" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="11017:11058" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="11108:11639" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="11682:12052" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="12088:12256" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="12300:12488" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="12537:12933" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="12970:13466" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="13517:13617" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="13654:13709" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="13772:13813" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="13868:14022" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="14078:14274" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="14325:14396" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="14444:14535" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="14586:14685" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="14732:14832" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="14888:14985" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="15036:15136" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="15177:15218" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="15262:15607" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="15414:15601" ph="//..." />
+            <marker date="1491489416515" expanded="true" signature="15669:15710" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="15750:16078" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="16137:16419" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="16589:16871" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="16934:17080" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="17139:17294" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="17361:17516" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="17562:17770" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="17814:17918" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="17956:18181" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="18245:18351" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="18400:18607" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="18676:18851" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="18889:19122" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="19176:19393" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="19438:19479" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="19531:19572" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="19627:19668" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="19723:19764" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="19816:19857" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="19888:19947" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="20026:20476" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="20517:21201" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="21254:21340" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="21392:21671" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="21719:21828" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="21886:22187" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="22238:22329" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="22405:22665" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="22706:23141" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="23191:23259" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="23311:23479" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="23534:23622" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="23678:23714" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="23758:24082" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="24122:24564" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="24617:24697" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="24751:24833" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="24886:25136" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="25194:25235" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="25290:25331" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="25381:25422" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="25476:25551" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="25587:25766" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="25591:25732" ph="//..." />
+            <marker date="1491489416515" expanded="true" signature="25810:26176" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="26244:26329" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="26378:26454" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="26504:26545" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="26591:26660" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="26706:26789" ph="{...}" />
+            <marker date="1491489416515" expanded="true" signature="26843:26926" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/config/clientProtos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/shared/config/mysql.json.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/shared/server.key">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/shared/server.crt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1257,60 +1006,93 @@
     <entry file="file://$PROJECT_DIR$/game-server/config/data/PkConfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="243" lean-forward="false" selection-start-line="0" selection-start-column="243" selection-end-line="0" selection-end-column="243" />
+          <caret line="0" column="69" lean-forward="false" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/util/rowParser/CommonParameter.js">
+    <entry file="file://$PROJECT_DIR$/game-server/config/data/code.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="-570">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/config/data/CommonParameter.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/consts/consts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        <state relative-caret-position="219">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/util/dataApi.js">
+    <entry file="file://$PROJECT_DIR$/shared/code.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="43" column="75" lean-forward="true" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js">
+    <entry file="file://$PROJECT_DIR$/web-server/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="140" column="72" lean-forward="false" selection-start-line="140" selection-start-column="72" selection-end-line="140" selection-end-column="72" />
+        <state relative-caret-position="115">
+          <caret line="89" column="13" lean-forward="true" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="708" column="54" lean-forward="true" selection-start-line="708" selection-start-column="54" selection-end-line="708" selection-end-column="54" />
+        <state relative-caret-position="210">
+          <caret line="684" column="4" lean-forward="false" selection-start-line="684" selection-start-column="4" selection-end-line="684" selection-end-column="4" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#arraysubtract#0" expanded="false" />
-            <element signature="e#4307#6527#0" expanded="false" />
-            <element signature="n#!!block;n#isQuanxiaoByPkIds#0" expanded="false" />
-            <element signature="n#!!block;n#isQuandaByPkIds#0" expanded="false" />
+            <element signature="n#!!block;n#isShierhuangzuByPkIds#0" expanded="false" />
+            <element signature="n#!!block;n#isShisanshuiByPkIds#0" expanded="false" />
             <element signature="n#!!block;n#isTonghuashisanshuiByPkIds#0" expanded="false" />
-            <marker date="1491482014311" expanded="false" signature="8799:9284" ph="{...}" />
-            <marker date="1491482014311" expanded="false" signature="9346:9973" ph="{...}" />
-            <marker date="1491482014311" expanded="false" signature="12355:12937" ph="{...}" />
-            <marker date="1491482014311" expanded="false" signature="17200:17577" ph="{...}" />
-            <marker date="1491482014311" expanded="false" signature="17635:18110" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="221" column="0" lean-forward="true" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/shared/code.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/SeatData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="170" column="0" lean-forward="false" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
