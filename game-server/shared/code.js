@@ -26,6 +26,9 @@ module.exports = {
 		ROOM_MEMBER_FULL : 3002,	//房间满员;
 		NOT_MEMBER_ROOM : 3003,	//玩家不在本房间;
 		NOT_FIGER_SPECIALTYPE : 3004,	//不是指定的特殊牌;
+        ORDINARY_TYPE_ERROR:3005,	//普通牌型错误
+        HAVE_PLAYERED:3006,	//已经出过牌了
+        TYPE_SORT_ERROR:3007,		//倒水了
 	}
 };
 

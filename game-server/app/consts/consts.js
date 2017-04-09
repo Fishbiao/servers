@@ -20,8 +20,8 @@ module.exports = {
     //同花十三水（清龙）>十三水（一条龙）>十二皇族>三同花顺>三套炸弹>全大>全小>凑一色>四套冲三>五对冲三>六对半>三同花>三顺子
     SHISANSHUI_SPECIAL:{
         NULL:0,//不是特殊牌型
-        SANSHUNZI:1,//三顺子
-        SANTONGHUA:2,//三同花
+        SANTONGHUA:1,//三同花
+        SANSHUNZI:2,//三顺子
         LIUDUIBAN:3,//六对半
         WUDUICHONGSAN:4,//五对冲三
         SITAOCHONGSAN:5,//四套冲三(四套三条)
@@ -33,6 +33,19 @@ module.exports = {
         SHIERHUANGZU:11,//十二皇族
         SHISANSHUI:12,//十三水（一条龙）
         TONGHUASHISANSHUI:13,//同花十三水（清龙）
+    },
+
+    //普通牌类型
+    SHISANSHUI_ORDINARY:{
+        SANPAI:1,//散牌
+        YIDUI:2,//一对
+        LIANGDUI:3,//两对
+        SANDUI:4,//三条
+        SHUNZI:5,//顺子
+        TONGHUA:6,//同花
+        HULU:7,//葫芦
+        TIEZHI:8,//铁支
+        TONGHUASHUN:9//同花顺
     },
 
 

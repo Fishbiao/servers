@@ -224,7 +224,143 @@ pro.play = function (msg,session,next) {
     if(!room){//没找到房间
         return next(null,{code:Code.AREA.ROOM_NOT_FOUND});
     }
-    var _code = room.setPlayCards(playerId,msg.specialType , msg.cards);
+    var _code = room.setPlayCards(playerId ,msg.specialType, msg.ordinaryType , msg.cards);
+    //都出牌了，要进行各种积分
+    if(room.isAllPlay()){
+        //第一步，将不是特殊牌型的几个玩家的牌进行比较，分别得出第一二三轮的出牌顺序和得分情况。
+        var ordinarySeatList = {};//普通牌型的座位信息 {座位号：座位信息}
+        var specialSeatList = {};//特殊牌型的座位信息
+        for(var i = 0 ; i < room.seatDataList.length ; i++){
+            if(room.seatDataList[i].getspecialType() == consts.SHISANSHUI_SPECIAL.NULL){
+                ordinarySeatList[room.seatDataList[i].getSeatIndex()] = room.seatDataList[i];
+            }
+            else{
+                specialSeatList[room.seatDataList[i].getSeatIndex()] = room.seatDataList[i];
+            }
+        }
+
+        var firstCycle = [];//第一轮出牌顺序和内容*****
+        for(var seatIndex in ordinarySeatList){
+            var playData = {};
+            playData.seatIndex = seatIndex;//出牌的座位号
+            playData.ordinaryType = ordinarySeatList[seatIndex].getOrdinaryType();
+            playData.cards = ordinarySeatList[seatIndex].getHandData().slice(0,3);//打出的牌编号
+            firstCycle.push(playData);
+        }
+        //按照牌型从大到小排序
+        var firstCycleSort = _.sortBy(firstCycle,function(data){
+            return -data.ordinaryType;
+        });
+        var firstScore = [0,0,0,0];//第一轮得分，按座位号顺序*****
+        for(var i = 0 ; i < firstCycle.length ; i++){
+            for(var j = i + 1 ; j < firstCycle.length ; j++){
+                if(firstCycle[i].ordinaryType > firstCycle[j].ordinaryType){
+                    firstScore[firstCycle[i].seatIndex] = firstScore[firstCycle[i].seatIndex] + 1;
+                    firstScore[firstCycle[j].seatIndex] = firstScore[firstCycle[j].seatIndex] - 1;
+                }
+                else if(firstCycle[i].ordinaryType == firstCycle[j].ordinaryType){//比较里面的大小
+                    var comp = thirteenCards.compareSameType(firstCycle[i].cards,firstCycle[j].cards,firstCycle[i].ordinaryType);
+                    if(comp > 0)
+                    {
+                        firstScore[firstCycle[i].seatIndex] = firstScore[firstCycle[i].seatIndex] + 1;
+                        firstScore[firstCycle[j].seatIndex] = firstScore[firstCycle[j].seatIndex] - 1;
+                    }
+                    else if(comp < 0){
+                        firstScore[firstCycle[i].seatIndex] = firstScore[firstCycle[i].seatIndex] - 1;
+                        firstScore[firstCycle[j].seatIndex] = firstScore[firstCycle[j].seatIndex] + 1;
+                    }
+                }
+                else{
+                    firstScore[firstCycle[i].seatIndex] = firstScore[firstCycle[i].seatIndex] - 1;
+                    firstScore[firstCycle[j].seatIndex] = firstScore[firstCycle[j].seatIndex] + 1;
+                }
+            }
+        }
+
+        var secondCycle = [];//第二轮出牌顺序和内容,第一轮中按牌面大小顺序出*****
+        firstCycleSort.forEach(function(cycleData){
+            var seatData = ordinarySeatList[cycleData.seatIndex];
+            var playData = {};
+            playData.seatIndex = seatData.seatIndex;
+            playData.ordinaryType = seatData.getOrdinaryType();
+            playData.cards = seatData.getHandData().slice(3,8);//打出的牌编号
+            secondCycle.push(playData);
+        });
+        //按照牌型从大到小排序
+        var secondCycleSort = _.sortBy(secondCycle,function(data){
+            return -data.ordinaryType;
+        });
+        var secondScore = [0,0,0,0];//第一轮得分，按座位号顺序*****
+        for(var i = 0 ; i < secondCycle.length ; i++){
+            for(var j = i + 1 ; j < secondCycle.length ; j++){
+                if(secondCycle[i].ordinaryType > secondCycle[j].ordinaryType){
+                    secondScore[secondCycle[i].seatIndex] = secondScore[secondCycle[i].seatIndex] + 1;
+                    secondScore[secondCycle[j].seatIndex] = secondScore[secondCycle[j].seatIndex] - 1;
+                }
+                else if(secondCycle[i].ordinaryType == secondCycle[j].ordinaryType){//比较里面的大小
+                    var comp = thirteenCards.compareSameType(secondCycle[i].cards, secondCycle[j].cards, secondCycle[i].ordinaryType);
+                    if(comp > 0)
+                    {
+                        secondScore[secondCycle[i].seatIndex] = secondScore[secondCycle[i].seatIndex] + 1;
+                        secondScore[secondCycle[j].seatIndex] = secondScore[secondCycle[j].seatIndex] - 1;
+                    }
+                    else if(comp < 0){
+                        secondScore[secondCycle[i].seatIndex] = secondScore[secondCycle[i].seatIndex] - 1;
+                        secondScore[secondCycle[j].seatIndex] = secondScore[secondCycle[j].seatIndex] + 1;
+                    }
+                }
+                else{
+                    secondScore[secondCycle[i].seatIndex] = secondScore[secondCycle[i].seatIndex] - 1;
+                    secondScore[secondCycle[j].seatIndex] = secondScore[secondCycle[j].seatIndex] + 1;
+                }
+            }
+        }
+
+        var thirdCycle = [];//第三轮出牌顺序和内容,第二轮中按牌面大小顺序出*****
+        secondCycleSort.forEach(function(cycleData){
+            var seatData = ordinarySeatList[cycleData.seatIndex];
+            var playData = {};
+            playData.seatIndex = seatData.seatIndex;
+            playData.ordinaryType = seatData.getOrdinaryType();
+            playData.cards = seatData.getHandData().slice(8,13);//打出的牌编号
+            thirdCycle.push(playData);
+        });
+        var thirdScore = [0,0,0,0];//第一轮得分，按座位号顺序*****
+        for(var i = 0 ; i < thirdCycle.length ; i++){
+            for(var j = i + 1 ; j < thirdCycle.length ; j++){
+                if(thirdCycle[i].ordinaryType > thirdCycle[j].ordinaryType){
+                    thirdScore[thirdCycle[i].seatIndex] = thirdScore[thirdCycle[i].seatIndex] + 1;
+                    thirdScore[thirdCycle[j].seatIndex] = thirdScore[thirdCycle[j].seatIndex] - 1;
+                }
+                else if(thirdCycle[i].ordinaryType == thirdCycle[j].ordinaryType){//比较里面的大小
+                    var comp = thirteenCards.compareSameType(thirdCycle[i].cards,thirdCycle[j].cards,thirdCycle[i].ordinaryType);
+                    if(comp > 0)
+                    {
+                        thirdScore[thirdCycle[i].seatIndex] = thirdScore[thirdCycle[i].seatIndex] + 1;
+                        thirdScore[thirdCycle[j].seatIndex] = thirdScore[thirdCycle[j].seatIndex] - 1;
+                    }
+                    else if(comp < 0){
+                        thirdScore[thirdCycle[i].seatIndex] = thirdScore[thirdCycle[i].seatIndex] - 1;
+                        thirdScore[thirdCycle[j].seatIndex] = thirdScore[thirdCycle[j].seatIndex] + 1;
+                    }
+                }
+                else{
+                    thirdScore[thirdCycle[i].seatIndex] = thirdScore[thirdCycle[i].seatIndex] - 1;
+                    thirdScore[thirdCycle[j].seatIndex] = thirdScore[thirdCycle[j].seatIndex] + 1;
+                }
+            }
+        }
+
+        var specialCycle = [];//特殊牌型出牌*****
+        for(var seatIndex in specialSeatList){
+            var playData = {};
+            playData.seatIndex = seatIndex;//出牌的座位号
+            playData.ordinaryType = specialSeatList[seatIndex].getOrdinaryType();
+            playData.cards = specialSeatList[seatIndex].getHandData();//打出的牌编号
+            specialCycle.push(playData);
+        }
+    }
+
     return next(null,{code:_code});
 }
 

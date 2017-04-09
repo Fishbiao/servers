@@ -62,7 +62,9 @@ module.exports = {
         //特殊牌型的类型，SHISANSHUI_SPECIAL中的值
         "optional uInt32 specialType": 1,
 		//非特殊牌型时的顺序,如果是特殊牌就不用发
-        "repeated uInt32 cards": 2,		
+        "repeated uInt32 cards": 2,	
+		//非特殊牌型的类型，SHISANSHUI_ORDINARY中的值,长度为三的数组
+        "repeated uInt32 ordinaryType": 3,		
     },
 
 
