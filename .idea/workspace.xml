@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="99cedcdd-9876-4e1b-a521-623a9f83b665" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/app/consts/consts.js" afterPath="$PROJECT_DIR$/game-server/app/consts/consts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js" afterPath="$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/config/clientProtos.js" afterPath="$PROJECT_DIR$/game-server/config/clientProtos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/shared/code.js" afterPath="$PROJECT_DIR$/game-server/shared/code.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +24,8 @@
       <file leaf-file-name="playerHandler.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="260" column="84" lean-forward="false" selection-start-line="260" selection-start-column="84" selection-end-line="260" selection-end-column="84" />
+            <state relative-caret-position="422">
+              <caret line="468" column="14" lean-forward="true" selection-start-line="468" selection-start-column="14" selection-end-line="468" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -37,7 +34,7 @@
       <file leaf-file-name="RoomData.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3553">
+            <state relative-caret-position="821">
               <caret line="187" column="64" lean-forward="false" selection-start-line="187" selection-start-column="64" selection-end-line="187" selection-end-column="64" />
               <folding />
             </state>
@@ -47,8 +44,8 @@
       <file leaf-file-name="SeatData.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/SeatData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3591">
-              <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="197" column="18" lean-forward="false" selection-start-line="197" selection-start-column="4" selection-end-line="197" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -57,8 +54,8 @@
       <file leaf-file-name="thirteenCards.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17518">
-              <caret line="939" column="4" lean-forward="false" selection-start-line="939" selection-start-column="4" selection-end-line="939" selection-end-column="4" />
+            <state relative-caret-position="269">
+              <caret line="1162" column="1" lean-forward="true" selection-start-line="1162" selection-start-column="1" selection-end-line="1162" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="n#!!block;n#isShierhuangzuByPkIds#0" expanded="false" />
@@ -90,8 +87,8 @@
       <file leaf-file-name="consts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app/consts/consts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state relative-caret-position="218">
+              <caret line="44" column="15" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -121,16 +118,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>isShunzi_10</find>
-      <find>dataApi</find>
-      <find>server.crt</find>
-      <find>bankerSeatIndex</find>
-      <find>rea.playerHandler.ready</find>
-      <find>distributeCard</find>
-      <find>originalCards</find>
-      <find>specialType</find>
-      <find>setHandData</find>
-      <find>isReady</find>
       <find>setIsReady</find>
       <find>isPlay</find>
       <find>setPlayCards</find>
@@ -149,8 +136,18 @@
       <find>secondCycle</find>
       <find>firstScore</find>
       <find>slice</find>
-      <find>thirdScore</find>
       <find>三套炸弹</find>
+      <find>compareSameType</find>
+      <find>specialSeatList</find>
+      <find>getspecialType</find>
+      <find>compareYiduiPkIds</find>
+      <find>SANDUI</find>
+      <find>arraysubtract</find>
+      <find>compareLiangduiPkIds</find>
+      <find>compareSanpaiPkIds</find>
+      <find>thirdScore</find>
+      <find>比较普通牌型大小</find>
+      <find>pointsB</find>
     </findStrings>
     <dirStrings>
       <dir>D:\chessProject\servers\game-server</dir>
@@ -207,12 +204,12 @@
         <option value="$PROJECT_DIR$/game-server/config/serverProtos.js" />
         <option value="$PROJECT_DIR$/game-server/config/data/CommonParameter.json" />
         <option value="$PROJECT_DIR$/game-server/config/data/code.json" />
-        <option value="$PROJECT_DIR$/game-server/app/domain/entity/SeatData.js" />
         <option value="$PROJECT_DIR$/game-server/shared/code.js" />
         <option value="$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js" />
-        <option value="$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js" />
-        <option value="$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js" />
         <option value="$PROJECT_DIR$/game-server/app/consts/consts.js" />
+        <option value="$PROJECT_DIR$/game-server/app/domain/entity/SeatData.js" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js" />
+        <option value="$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js" />
       </list>
     </option>
   </component>
@@ -249,6 +246,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -325,9 +323,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="consts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -534,11 +553,12 @@
       <workItem from="1491485858219" duration="8068000" />
       <workItem from="1491732551284" duration="18814000" />
       <workItem from="1491754415344" duration="65000" />
+      <workItem from="1491831247507" duration="10662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167669000" />
+    <option name="totallyTimeSpent" value="178331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -546,20 +566,20 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14947917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30232558" sideWeight="0.53333336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30232558" sideWeight="0.53541666" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30232558" sideWeight="0.46458334" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37632135" sideWeight="0.46666667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30232558" sideWeight="0.46666667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37632135" sideWeight="0.46666667" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -877,14 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/SeatData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3591">
-          <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/shared/code.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -893,18 +905,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/SeatData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="197" column="18" lean-forward="false" selection-start-line="197" selection-start-column="4" selection-end-line="197" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3553">
+        <state relative-caret-position="821">
           <caret line="187" column="64" lean-forward="false" selection-start-line="187" selection-start-column="64" selection-end-line="187" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/consts/consts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="44" column="15" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17518">
-          <caret line="939" column="4" lean-forward="false" selection-start-line="939" selection-start-column="4" selection-end-line="939" selection-end-column="4" />
+        <state relative-caret-position="269">
+          <caret line="1162" column="1" lean-forward="true" selection-start-line="1162" selection-start-column="1" selection-end-line="1162" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#isShierhuangzuByPkIds#0" expanded="false" />
@@ -912,18 +940,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/consts/consts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="260" column="84" lean-forward="false" selection-start-line="260" selection-start-column="84" selection-end-line="260" selection-end-column="84" />
+        <state relative-caret-position="422">
+          <caret line="468" column="14" lean-forward="true" selection-start-line="468" selection-start-column="14" selection-end-line="468" selection-end-column="14" />
           <folding />
         </state>
       </provider>
