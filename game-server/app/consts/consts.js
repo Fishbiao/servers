@@ -40,7 +40,7 @@ module.exports = {
         SANPAI:1,//散牌
         YIDUI:2,//一对
         LIANGDUI:3,//两对
-        SANDUI:4,//三条
+        SANTIAO:4,//三条
         SHUNZI:5,//顺子
         TONGHUA:6,//同花
         HULU:7,//葫芦
