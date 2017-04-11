@@ -252,6 +252,7 @@ pro.play = function (msg,session,next) {
             return -data.ordinaryType;
         });
         var firstScore = [0,0,0,0];//第一轮得分，按座位号顺序*****
+        var firstDaqiangScore = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]];
         for(var i = 0 ; i < firstCycle.length ; i++){
             for(var j = i + 1 ; j < firstCycle.length ; j++){
                 if(firstCycle[i].ordinaryType > firstCycle[j].ordinaryType){
@@ -259,8 +260,11 @@ pro.play = function (msg,session,next) {
                     if(firstCycle[i].ordinaryType == consts.SHISANSHUI_ORDINARY.SANTIAO){
                         rate = 3;//头墩为冲三，3分
                     }
-                    firstScore[firstCycle[i].seatIndex] = firstScore[firstCycle[i].seatIndex] + 1*rate;
-                    firstScore[firstCycle[j].seatIndex] = firstScore[firstCycle[j].seatIndex] - 1*rate;
+                    firstScore[firstCycle[i].seatIndex] += 1*rate;
+                    firstScore[firstCycle[j].seatIndex] -= 1*rate;
+
+                    firstDaqiangScore[firstCycle[i].seatIndex][firstCycle[j].seatIndex] += 1;
+                    firstDaqiangScore[firstCycle[j].seatIndex][firstCycle[i].seatIndex] -= 1;
                 }
                 else if(firstCycle[i].ordinaryType == firstCycle[j].ordinaryType){//比较里面的大小
                     var comp = thirteenCards.compareSameType(firstCycle[i].cards,firstCycle[j].cards,firstCycle[i].ordinaryType);
@@ -270,16 +274,22 @@ pro.play = function (msg,session,next) {
                         if(firstCycle[i].ordinaryType == consts.SHISANSHUI_ORDINARY.SANTIAO){
                             rate = 3;//头墩为冲三，3分
                         }
-                        firstScore[firstCycle[i].seatIndex] = firstScore[firstCycle[i].seatIndex] + 1*rate;
-                        firstScore[firstCycle[j].seatIndex] = firstScore[firstCycle[j].seatIndex] - 1*rate;
+                        firstScore[firstCycle[i].seatIndex] += 1*rate;
+                        firstScore[firstCycle[j].seatIndex] -= 1*rate;
+
+                        firstDaqiangScore[firstCycle[i].seatIndex][firstCycle[j].seatIndex] += 1;
+                        firstDaqiangScore[firstCycle[j].seatIndex][firstCycle[i].seatIndex] -= 1;
                     }
                     else if(comp < 0){
                         var rate = 1;
                         if(firstCycle[j].ordinaryType == consts.SHISANSHUI_ORDINARY.SANTIAO){
                             rate = 3;//头墩为冲三，3分
                         }
-                        firstScore[firstCycle[i].seatIndex] = firstScore[firstCycle[i].seatIndex] - 1*rate;
-                        firstScore[firstCycle[j].seatIndex] = firstScore[firstCycle[j].seatIndex] + 1*rate;
+                        firstScore[firstCycle[i].seatIndex] -= 1*rate;
+                        firstScore[firstCycle[j].seatIndex] += 1*rate;
+
+                        firstDaqiangScore[firstCycle[i].seatIndex][firstCycle[j].seatIndex] -= 1;
+                        firstDaqiangScore[firstCycle[j].seatIndex][firstCycle[i].seatIndex] += 1;
                     }
                 }
                 else{
@@ -287,8 +297,11 @@ pro.play = function (msg,session,next) {
                     if(firstCycle[j].ordinaryType == consts.SHISANSHUI_ORDINARY.SANTIAO){
                         rate = 3;//头墩为冲三，3分
                     }
-                    firstScore[firstCycle[i].seatIndex] = firstScore[firstCycle[i].seatIndex] - 1*rate;
-                    firstScore[firstCycle[j].seatIndex] = firstScore[firstCycle[j].seatIndex] + 1*rate;
+                    firstScore[firstCycle[i].seatIndex] -= 1*rate;
+                    firstScore[firstCycle[j].seatIndex] += 1*rate;
+
+                    firstDaqiangScore[firstCycle[i].seatIndex][firstCycle[j].seatIndex] -= 1;
+                    firstDaqiangScore[firstCycle[j].seatIndex][firstCycle[i].seatIndex] += 1;
                 }
             }
         }
@@ -307,6 +320,7 @@ pro.play = function (msg,session,next) {
             return -data.ordinaryType;
         });
         var secondScore = [0,0,0,0];//第二轮得分，按座位号顺序*****
+        var secondDaqiangScore = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]];
         for(var i = 0 ; i < secondCycle.length ; i++){
             for(var j = i + 1 ; j < secondCycle.length ; j++){
                 if(secondCycle[i].ordinaryType > secondCycle[j].ordinaryType){
@@ -320,8 +334,11 @@ pro.play = function (msg,session,next) {
                     else if(firstCycle[i].ordinaryType == consts.SHISANSHUI_ORDINARY.TONGHUASHUN){
                         rate = 9;//同花顺在中墩，9分
                     }
-                    secondScore[secondCycle[i].seatIndex] = secondScore[secondCycle[i].seatIndex] + 1*rate;
-                    secondScore[secondCycle[j].seatIndex] = secondScore[secondCycle[j].seatIndex] - 1*rate;
+                    secondScore[secondCycle[i].seatIndex] += 1*rate;
+                    secondScore[secondCycle[j].seatIndex] -= 1*rate;
+
+                    secondDaqiangScore[firstCycle[i].seatIndex][firstCycle[j].seatIndex] += 1;
+                    secondDaqiangScore[firstCycle[j].seatIndex][firstCycle[i].seatIndex] -= 1;
                 }
                 else if(secondCycle[i].ordinaryType == secondCycle[j].ordinaryType){//比较里面的大小
                     var comp = thirteenCards.compareSameType(secondCycle[i].cards, secondCycle[j].cards, secondCycle[i].ordinaryType);
@@ -337,8 +354,11 @@ pro.play = function (msg,session,next) {
                         else if(firstCycle[i].ordinaryType == consts.SHISANSHUI_ORDINARY.TONGHUASHUN){
                             rate = 9;//同花顺在中墩，9分
                         }
-                        secondScore[secondCycle[i].seatIndex] = secondScore[secondCycle[i].seatIndex] + 1*rate;
-                        secondScore[secondCycle[j].seatIndex] = secondScore[secondCycle[j].seatIndex] - 1*rate;
+                        secondScore[secondCycle[i].seatIndex] += 1*rate;
+                        secondScore[secondCycle[j].seatIndex] -= 1*rate;
+
+                        secondDaqiangScore[firstCycle[i].seatIndex][firstCycle[j].seatIndex] += 1;
+                        secondDaqiangScore[firstCycle[j].seatIndex][firstCycle[i].seatIndex] -= 1;
                     }
                     else if(comp < 0){
                         var rate = 1;
@@ -351,8 +371,11 @@ pro.play = function (msg,session,next) {
                         else if(firstCycle[j].ordinaryType == consts.SHISANSHUI_ORDINARY.TONGHUASHUN){
                             rate = 9;//同花顺在中墩，9分
                         }
-                        secondScore[secondCycle[i].seatIndex] = secondScore[secondCycle[i].seatIndex] - 1*rate;
-                        secondScore[secondCycle[j].seatIndex] = secondScore[secondCycle[j].seatIndex] + 1*rate;
+                        secondScore[secondCycle[i].seatIndex] -= 1*rate;
+                        secondScore[secondCycle[j].seatIndex] += 1*rate;
+
+                        secondDaqiangScore[firstCycle[i].seatIndex][firstCycle[j].seatIndex] -= 1;
+                        secondDaqiangScore[firstCycle[j].seatIndex][firstCycle[i].seatIndex] += 1;
                     }
                 }
                 else{
@@ -366,8 +389,11 @@ pro.play = function (msg,session,next) {
                     else if(firstCycle[j].ordinaryType == consts.SHISANSHUI_ORDINARY.TONGHUASHUN){
                         rate = 9;//同花顺在中墩，9分
                     }
-                    secondScore[secondCycle[i].seatIndex] = secondScore[secondCycle[i].seatIndex] - 1*rate;
-                    secondScore[secondCycle[j].seatIndex] = secondScore[secondCycle[j].seatIndex] + 1*rate;
+                    secondScore[secondCycle[i].seatIndex] -= 1*rate;
+                    secondScore[secondCycle[j].seatIndex] += 1*rate;
+
+                    secondDaqiangScore[firstCycle[i].seatIndex][firstCycle[j].seatIndex] -= 1;
+                    secondDaqiangScore[firstCycle[j].seatIndex][firstCycle[i].seatIndex] += 1;
                 }
             }
         }
@@ -382,6 +408,7 @@ pro.play = function (msg,session,next) {
             thirdCycle.push(playData);
         });
         var thirdScore = [0,0,0,0];//第三轮得分，按座位号顺序*****
+        var thirdDaqiangScore = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]];
         for(var i = 0 ; i < thirdCycle.length ; i++){
             for(var j = i + 1 ; j < thirdCycle.length ; j++){
                 if(thirdCycle[i].ordinaryType > thirdCycle[j].ordinaryType){
@@ -392,8 +419,11 @@ pro.play = function (msg,session,next) {
                     else if(firstCycle[i].ordinaryType == consts.SHISANSHUI_ORDINARY.TONGHUASHUN){
                         rate = 5;//同花顺在中墩，5分
                     }
-                    thirdScore[thirdCycle[i].seatIndex] = thirdScore[thirdCycle[i].seatIndex] + 1*rate;
-                    thirdScore[thirdCycle[j].seatIndex] = thirdScore[thirdCycle[j].seatIndex] - 1*rate;
+                    thirdScore[thirdCycle[i].seatIndex] += 1*rate;
+                    thirdScore[thirdCycle[j].seatIndex] -= 1*rate;
+
+                    thirdDaqiangScore[firstCycle[i].seatIndex][firstCycle[j].seatIndex] += 1;
+                    thirdDaqiangScore[firstCycle[j].seatIndex][firstCycle[i].seatIndex] -= 1;
                 }
                 else if(thirdCycle[i].ordinaryType == thirdCycle[j].ordinaryType){//比较里面的大小
                     var comp = thirteenCards.compareSameType(thirdCycle[i].cards,thirdCycle[j].cards,thirdCycle[i].ordinaryType);
@@ -406,8 +436,11 @@ pro.play = function (msg,session,next) {
                         else if(firstCycle[i].ordinaryType == consts.SHISANSHUI_ORDINARY.TONGHUASHUN){
                             rate = 5;//同花顺在中墩，5分
                         }
-                        thirdScore[thirdCycle[i].seatIndex] = thirdScore[thirdCycle[i].seatIndex] + 1*rate;
-                        thirdScore[thirdCycle[j].seatIndex] = thirdScore[thirdCycle[j].seatIndex] - 1*rate;
+                        thirdScore[thirdCycle[i].seatIndex] += 1*rate;
+                        thirdScore[thirdCycle[j].seatIndex] -= 1*rate;
+
+                        thirdDaqiangScore[firstCycle[i].seatIndex][firstCycle[j].seatIndex] += 1;
+                        thirdDaqiangScore[firstCycle[j].seatIndex][firstCycle[i].seatIndex] -= 1;
                     }
                     else if(comp < 0){
                         var rate = 1;
@@ -417,8 +450,11 @@ pro.play = function (msg,session,next) {
                         else if(firstCycle[j].ordinaryType == consts.SHISANSHUI_ORDINARY.TONGHUASHUN){
                             rate = 5;//同花顺在中墩，5分
                         }
-                        thirdScore[thirdCycle[i].seatIndex] = thirdScore[thirdCycle[i].seatIndex] - 1*rate;
-                        thirdScore[thirdCycle[j].seatIndex] = thirdScore[thirdCycle[j].seatIndex] + 1*rate;
+                        thirdScore[thirdCycle[i].seatIndex] -= 1*rate;
+                        thirdScore[thirdCycle[j].seatIndex] += 1*rate;
+
+                        thirdDaqiangScore[firstCycle[i].seatIndex][firstCycle[j].seatIndex] -= 1;
+                        thirdDaqiangScore[firstCycle[j].seatIndex][firstCycle[i].seatIndex] += 1;
                     }
                 }
                 else{
@@ -429,8 +465,11 @@ pro.play = function (msg,session,next) {
                     else if(firstCycle[j].ordinaryType == consts.SHISANSHUI_ORDINARY.TONGHUASHUN){
                         rate = 5;//同花顺在中墩，5分
                     }
-                    thirdScore[thirdCycle[i].seatIndex] = thirdScore[thirdCycle[i].seatIndex] - 1*rate;
-                    thirdScore[thirdCycle[j].seatIndex] = thirdScore[thirdCycle[j].seatIndex] + 1*rate;
+                    thirdScore[thirdCycle[i].seatIndex] -= 1*rate;
+                    thirdScore[thirdCycle[j].seatIndex] += 1*rate;
+
+                    thirdDaqiangScore[firstCycle[i].seatIndex][firstCycle[j].seatIndex] -= 1;
+                    thirdDaqiangScore[firstCycle[j].seatIndex][firstCycle[i].seatIndex] += 1;
                 }
             }
         }
@@ -448,26 +487,62 @@ pro.play = function (msg,session,next) {
         for(var i = 0 ; i < specialCycle.length ; i++) {//特殊牌之间的比较得分
             for (var j = i + 1; j < specialCycle.length; j++) {
                 if(specialCycle[i].specialType > specialCycle[j].specialType){
-                    specialScore[specialCycle[i].seatIndex] = specialScore[specialCycle[i].seatIndex] + 1*specialScoreTemplate[specialCycle[i].specialType];
-                    specialScore[specialCycle[j].seatIndex] = specialScore[specialCycle[j].seatIndex] - 1*specialScoreTemplate[specialCycle[i].specialType];
+                    specialScore[specialCycle[i].seatIndex] += 1*specialScoreTemplate[specialCycle[i].specialType];
+                    specialScore[specialCycle[j].seatIndex] -= 1*specialScoreTemplate[specialCycle[i].specialType];
                 }
                 else if(specialCycle[i].specialType < specialCycle[j].specialType){
-                    specialScore[specialCycle[i].seatIndex] = specialScore[specialCycle[i].seatIndex] - 1*specialScoreTemplate[specialCycle[j].specialType];
-                    specialScore[specialCycle[j].seatIndex] = specialScore[specialCycle[j].seatIndex] + 1*specialScoreTemplate[specialCycle[j].specialType];
+                    specialScore[specialCycle[i].seatIndex] -= 1*specialScoreTemplate[specialCycle[j].specialType];
+                    specialScore[specialCycle[j].seatIndex] += 1*specialScoreTemplate[specialCycle[j].specialType];
                 }
 
             }
         }
         for(var i = 0 ; i < specialCycle.length ; i++) {//特殊牌和普通牌之间的比较得分
             for(var j = 0 ; j < ordinarySeatList.length ; j++){
-                specialScore[specialCycle[i].seatIndex] = specialScore[specialCycle[i].seatIndex] + 1*specialScoreTemplate[specialCycle[i].specialType];
-                specialScore[ordinarySeatList[j].seatIndex] = specialScore[ordinarySeatList[j].seatIndex] - 1*specialScoreTemplate[specialCycle[i].specialType];
+                specialScore[specialCycle[i].seatIndex] += 1*specialScoreTemplate[specialCycle[i].specialType];
+                specialScore[ordinarySeatList[j].seatIndex] -= 1*specialScoreTemplate[specialCycle[i].specialType];
             }
         }
 
         //----------到这里，出牌顺序和得分计算完成，接下来计算打枪和全垒打
         //打枪计算
+        var daqiangData = [];//[[a,b],[]]表示座位号a对座位号b打枪*****
+        var daqiangScore = {};//打钱者加的分数，也就是中枪者减的分数*****
+        if(room.seatDataList.length >= 3){//3人和3人以上的局才算打枪
+            for(var i = 0 ; i < room.seatDataList.length ; i ++){
+                for(var j = i + 1 ; j < room.seatDataList.length ; j ++){
+                    if(firstDaqiangScore[i][j] + secondDaqiangScore[i][j] + thirdDaqiangScore[i][j] == 3){//表示i对j打枪,i,j就是座位顺序 3表示三轮
+                        var temp = [];
+                        temp.push(i);
+                        temp.push(j);
+                        daqiangData.push(temp);
+                        //daqiangScore[] = room.seatDataList.length - 1
+                    }
+                }
+            }
+            daqiangScore = room.seatDataList.length - 1;
+        }
 
+        //计算全垒打
+        quanleidaIndex = -1;//全垒打的座位号*****
+        quanleidaScore = [0,0,0,0];
+        if(room.seatDataList.length == 4){//4人局才算全垒打
+            var daqiangCount = [0,0,0,0];
+            for(var i = 0 ; i < daqiangData.length ; i ++){
+                daqiangCount[daqiangData[i][0]] += 1;
+            }
+            for(var i = 0 ; i < daqiangCount.length ; i ++){
+                if(daqiangCount[i] == room.seatDataList.length - 1){
+                    quanleidaIndex = i;
+                    break;
+                }
+            }
+            if(quanleidaIndex != -1){//有全垒打者
+                for(var i = 0 ; i < room.seatDataList.length ; i ++){
+                    quanleidaScore[i] += (quanleidaIndex == room.seatDataList[i].seatIndex ? 1 : -1)*aaaa;
+                }
+            }
+        }
 
 
     }
