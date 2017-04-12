@@ -73,5 +73,32 @@ module.exports = {
 	//获得手牌
 	"seat.getHandCards":{
         "repeated uInt32 cards": 1,
-	}
+	},
+
+    //出牌数据
+    "showCardData":{
+        "optional uInt32 seatIndex": 1,//出牌的座位号
+        "optional uInt32 ordinaryType": 2,//牌型
+        "repeated uInt32 cards": 3//打出的牌编号
+    },
+    //打枪数据
+    "shotData":{
+        "optional uInt32 fire": 1,//打枪者
+        "optional uInt32 beShot": 2,//中枪者
+    },
+    //十三水结果
+    "thirtyCards.result":{
+        "repeated showCardData firstCycle":1,//第一轮出牌数据
+        "repeated showCardData secondCycle":2,//第二轮出牌数据
+        "repeated showCardData thirdCycle":3,//第三轮出牌数据
+        "repeated showCardData specialCycle":4,//特殊牌出牌数据
+        "repeated uInt32 firstScore":5,//第一轮得分，按座位号顺
+        "repeated uInt32 secondScore":6,//第二轮得分，按座位号顺
+        "repeated uInt32 thirdScore":7,//第三轮得分，按座位号顺
+        "repeated uInt32 specialScore":8,//特殊牌出牌得分，按座位号顺
+        "repeated shotData daqiangData":9,//打枪数据
+        "repeated uInt32 daqiangScore":10,//打枪结果每个座位应该加减的分数
+        "optional uInt32 quanleidaIndex":11,//全垒打的座位号 -1=没有全垒打
+        "repeated uInt32 quanleidaScore":12,//全垒打结果每个座位应该加减的分数
+    }
 };
