@@ -95,6 +95,10 @@ module.exports = {
         "optional uInt32 code": 1,
     },
 
+	//完成本局
+    "area.playerHandler.finish": {
+        "optional uInt32 code": 1,
+	}
 
 
 

@@ -66,7 +66,12 @@ module.exports = {
 		//非特殊牌型的类型，SHISANSHUI_ORDINARY中的值,长度为三的数组
         "repeated uInt32 ordinaryType": 3,		
     },
-
+	
+	//完成本局
+    "area.playerHandler.finish": {
+		//是否准备
+		"optional uInt32 isReady": 1
+	}
 
 
 

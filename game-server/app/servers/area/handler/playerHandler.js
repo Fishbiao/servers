@@ -547,7 +547,7 @@ pro.play = function (msg,session,next) {
         //----------到这里，出牌顺序和得分计算完成，接下来计算打枪和全垒打
         //打枪计算
         var daqiangData = [];//[[a,b],[]]表示座位号a对座位号b打枪*****
-        var daqiangScore = [0,0,0,0];//打枪结果每个座位应该加减的分数*****
+        var daqiangScore = [0,0,0,0];//打枪结果每个座位应该加减的分数，按座位号顺序*****
         //if(room.seatDataList.length >= 3){//3人和3人以上的局才算打枪
             for(var i = 0 ; i < room.seatDataList.length ; i ++){
                 for(var j = i + 1 ; j < room.seatDataList.length ; j ++){
@@ -566,7 +566,7 @@ pro.play = function (msg,session,next) {
 
         //计算全垒打
         var quanleidaIndex = -1;//全垒打的座位号*****
-        var quanleidaScore = [0,0,0,0];//全垒打结果每个座位应该加减的分数*****
+        var quanleidaScore = [0,0,0,0];//全垒打结果每个座位应该加减的分数，按座位号顺序*****
         if(room.seatDataList.length == 4){//4人局才算全垒打
             var daqiangCount = [0,0,0,0];
             for(var i = 0 ; i < daqiangData.length ; i ++){
@@ -591,19 +591,65 @@ pro.play = function (msg,session,next) {
         result.secondCycle = secondCycle;//第二轮出牌数据
         result.thirdCycle = thirdCycle;//第三轮出牌数据
         result.specialCycle = specialCycle;//特殊牌出牌数据
+
         result.firstScore = firstScore;//第一轮得分，按座位号顺
         result.secondScore = secondScore;//第二轮得分，按座位号顺
         result.thirdScore = thirdScore;//第三轮得分，按座位号顺
         result.specialScore = specialScore;//特殊牌出牌得分，按座位号顺
+
         result.daqiangData = daqiangData;//打枪数据
         result.daqiangScore = daqiangScore;//打枪结果每个座位应该加减的分数
+
         result.quanleidaIndex = quanleidaIndex;//全垒打的座位号 -1=没有全垒打
         result.quanleidaScore = quanleidaScore;//全垒打结果每个座位应该加减的分数
+
         room.pushMsgToMembers('thirtyCards.result',result);
 
+        room.setLastResult(result);
     }
 
     return next(null,{code:_code});
+}
+
+//完成本局
+pro.finish = function (msg,session,next) {
+    var playerId = session.get('playerId');
+    var player = area.getPlayer(playerId);
+    logger.debug('play playerId = %s data=%j', playerId, msg);
+
+    var room = roomManager.getRoom(player.roomId);
+    if(!room){//没找到房间
+        return next(null,{code:Code.AREA.ROOM_NOT_FOUND});
+    }
+
+    var isReady = msg.isReady == 1 ? true :false;
+
+    //结算上一场的结果，给各个玩家发送数据
+    var result = room.getLastResult();
+
+    var totalScore = [0,0,0,0];//按桌位顺序
+    for(var i = 0 ; i < room.seatDataList.length ; i ++){
+        if(room.seatDataList[i].playerId == playerId){
+            totalScore[i] += result.firstScore[i];
+            totalScore[i] += result.secondScore[i];
+            totalScore[i] += result.thirdScore[i];
+            totalScore[i] += result.specialScore[i];
+            totalScore[i] += result.daqiangScore[i];
+            totalScore[i] += result.quanleidaScore[i];
+
+            var playerId = room.seatDataList[i].playerId;
+            var player = area.getPlayer(playerId);
+            if(!!player){
+                player.set('goldCnt',player.goldCnt + totalScore[i]);
+                room.seatDataList[i].clearn();
+                room.getReadByPlayerId(playerId);
+            }
+        }
+    }
+
+    room.setLastResult(null);
+
+    return next(null,{code:code.OK});
 }
 
 //=================================================取名字===============================================================
