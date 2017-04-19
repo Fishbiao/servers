@@ -95,6 +95,12 @@
               console.log("success area.playerHandler.ready data=%j",data);
           });
       }
+
+      function play(){
+          pomelo.request("area.playerHandler.play",{specialType:0,ordinaryType:[1,1,1]},function(data){
+              console.log("success area.playerHandler.play data=%j",data);
+          });
+      }
     </script>
   </head>
   <body>
@@ -125,9 +131,12 @@
         <input id="roomId" type="text" value="" >
         <input id="enterRoom" type="button" value="enterRoom" onclick="enterRoom()"/>
       </div>
-        <div class="g-button">
-            <input id="ready" type="button" value="ready" onclick="ready()"/>
-        </div>
+      <div class="g-button">
+          <input id="ready" type="button" value="ready" onclick="ready()"/>
+      </div>
+      <div class="g-button">
+        <input id="play" type="button" value="play" onclick="play()"/>
+      </div>
     </div>
   </body>
 </html>

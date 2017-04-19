@@ -225,6 +225,10 @@ pro.play = function (msg,session,next) {
     if(!room){//没找到房间
         return next(null,{code:Code.AREA.ROOM_NOT_FOUND});
     }
+
+    //测试
+    msg.cards= thirteenCards.offlineSort(room.getSeatByPlayerId(playerId).getHandData());
+
     var _code = room.setPlayCards(playerId ,msg.specialType, msg.ordinaryType , msg.cards);
     //都出牌了，要进行各种积分
     if(room.isAllPlay()){
@@ -241,7 +245,7 @@ pro.play = function (msg,session,next) {
         }
 
         //结果计算完毕，把结果推送给玩家
-        var result = thirteenCards.calcResult(ordinarySeatList,ordinarySeatList);
+        var result = thirteenCards.calcResult(ordinarySeatList,specialSeatList);
 
         room.pushMsgToMembers('thirtyCards.result',result);
 
