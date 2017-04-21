@@ -4,5 +4,7 @@ game-server/app/domain
 game-server/app/dao
 game-server/node_modules
 game-server/logs
+game-server/config/mysql.json
 authServer/node_modules
+authServer/config/mysql.json
 web-server/node_modules
