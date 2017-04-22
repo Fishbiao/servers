@@ -58,7 +58,11 @@ module.exports = {
         // 碰牌数据
         "repeated uInt32 pengData": 5,
         // 杠牌数据
-        "repeated uInt32 gangData": 6
+        "repeated uInt32 gangData": 6,
+        // playerName
+        "repeated string playerName": 7,
+        // gold
+        "repeated string goldCnt": 8,
     },
     // 座位的公开信息
     "seatData.push": {
