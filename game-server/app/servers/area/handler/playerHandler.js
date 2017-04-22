@@ -226,9 +226,6 @@ pro.play = function (msg,session,next) {
         return next(null,{code:Code.AREA.ROOM_NOT_FOUND});
     }
 
-    //测试
-    msg.cards= thirteenCards.offlineSort(room.getSeatByPlayerId(playerId).getHandData());
-
     var _code = room.setPlayCards(playerId ,msg.specialType, msg.ordinaryType , msg.cards);
     //都出牌了，要进行各种积分
     if(room.isAllPlay()){

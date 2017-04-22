@@ -1,3 +1,6 @@
+cd ./authServer && npm install -d
+echo '============   game-server npm installed ============'
+cd ..
 cd ./game-server && npm install -d
 echo '============   game-server npm installed ============'
 cd ..
