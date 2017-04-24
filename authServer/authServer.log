@@ -1,0 +1,79 @@
+connect.multipart() will be removed in connect 3.0
+visit https://github.com/senchalabs/connect/wiki/Connect-3.0 for alternatives
+connect.limit() will be removed in connect 3.0
+events.js:141
+      throw er; // Unha[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m11ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m2ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m0ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m0ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m0ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m2ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m2ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m0ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m
+[token] fail to decrypt token. undefined
+authCheck token = undefined  result=null
+[90mPOST /authCheck [32m200 [90m1ms - 17b[0m

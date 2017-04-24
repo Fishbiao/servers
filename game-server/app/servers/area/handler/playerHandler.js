@@ -246,14 +246,35 @@ pro.play = function (msg,session,next) {
 
         room.pushMsgToMembers('thirtyCards.result',result);
 
-        room.setLastResult(result);
+        //room.setLastResult(result);
+        var totalScore = [0,0,0,0];//按桌位顺序
+        for(var i = 0 ; i < room.seatDataList.length ; i ++){
+            if(room.seatDataList[i].playerId == playerId){
+                totalScore[i] += result.firstScore[i];
+                totalScore[i] += result.secondScore[i];
+                totalScore[i] += result.thirdScore[i];
+                totalScore[i] += result.specialScore[i];
+                totalScore[i] += result.daqiangScore[i];
+                totalScore[i] += result.quanleidaScore[i];
+
+                var playerId = room.seatDataList[i].playerId;
+                var player = area.getPlayer(playerId);
+                if(!!player){
+                    var gold = player.goldCnt + totalScore[i];
+                    player.set('goldCnt',(player.goldCnt + totalScore[i]) >= 0 ? gold : 0);
+                    room.seatDataList[i].clearn();
+
+                    room.seatDataList[i].setIsReady(false);
+                }
+            }
+        }
     }
 
     return next(null,{code:_code});
 }
 
 //完成本局
-pro.finish = function (msg,session,next) {
+/*pro.finish = function (msg,session,next) {
     var playerId = session.get('playerId');
     var player = area.getPlayer(playerId);
     logger.debug('play playerId = %s data=%j', playerId, msg);
@@ -281,7 +302,8 @@ pro.finish = function (msg,session,next) {
             var playerId = room.seatDataList[i].playerId;
             var player = area.getPlayer(playerId);
             if(!!player){
-                player.set('goldCnt',player.goldCnt + totalScore[i]);
+                var gold = player.goldCnt + totalScore[i];
+                player.set('goldCnt',(player.goldCnt + totalScore[i]) >= 0 ? gold : 0);
                 room.seatDataList[i].clearn();
                 room.getReadByPlayerId(playerId);
             }
@@ -290,8 +312,8 @@ pro.finish = function (msg,session,next) {
 
     room.setLastResult(null);
 
-    return next(null,{code:code.OK});
-}
+    return next(null,{code:Code.OK});
+}*/
 
 //=================================================取名字===============================================================
 /*
