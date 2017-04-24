@@ -249,24 +249,23 @@ pro.play = function (msg,session,next) {
         //room.setLastResult(result);
         var totalScore = [0,0,0,0];//按桌位顺序
         for(var i = 0 ; i < room.seatDataList.length ; i ++){
-            if(room.seatDataList[i].playerId == playerId){
-                totalScore[i] += result.firstScore[i];
-                totalScore[i] += result.secondScore[i];
-                totalScore[i] += result.thirdScore[i];
-                totalScore[i] += result.specialScore[i];
-                totalScore[i] += result.daqiangScore[i];
-                totalScore[i] += result.quanleidaScore[i];
+            totalScore[i] += result.firstScore[i];
+            totalScore[i] += result.secondScore[i];
+            totalScore[i] += result.thirdScore[i];
+            totalScore[i] += result.specialScore[i];
+            totalScore[i] += result.daqiangScore[i];
+            totalScore[i] += result.quanleidaScore[i];
 
-                var playerId = room.seatDataList[i].playerId;
-                var player = area.getPlayer(playerId);
-                if(!!player){
-                    var gold = player.goldCnt + totalScore[i];
-                    player.set('goldCnt',(player.goldCnt + totalScore[i]) >= 0 ? gold : 0);
-                    room.seatDataList[i].clearn();
-
-                    room.seatDataList[i].setIsReady(false);
-                }
+            var playerId = room.seatDataList[i].playerId;
+            var player = area.getPlayer(playerId);
+            if(!!player){
+                var gold = player.goldCnt + totalScore[i];
+                player.set('goldCnt',(player.goldCnt + totalScore[i]) >= 0 ? gold : 0);
             }
+            room.seatDataList[i].clearn();
+
+            room.seatDataList[i].setIsReady(false);
+            room.seatDataList[i].setIsPlay(false);
         }
     }
 
