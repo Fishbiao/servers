@@ -28,5 +28,10 @@
     "NumEachSeat_shisanshui",
     13,
     "十三水每个座位发牌数量"
+  ],
+  [
+    "init_Gold",
+    1000,
+    "创角初始金币"
   ]
 ]
