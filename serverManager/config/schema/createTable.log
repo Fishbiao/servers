@@ -1,0 +1,5 @@
+Note (Code 1051): Unknown table 'myservermgr.serverinfo'
+Note (Code 1051): Unknown table 'myservermgr.playerinfo'
+Note (Code 1051): Unknown table 'myservermgr.transformdetail'
+Note (Code 1051): Unknown table 'myservermgr.transformdaily'
+Note (Code 1305): PROCEDURE myservermgr.dailySample does not exist

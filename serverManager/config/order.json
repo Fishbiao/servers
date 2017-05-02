@@ -1,0 +1,26 @@
+{
+  "default": {
+    "enable": true,
+    "port": 3801,
+    "algorithm": "md5",
+    "secret": "75beb021861d8d01c0863fb0761c5967"
+  },
+  "guonei_ios": {
+    "enable": false,
+    "port": 3801,
+    "algorithm": "md5",
+    "apiKey": "8dd015062bd98a66b9d66c4bafd44737"
+  },
+  "taiqi_guonei_ios": {
+    "enable": false,
+    "port": 3801,
+    "algorithm": "md5",
+    "secret": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDXELQso1q3pRFqVX55vyUvKLrim14cfSh9I9m/rkIkIC8kMSVLkbAnoPuYl9iJCaVEh6OmKLJW8MrwkoJeaMMVGhMjNzm4fXE48uLW+nyHNV1lTwCn0Q7fk7C6QZVDQtfDN45OgrHwAC51xqgZq2jou1PrXWtVKb5k3Wan9UfwlQIDAQAB"
+  },
+  "taiqi_hudong_android": {
+    "enable": false,
+    "port": 3801,
+    "algorithm": "md5",
+    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCgqlEzzKFPx7g/zU57eJXo5LABJMyQNHE4ZARBDg66cAOqQewJzUeL6B8ppA0rOyQ+oS/mMR5eD2Bsz+ab/AsPHwjD/yNSZmi8REjrurX+NOgxlMv/OLgqVnAEtG3WyvOkgmoGle0B0VbbmYaHq3zmmO155mTnjUAL5FEobPJTvQIDAQAB"
+  }
+}

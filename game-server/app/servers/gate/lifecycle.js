@@ -5,7 +5,7 @@ var util = require('util');
 
 var request = require('request');
 
-//var stateReport = require('../../../config/stateReport');
+var stateReport = require('../../../config/stateReport');
 
 var exp = module.exports;
 
@@ -66,9 +66,9 @@ function pushServerInfo(app) {
 }
 
 function startStateReport(app) {
-    //pushServerInfo(app);
+    pushServerInfo(app);
 
-    //setInterval(function () {
-    //    pushServerInfo(app);
-    //}, 30000);
+    setInterval(function () {
+        pushServerInfo(app);
+    }, 30000);
 }

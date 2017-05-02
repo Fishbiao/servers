@@ -1,0 +1,13 @@
+{
+	"apps": [
+		{
+			"name": "ServerManager",
+			"script": "/home/wb/project/servers/serverManager/app.js",
+			"args": "[]",
+			"watch": "false",
+			"merge_logs": "true",
+			"cwd": "/home/wb/project/servers/serverManager",
+			"exec_mode": "fork_mode"
+		}
+	]
+}

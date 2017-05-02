@@ -1,0 +1,1 @@
+{"name":"十三水","alias":"thirteenCards","maxClient":12000,"host":"192.168.1.102","port":9999,"interval":30000,"flag":4,"clientVersion":"1.0.0","clientMinVer":"1.0.0","resVersion":"1.0.0","packages":"*","pkgUrl":"192.168.1.102:3001/","tips":"fuck it","doMainName":""}
