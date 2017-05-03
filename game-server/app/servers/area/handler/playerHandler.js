@@ -162,19 +162,20 @@ function createPlayer(session, allData, next) {
 pro.createRoom = function (msg, session, next) {
     var playerId = session.get('playerId');
     var player = area.getPlayer(playerId);
-    logger.debug('createRoom playerId = %s', playerId);
-
+    logger.debug('createRoom playerId = %s,args=%j', playerId , msg);
+    var count = msg.count || dataUtils.getOptionValue('NumEachRoom_shisanshui', 3);
     //判断货币是否足够，扣除创建房间的花费
     //XXXX
 
     //调用数据库创建房间
-    roomDao.createRoom(playerId, function (err, roomId) {
+    roomDao.createRoom(playerId , count , function (err, roomId) {
         if(err){
             return next(null, {code: Code.DB_ERROR});
         }
         var newRoomData = {};
         newRoomData.id = roomId;
         newRoomData.createPlayerId = playerId;
+        newRoomData.count = count;
         var room = roomManager.addRoom(newRoomData);
         room.addSeatData(player);
         next(null,{code:Code.OK,room:room.getClientInfo()});
@@ -242,7 +243,7 @@ pro.play = function (msg,session,next) {
         }
 
         //结果计算完毕，把结果推送给玩家
-        var result = thirteenCards.calcResult(ordinarySeatList,specialSeatList);
+        var result = thirteenCards.calcResult(ordinarySeatList,specialSeatList,room.memberCount);
 
         room.pushMsgToMembers('thirtyCards.result',result);
 

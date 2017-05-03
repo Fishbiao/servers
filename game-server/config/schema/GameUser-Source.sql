@@ -31,7 +31,8 @@ CREATE TABLE `room` (
   `currOutCardPlayerId` bigint(20) DEFAULT '0' COMMENT '当前出牌玩家id',
   `finshGameCnt` bigint(20) DEFAULT '0' COMMENT '已完成游戏局数',
   `seatDataList` varchar(512) NOT NULL DEFAULT '[]' COMMENT '作为列表',
-  `bankerSeatIndex` int(11) DEFAULT '0' COMMENT '庄家的座位号',  
+  `bankerSeatIndex` int(11) DEFAULT '0' COMMENT '庄家的座位号',
+  `memberCount` int(11) NOT NULL DEFAULT '0' COMMENT '房间允许的人数',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8;
 

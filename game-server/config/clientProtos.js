@@ -45,6 +45,8 @@ module.exports = {
 
     //创建房间
     "area.playerHandler.createRoom": {
+        //房间人数
+        "optional uInt32 count": 1
     },
 
     //加入一个房间
@@ -71,7 +73,7 @@ module.exports = {
     "area.playerHandler.finish": {
 		//是否准备
 		"optional uInt32 isReady": 1
-	}
+	},
 
 
 
