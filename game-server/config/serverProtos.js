@@ -89,6 +89,7 @@ module.exports = {
     "shotData":{
         "optional uInt32 fire": 1,//打枪者
         "optional uInt32 beShot": 2,//中枪者
+        "optional uInt32 score": 3,//中枪者减分，打枪者得分
     },
     //十三水结果
     "thirtyCards.result":{

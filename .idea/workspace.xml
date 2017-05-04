@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99cedcdd-9876-4e1b-a521-623a9f83b665" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js" afterPath="$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/config/clientProtos.js" afterPath="$PROJECT_DIR$/game-server/config/clientProtos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/config/schema/GameUser-Source.sql" afterPath="$PROJECT_DIR$/game-server/config/schema/GameUser-Source.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/config/serverProtos.js" afterPath="$PROJECT_DIR$/game-server/config/serverProtos.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +21,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="playerHandler.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="playerHandler.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="167" column="10" lean-forward="true" selection-start-line="167" selection-start-column="10" selection-end-line="167" selection-end-column="10" />
+            <state relative-caret-position="456">
+              <caret line="190" column="0" lean-forward="true" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -35,7 +34,7 @@
       <file leaf-file-name="CommonParameter.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/config/data/CommonParameter.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
+            <state relative-caret-position="418">
               <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding />
             </state>
@@ -45,7 +44,7 @@
       <file leaf-file-name="roomManager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app/domain/area/roomManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="1311">
               <caret line="69" column="16" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
               <folding />
             </state>
@@ -65,7 +64,7 @@
       <file leaf-file-name="playerDao.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app/dao/playerDao.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
+            <state relative-caret-position="4731">
               <caret line="249" column="6" lean-forward="true" selection-start-line="249" selection-start-column="6" selection-end-line="249" selection-end-column="6" />
               <folding />
             </state>
@@ -75,7 +74,7 @@
       <file leaf-file-name="clientProtos.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/config/clientProtos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="912">
               <caret line="48" column="30" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="30" />
               <folding />
             </state>
@@ -85,8 +84,8 @@
       <file leaf-file-name="thirteenCards.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="1656" column="47" lean-forward="false" selection-start-line="1656" selection-start-column="47" selection-end-line="1656" selection-end-column="47" />
+            <state relative-caret-position="542">
+              <caret line="1623" column="30" lean-forward="false" selection-start-line="1623" selection-start-column="25" selection-end-line="1623" selection-end-column="30" />
               <folding>
                 <element signature="n#!!block;n#isShierhuangzuByPkIds#0" expanded="false" />
               </folding>
@@ -94,11 +93,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serverProtos.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="serverRes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/config/serverRes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="673">
+              <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serverProtos.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game-server/config/serverProtos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="102" column="26" lean-forward="false" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="26" />
+            <state relative-caret-position="518">
+              <caret line="93" column="11" lean-forward="true" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -107,18 +116,8 @@
       <file leaf-file-name="RoomData.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="288" column="40" lean-forward="false" selection-start-line="288" selection-start-column="29" selection-end-line="288" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="servers.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/config/servers.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="670">
+              <caret line="303" column="11" lean-forward="false" selection-start-line="303" selection-start-column="11" selection-end-line="303" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -128,7 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>code</find>
       <find>player</find>
       <find>getReadByPlayerId</find>
       <find>setIsReady</find>
@@ -158,6 +156,7 @@
       <find>满员</find>
       <find>room</find>
       <find>NumEachRoom_shisanshui</find>
+      <find>thirdDaqiangScore</find>
     </findStrings>
     <replaceStrings>
       <replace>firstDaqiangFlag</replace>
@@ -200,7 +199,6 @@
         <option value="$PROJECT_DIR$/game-server/app/domain/entity/player.js" />
         <option value="$PROJECT_DIR$/game-server/app/domain/area/area.js" />
         <option value="$PROJECT_DIR$/authServer/app.js" />
-        <option value="$PROJECT_DIR$/game-server/config/serverProtos.js" />
         <option value="$PROJECT_DIR$/game-server/app/domain/entity/SeatData.js" />
         <option value="$PROJECT_DIR$/game-server/config/serverRes.js" />
         <option value="$PROJECT_DIR$/authServer/config/config.json" />
@@ -221,9 +219,10 @@
         <option value="$PROJECT_DIR$/game-server/config/clientProtos.js" />
         <option value="$PROJECT_DIR$/game-server/config/schema/GameUser-Source.sql" />
         <option value="$PROJECT_DIR$/game-server/app/dao/roomDao.js" />
-        <option value="$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js" />
         <option value="$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js" />
         <option value="$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js" />
+        <option value="$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js" />
+        <option value="$PROJECT_DIR$/game-server/config/serverProtos.js" />
       </list>
     </option>
   </component>
@@ -240,8 +239,7 @@
     <handled-path value="$PROJECT_DIR$/web-server/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-18" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -260,6 +258,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -495,7 +494,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -720,20 +718,20 @@
       <workItem from="1493388915104" duration="1629000" />
       <workItem from="1493732125458" duration="8287000" />
       <workItem from="1493822868565" duration="4187000" />
+      <workItem from="1493905804163" duration="1556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246078000" />
+    <option name="totallyTimeSpent" value="247634000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-18" y="0" width="1936" height="1056" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14947917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25792813" sideWeight="0.54791665" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20930232" sideWeight="0.45208332" order="1" side_tool="false" content_ui="tabs" x="0" y="398" width="1920" height="244" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -745,6 +743,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20930232" sideWeight="0.45208332" order="1" side_tool="false" content_ui="tabs" x="0" y="398" width="1920" height="244" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -997,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,7 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4351">
           <caret line="229" column="7" lean-forward="false" selection-start-line="229" selection-start-column="7" selection-end-line="229" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,7 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="67" lean-forward="false" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1037,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,7 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2356">
           <caret line="124" column="5" lean-forward="false" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,7 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,7 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,22 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/serverRes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/serverProtos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="102" column="26" lean-forward="false" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1099,33 +1073,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/domain/area/roomManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="1311">
           <caret line="69" column="16" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="288" column="40" lean-forward="false" selection-start-line="288" selection-start-column="29" selection-end-line="288" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="1656" column="47" lean-forward="false" selection-start-line="1656" selection-start-column="47" selection-end-line="1656" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!block;n#isShierhuangzuByPkIds#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/config/data/CommonParameter.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
+        <state relative-caret-position="418">
           <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
@@ -1141,7 +1097,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/dao/playerDao.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
+        <state relative-caret-position="4731">
           <caret line="249" column="6" lean-forward="true" selection-start-line="249" selection-start-column="6" selection-end-line="249" selection-end-column="6" />
           <folding />
         </state>
@@ -1149,7 +1105,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/config/clientProtos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="912">
           <caret line="48" column="30" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="30" />
           <folding />
         </state>
@@ -1157,8 +1113,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/servers/area/handler/playerHandler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="167" column="10" lean-forward="true" selection-start-line="167" selection-start-column="10" selection-end-line="167" selection-end-column="10" />
+        <state relative-caret-position="456">
+          <caret line="190" column="0" lean-forward="true" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/domain/entity/RoomData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="303" column="11" lean-forward="false" selection-start-line="303" selection-start-column="11" selection-end-line="303" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/domain/rules/thirteenCards.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="1623" column="30" lean-forward="false" selection-start-line="1623" selection-start-column="25" selection-end-line="1623" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!block;n#isShierhuangzuByPkIds#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/config/serverRes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/config/serverProtos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="93" column="11" lean-forward="true" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
           <folding />
         </state>
       </provider>
