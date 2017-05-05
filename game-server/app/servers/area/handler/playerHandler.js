@@ -259,9 +259,19 @@ pro.play = function (msg,session,next) {
 
             var playerId = room.seatDataList[i].playerId;
             var player = area.getPlayer(playerId);
-            if(!!player){
-                var gold = player.goldCnt + totalScore[i];
-                player.set('goldCnt',(player.goldCnt + totalScore[i]) >= 0 ? gold : 0);
+
+            if(room.seatDataList[i].getBoolIsOffline()){//已经离线了
+                //直接保存数据库
+                playerDao.addGold(room.seatDataList[i].playerId, totalScore[i]);
+
+                //推送离线消息
+                this.pushMsgToMembers('seat.offline',{seatIndex:i});
+            }
+            else{
+                if(!!player){
+                    var gold = player.goldCnt + totalScore[i];
+                    player.set('goldCnt',(player.goldCnt + totalScore[i]) >= 0 ? gold : 0);
+                }
             }
             room.seatDataList[i].clearn();
 

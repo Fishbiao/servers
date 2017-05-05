@@ -105,5 +105,9 @@ module.exports = {
         "repeated uInt32 daqiangScore":10,//打枪结果每个座位应该加减的分数
         "optional uInt32 quanleidaIndex":11,//全垒打的座位号 -1=没有全垒打
         "repeated uInt32 quanleidaScore":12,//全垒打结果每个座位应该加减的分数
-    }
+    },
+    //下线通知
+    "seat.offline":{
+        "optional uInt32 seatIndex": 1,//离线的座位号
+    },
 };
