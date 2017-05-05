@@ -60,3 +60,18 @@ BEGIN
 END
 ;;
 DELIMITER ;
+
+
+-- ----------------------------
+-- Procedure structure for `onAddGold`
+-- ----------------------------
+DROP PROCEDURE IF EXISTS `onAddGold`;
+DELIMITER ;;
+CREATE PROCEDURE `onAddGold`(IN `playerId` bigint,IN `addGold` bigint)
+BEGIN
+    DECLARE gold BIGINT;
+    SELECT goldCnt INTO gold FROM player WHERE id = playerId;
+		UPDATE player SET goldCnt = gold + addGold WHERE id = playerId;
+END
+;;
+DELIMITER ;
