@@ -269,6 +269,10 @@ exports.getServerList = function (req, res) {
                     serverInfo.noticeMd5 = noticeDict[serverInfo.alias].md5;
                 }
             });*/
+            console.log("authServerInfo = %j",authServerInfo);
+            if(!!authServerInfo){
+                resObj.authServer = authServerInfo;
+            }
             resObj.serverList = sortedServerList;
             res.send(resObj);
         }
@@ -297,6 +301,20 @@ exports.pushServerInfo = function (req, res) {
             res.send({code: 502});
         }
     });
+};
+
+//authServer info
+var authServerInfo = null;
+exports.pushAuthServerInfo = function (req, res) {
+    var serverInfo = req.body;
+    console.info('pushauthServerInfo serverInfo = %j', serverInfo);
+
+    authServerInfo = {};
+    authServerInfo.ip = serverInfo.ip;
+    authServerInfo.port = serverInfo.port;
+    authServerInfo.doMainName = serverInfo.doMainName;
+
+    res.send({code: 200});
 };
 
 exports.getNotice = function (req, res) {

@@ -8,6 +8,9 @@ var express = require('express'),
     mysql = require('./dao/mysql/mysql'),
     config = require('./config/config'),
     authUser = require('./routes/authUser');
+var util = require('util');
+var request = require('request');
+var serverManagerIPPort = require('./config/serverManagerIPPort');
 
 var app = express();
 
@@ -46,6 +49,59 @@ app.get('/register', authUser.register);
 app.get('/login', authUser.login);
 mysql.init();
 
-http.createServer(app).listen(app.get('port'), function(){
+
+//获取内网ip
+function getIPAdress(){
+    var interfaces = require('os').networkInterfaces();
+    for(var devName in interfaces){
+        var iface = interfaces[devName];
+        for(var i=0;i<iface.length;i++){
+            var alias = iface[i];
+            if(alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal){
+                return alias.address;
+            }
+        }
+    }
+}
+
+
+var server = http.createServer(app).listen(app.get('port'), function(){
     console.log('Express server listening on port ' + app.get('port'));
+
+    //const port = server.address().port
+    //console.log('Express server listening on port %d %s' , port,getIPAdress());
+    pushServerInfo(app);
 });
+
+function getServerInfo(app) {
+    var serverInfo = {};
+    serverInfo.ip = serverManagerIPPort.myIP;
+    serverInfo.port = app.get('port');
+    serverInfo.doMainName = serverManagerIPPort.myDoMainName;
+    return serverInfo;
+}
+
+function pushServerInfo(app) {
+    var options = {
+        uri: util.format('http://%s:%s/pushAuthServerInfo', serverManagerIPPort.host, serverManagerIPPort.port),
+        method: 'POST',
+        json: getServerInfo(app)
+    };
+
+    request(options, function (err, res) {
+        if (err) {
+            console.log('pushServerInfo failed!err = %s', err.stack);
+            setInterval(function () {
+                pushServerInfo(app);
+            }, 30000);
+            return;
+        }
+        if (res.statusCode !== 200) {
+            console.log('pushServerInfo failed!code = %s', res.statusCode);
+            setInterval(function () {
+                pushServerInfo(app);
+            }, 30000);
+        }
+        console.log('pushServerInfo success!');
+    });
+}

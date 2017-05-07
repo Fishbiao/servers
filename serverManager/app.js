@@ -139,6 +139,7 @@ async.series([
     app.post('/pushServerInfo', serverList.pushServerInfo);
     app.post('/pushUserInfo', userInfo.pushUserInfo);
     app.get('/getNotice', serverList.getNotice);
+    app.post('/pushAuthServerInfo',serverList.pushAuthServerInfo);
 
 
 
