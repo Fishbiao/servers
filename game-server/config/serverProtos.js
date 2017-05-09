@@ -63,6 +63,8 @@ module.exports = {
         "repeated string playerName": 7,
         // gold
         "repeated string goldCnt": 8,
+        //是否准备 1表示已经准备
+        "repeated uInt32 isReady": 9
     },
     // 座位的公开信息
     "seatData.push": {
